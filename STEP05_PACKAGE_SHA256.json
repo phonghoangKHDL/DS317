@@ -1,0 +1,11 @@
+{
+  "scope": "Additive notebook05 update; reuses existing src/baf.py and src/gru.py",
+  "files_sha256": {
+    "notebooks/05_BAF_GRU_full.ipynb": "03e7352002005fb02a7032c913e35bdce6eef0f367a28f0f3dbe080524cd24b0",
+    "docs/STEP05_GRU_full.md": "c8453a1849bce2f0bf028b5a33d3239c897f8460549a198fd7c9ca2f3cad6b95",
+    "docs/STEP05_VALIDATION.json": "b40dc8e52d3f1b8e2102146530fdd63849020d4abc000d1fb078ad7e40ef13b0"
+  },
+  "overwrites_notebooks_01_to_04": false,
+  "ships_source_changes": false,
+  "full_BAF_training_performed_by_builder": false
+}

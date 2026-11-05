@@ -1,0 +1,7 @@
+# Use the existing D:\UIT\.venvs\ml-gpu interpreter.
+# No PyTorch/CUDA/legacy Feedzai package changes are needed for notebook09.
+lightgbm==4.7.0
+nbformat==5.11.1
+ipython==9.17.1
+psutil==7.2.2
+matplotlib>=3.8

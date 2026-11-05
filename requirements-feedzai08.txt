@@ -1,0 +1,7 @@
+# Main notebook dependencies. Select the existing D:\UIT venv first.
+# Legacy Optuna/Aequitas are installed separately by the notebook into external/.
+lightgbm==4.7.0
+nbformat==5.11.1
+ipython==9.17.1
+PyYAML==6.0.3
+seaborn>=0.13.2

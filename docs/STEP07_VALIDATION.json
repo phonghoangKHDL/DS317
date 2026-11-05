@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "date": "2026-10-27",
+  "scope": "Synthetic400 rows, original source full HPO10/fixed8; no new full BAF training",
+  "execution": "Actual production executor: fresh Python/IPython InteractiveShell process, source cells read from real cloned GitHub commit",
+  "checks": {
+    "real_git_clone_and_pinned_commit": true,
+    "original_notebook_sha256_confirmed": true,
+    "all_wrapper_cells_once_in_order": true,
+    "all_original_source_cells_executed_and_outputs_saved": true,
+    "rich_display_outputs_saved": true,
+    "all_10_original_hpo_trials_69_epochs": true,
+    "original_fixed_recipe_8_epochs_after_hpo": true,
+    "observer_preserves_final_checkpoint_and_predictions_bit_exact_on_cpu": true,
+    "two_original_checkpoints_saved": true,
+    "metrics_recomputed_from_predictions": true,
+    "portable_verify_without_raw_data": true,
+    "all_packaged_proof_hashes_valid": true,
+    "one_pass_export_without_frontend_save": true
+  },
+  "synthetic_rows": 400,
+  "hpo_training_epochs": 69,
+  "fixed_training_epochs": 8,
+  "limitations": [
+    "No full BAF/GPU/Windows run in builder",
+    "Not a full-paper replay: classical models/importance/CI excluded",
+    "Native Jupyter kernel launch is restricted in builder; production uses Python/IPython subprocess"
+  ]
+}

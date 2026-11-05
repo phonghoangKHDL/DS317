@@ -1,0 +1,1182 @@
+[
+  {
+    "repository": "feedzai/bank-account-fraud",
+    "url": "https://github.com/feedzai/bank-account-fraud",
+    "commit": "3377cfd8fc20edcda3dd9dd14c10ed3dd276c6de",
+    "commit_date": "2023-12-21T11:12:29Z",
+    "default_branch": "main",
+    "github_license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "snapshot_tar_sha256": "c297ae04902ad9fc6de07728239511c3db638171db004619c14fcc20339a9a6b",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 11495,
+        "sha256": "cd0438d90fde99cdc0db4971c9a85a9d53b7fe07923c318fdf74000bd110630b"
+      },
+      {
+        "path": "README.md",
+        "bytes": 4709,
+        "sha256": "043afc759f0818c790a659a33dcc0bfa11172567739614e74b3cad9d4aa16716"
+      },
+      {
+        "path": "notebooks/config-rs.yml",
+        "bytes": 1934,
+        "sha256": "f705306308a16064663b89dc1cc00753247f97285fe8f1f96607ae30caa1df84"
+      },
+      {
+        "path": "notebooks/ctgan_training_notebook.ipynb",
+        "bytes": 23836,
+        "sha256": "9c8363aaea96b7e6e466654614456b7dbc22a8612fd33848137f408a377c57c6"
+      },
+      {
+        "path": "notebooks/empirical_results.ipynb",
+        "bytes": 15280,
+        "sha256": "8964df82c3ab1417aeaf39b15d1146d13eddb9813f1d8f014f59387c79b920be"
+      },
+      {
+        "path": "notebooks/generate_dataset_variants.ipynb",
+        "bytes": 14930,
+        "sha256": "b1a12964bdd9a5afdebb96a022266513f323c7365751a0f75b0ef1d20320993e"
+      },
+      {
+        "path": "notebooks/lightgbm_hyperparameter_space.yaml",
+        "bytes": 748,
+        "sha256": "f991dadead1a99ac68d2a92b225610fc9412f6137333bf7815cda227f05594ed"
+      },
+      {
+        "path": "notebooks/mvn.py",
+        "bytes": 4160,
+        "sha256": "4328a53806a15c9665f33b0509528ccb3589c874c414e6882a06b5b450032df0"
+      },
+      {
+        "path": "notebooks/random_search.py",
+        "bytes": 8980,
+        "sha256": "f7e830468b6393e5cca90125e927640cecec06234ca26e276885b40f90ec7e1d"
+      },
+      {
+        "path": "notebooks/requirements.txt",
+        "bytes": 171,
+        "sha256": "f5805992a2bf8c373aedb4a6df1928390452d93f4fee3e4e3e1d4226aa01360e"
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "repository": "wn-nwN/fraud-detection-project-Nov2025",
+    "url": "https://github.com/wn-nwN/fraud-detection-project-Nov2025",
+    "commit": "6e8252cb9080378905b2aae30033c5946b72335b",
+    "commit_date": "2025-12-09T03:06:04Z",
+    "default_branch": "main",
+    "github_license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "snapshot_tar_sha256": "21cd570f0f809c188966141acc307a9f04aa4342259fa39fd6d23c9d7e367afc",
+    "files": [
+      {
+        "path": "Binary_class_variable_analysis_github.ipynb",
+        "bytes": 87571,
+        "sha256": "5391e269bb5388ac5c0dde44662a950de1285e0f5f81c6b02315d466e3422e41"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 11357,
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "README.md",
+        "bytes": 33,
+        "sha256": "f3e33d0a88914a662a22a85aecfb624bad34051b6f3df0fb4f438fb5f905d002"
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "repository": "raihandinaribn/templar-fraud",
+    "url": "https://github.com/raihandinaribn/templar-fraud",
+    "commit": "5ae9f6c76d20cd12a2321bcdfbb7e17dc42ed9d2",
+    "commit_date": "2026-07-26T08:35:47Z",
+    "default_branch": "main",
+    "github_license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "snapshot_tar_sha256": "471a9cdf013851bdd6e7d1bf1dc79e9eac3e0a33753ed7eb8a21a2f3758bc2af",
+    "files": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "bytes": 807,
+        "sha256": "370b0b66ab09d3ed6ba8fc70073d825e88cfad3e9b1da23b1041095b9a95e26e"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1078,
+        "sha256": "9ccbd195c60b999d9a09b9d9cc5001006a0f4027b3f6420202ab925143ca2036"
+      },
+      {
+        "path": "README.md",
+        "bytes": 3160,
+        "sha256": "d611df27f054358df01afecf6cd784db057bf2d6592ed6beda84f97a36446cb7"
+      },
+      {
+        "path": "configs/d1_baf.yaml",
+        "bytes": 1897,
+        "sha256": "ed01ac93fd95d001ad7fc2ea33f243a187883f6980c83b5bd9ba6846be2aad00"
+      },
+      {
+        "path": "configs/d2_ieee.yaml",
+        "bytes": 1659,
+        "sha256": "c2b78282c00cc327fa43e045c5b206afdc437c584d978b10afd5579b547e2bc1"
+      },
+      {
+        "path": "docs/METHOD.md",
+        "bytes": 2331,
+        "sha256": "c08809559669ee9aa08fead30d4b5c528edb0c0cf8669bf2db68d03949161e80"
+      },
+      {
+        "path": "docs/PUSH_INSTRUCTIONS.md",
+        "bytes": 1214,
+        "sha256": "5396473e116b1ed56f964851fb7c3886e4cd2a22865ead24f07c9ba323c976ea"
+      },
+      {
+        "path": "docs/_config.yml",
+        "bytes": 137,
+        "sha256": "4b02597e648cd2bcc680e5718c3778b9cf1a9410f128e4b5b8bff2c5091d7263"
+      },
+      {
+        "path": "docs/index.md",
+        "bytes": 1114,
+        "sha256": "9b09df24e458cea5bd3bc25250942d06914742aa61078a35acae13b42ea26d6b"
+      },
+      {
+        "path": "pyproject.toml",
+        "bytes": 960,
+        "sha256": "982ab103ba21678a9ce7da3d4afa82384bf569c6cdd45ca468e2629f67343f06"
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 203,
+        "sha256": "eecc715f404aa6ff832c1f010c6704516725f25fb98a34dbe43773d24b0ce00e"
+      },
+      {
+        "path": "scripts/reproduce_tables.py",
+        "bytes": 4632,
+        "sha256": "e4aed6c88df565f723c4240131b6c642e42bf8c339181720d673f274b273e2f2"
+      },
+      {
+        "path": "scripts/run_eval.py",
+        "bytes": 1402,
+        "sha256": "5f9c9e8724f9926a28b96288cfaed861afb0d90fd2e9483c6c1807f2dc22c551"
+      },
+      {
+        "path": "scripts/run_train.py",
+        "bytes": 1810,
+        "sha256": "12e20f5abc744eca363234b8dc6c0fdd3804359b08b01485a5bcee9ab9d7a399"
+      },
+      {
+        "path": "src/templar_fraud/__init__.py",
+        "bytes": 292,
+        "sha256": "f4859650ea22bf9865ce3dfea0331e44b3934fa1cb9be1564aecbdbde3d099ad"
+      },
+      {
+        "path": "src/templar_fraud/config.py",
+        "bytes": 1621,
+        "sha256": "4752a02880c55610737f968140bb2c238c8db165e92f7fcd0d308b6696b275be"
+      },
+      {
+        "path": "src/templar_fraud/data/__init__.py",
+        "bytes": 417,
+        "sha256": "be331ccf1d8bbcfb43331905da294da13cbc67c5266d6fc72c40b1e094174275"
+      },
+      {
+        "path": "src/templar_fraud/data/datasets.py",
+        "bytes": 3163,
+        "sha256": "0c235cc2202b89ad420371669d68ecfa3000e89c666d632a9bd40b104f7aa6fe"
+      },
+      {
+        "path": "src/templar_fraud/data/preprocessing.py",
+        "bytes": 4931,
+        "sha256": "d70296bc42d2ab2182607bcfafc5b50dc2d610858e412a9fa7cbc5dbbc704baa"
+      },
+      {
+        "path": "src/templar_fraud/data/synthetic.py",
+        "bytes": 4302,
+        "sha256": "fa113fe5a812a24441ce9066c19c66c619fbee9f2e18e82c91c9b8aeedc9d3bd"
+      },
+      {
+        "path": "src/templar_fraud/models/__init__.py",
+        "bytes": 663,
+        "sha256": "83c71b52425d0ecdffef4756f06a4dc9d1d1c10122c4bd34dbed415053ecae74"
+      },
+      {
+        "path": "src/templar_fraud/models/calibration.py",
+        "bytes": 4230,
+        "sha256": "1a7ccfdbeec2d0bc70f88dab868e979eeea94c9bdf4f07578178c4542d0ff090"
+      },
+      {
+        "path": "src/templar_fraud/models/decision.py",
+        "bytes": 3665,
+        "sha256": "fc3e1d4e29d8ecc5215ebe49d80060e952c418b9a1a5410808c0d3ef752f88f0"
+      },
+      {
+        "path": "src/templar_fraud/models/routing.py",
+        "bytes": 1347,
+        "sha256": "3871c830d278e85e6dd73041dc90d3920ff5bbc19f80c83f8f71c5ec4d5f7b8f"
+      },
+      {
+        "path": "src/templar_fraud/models/saint.py",
+        "bytes": 7958,
+        "sha256": "afe6b4b85634b8f7423bc930094426b0605414bcae759696e2bebafdca40885c"
+      },
+      {
+        "path": "src/templar_fraud/models/stacking.py",
+        "bytes": 4104,
+        "sha256": "66522d852f2dbbf415e75566ef9725b6acf48d04883c53517de80ee0a3b717c5"
+      },
+      {
+        "path": "src/templar_fraud/models/symbolic.py",
+        "bytes": 5568,
+        "sha256": "707710ca7328813e92ea2b3a9d138895b12b94d5d41731bece705a1a722d3e60"
+      },
+      {
+        "path": "src/templar_fraud/models/templar.py",
+        "bytes": 8402,
+        "sha256": "43438fbd53b2b1f1ebb8fba15478763811569f0b0f7d46694edb7ac9c2a77bed"
+      },
+      {
+        "path": "src/templar_fraud/models/triage.py",
+        "bytes": 3104,
+        "sha256": "06677d835c47803e3f4a3ea24e875eaf4361b8d46bea19f8d480289b5ecf5e98"
+      },
+      {
+        "path": "src/templar_fraud/models/verifier.py",
+        "bytes": 3244,
+        "sha256": "7ffac1fa94a223d935856f98f723994af59e6d137adb68ffdea4224df86ccc44"
+      },
+      {
+        "path": "src/templar_fraud/training/__init__.py",
+        "bytes": 294,
+        "sha256": "132410c246fadeac2ac3bd4e3f92c15308283a8b7e76863080a4c3f8ce13e1e2"
+      },
+      {
+        "path": "src/templar_fraud/training/evaluate.py",
+        "bytes": 3477,
+        "sha256": "40d0746b8f66041daaf928f292eb662321cd73348eadb769d0bb7ce9941c2d38"
+      },
+      {
+        "path": "src/templar_fraud/training/train.py",
+        "bytes": 1532,
+        "sha256": "3d7c7e809839e9e23695e17b41bd5c461ae114d59b6322b1c30fc98f78a37a65"
+      },
+      {
+        "path": "src/templar_fraud/utils/__init__.py",
+        "bytes": 674,
+        "sha256": "f187159c41a6a8f66f063da399dcd8fdda3c74f793ff625dff802c807ba6ce45"
+      },
+      {
+        "path": "src/templar_fraud/utils/metrics.py",
+        "bytes": 4327,
+        "sha256": "8431ccf09c628f3d21832b75ad85caac1e37e1a6aa16e549b3809d4fa6a1330e"
+      },
+      {
+        "path": "src/templar_fraud/utils/seed.py",
+        "bytes": 833,
+        "sha256": "a27d5481480eabbf5900a6cca6f7b8f86615dbd2e471b00f3e1b259a46706779"
+      },
+      {
+        "path": "src/templar_fraud/utils/stats.py",
+        "bytes": 4794,
+        "sha256": "5aa22ce431477a0c6b284222d6753f8bf7f8b6b2b9c0792ad6f515e2cc9490ce"
+      },
+      {
+        "path": "tests/conftest.py",
+        "bytes": 972,
+        "sha256": "e5390a17c0f63d93008e66409464c33bd715c380f8756aaab753305e43221628"
+      },
+      {
+        "path": "tests/test_calibration.py",
+        "bytes": 1767,
+        "sha256": "12c15b166d9f97dc9eca394435b6d5f73e5f73f6c9cf5fca1f6337b34e3072a6"
+      },
+      {
+        "path": "tests/test_data.py",
+        "bytes": 1693,
+        "sha256": "84fade6c1eed0ba6965c29887fc1bda7dbdf2e258a7cfa143d992d8ae01cd9d0"
+      },
+      {
+        "path": "tests/test_decision.py",
+        "bytes": 1488,
+        "sha256": "f55ca41cc9d138aae827f478db6af4c8dc89a336175219f38f4f3195501eafab"
+      },
+      {
+        "path": "tests/test_metrics.py",
+        "bytes": 2249,
+        "sha256": "20b3616ad478ab403c34932afec8c54bac889e0f3bc9b908774771a10706dede"
+      },
+      {
+        "path": "tests/test_pipeline.py",
+        "bytes": 2492,
+        "sha256": "76fed8851be17f500869827b14445af163eeecf1293dd714665cc7beef972ede"
+      },
+      {
+        "path": "tests/test_preprocessing.py",
+        "bytes": 1875,
+        "sha256": "24cd17ab11b4805bae2ab422f704d0efcea16a0aefadd4e3db15b44aa5e93a73"
+      },
+      {
+        "path": "tests/test_stacking_routing.py",
+        "bytes": 2204,
+        "sha256": "a4bef7e76c6b261a230eba70e6c7e30cb881aff0044aabf37fe1d6ddff5fc4c3"
+      },
+      {
+        "path": "tests/test_stats.py",
+        "bytes": 2454,
+        "sha256": "974ee4da7d013fc40575d98d8808a1896c553d2aaf7324ce0a28a271641db01d"
+      },
+      {
+        "path": "tests/test_verifier_symbolic.py",
+        "bytes": 2251,
+        "sha256": "41c6dee69472ebb4f5ff375fba2a865d66cc7f144270d4cc5d8bd6f77301bb01"
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "repository": "feedzai/deccaf",
+    "url": "https://github.com/feedzai/deccaf",
+    "commit": "b910b48d7e146d53b5f145224b819bdb0962d40a",
+    "commit_date": "2025-01-02T18:59:01Z",
+    "default_branch": "main",
+    "github_license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "snapshot_tar_sha256": "3cdb9c4be58617db46231246e330480de451c76aa3115b56080a6359a8472a12",
+    "files": [
+      {
+        "path": "Code/alert_model/cfg.yaml",
+        "bytes": 322,
+        "sha256": "2a08542766f1a4ed498b42b2c0cd6053df937e806f68be18134b5da93a58854b"
+      },
+      {
+        "path": "Code/alert_model/hpo_fpr.py",
+        "bytes": 6156,
+        "sha256": "a46d2e7b7829809b5f3fd834e97e702f66ee21bd244a415df26195067b145717"
+      },
+      {
+        "path": "Code/alert_model/training_and_predicting.py",
+        "bytes": 4658,
+        "sha256": "5660a1829c791be41d8f453f1a8c9a2bb0aace65ad517013026594f9de84d123"
+      },
+      {
+        "path": "Code/classifier_h/cfg.yaml",
+        "bytes": 401,
+        "sha256": "98a80c0a326e50c64674e66399dec58a824168485e97a865004264d17398df29"
+      },
+      {
+        "path": "Code/classifier_h/hpo_wce.py",
+        "bytes": 7432,
+        "sha256": "d805f9ea455d6fc170c9bd5a19020051a4dd2307a4f076a5f0596c92808c6144"
+      },
+      {
+        "path": "Code/classifier_h/param_spaces/param_space_0.yaml",
+        "bytes": 800,
+        "sha256": "1bf52462bb6b6898feeb1b471ff772fc64686e6b5669f55095428317780fd8b1"
+      },
+      {
+        "path": "Code/classifier_h/param_spaces/param_space_1.yaml",
+        "bytes": 803,
+        "sha256": "f26bb516653b87edb83c277a5f0bcef1e4979037f0efbba95bb5b232e08e5d3e"
+      },
+      {
+        "path": "Code/classifier_h/training.py",
+        "bytes": 7680,
+        "sha256": "0a4d0f4ad2883ce122896a2fd6f4f41e80d068aa594dc5aaa744ad6cdba3642c"
+      },
+      {
+        "path": "Code/data/dataset_cfg.yaml",
+        "bytes": 540,
+        "sha256": "55a9c717a9e5d8900995ed481cf6103a8855b61b9cd687d02997af47ba8545bc"
+      },
+      {
+        "path": "Code/data/preprocess.py",
+        "bytes": 3734,
+        "sha256": "3d586efac57410ae2ff40d43672c92aad299256766dabdc87fc276ffb424e951"
+      },
+      {
+        "path": "Code/deferral/cfg.yaml",
+        "bytes": 58,
+        "sha256": "726589cb342c297762c47c6473f9dcb06f53d70e9ea4bade2c0472d793e31be7"
+      },
+      {
+        "path": "Code/deferral/process_results.ipynb",
+        "bytes": 229279,
+        "sha256": "0d720d02e07d696c419dc2dc7bf17ccbd6661c84a28eda97c26fb3abe59684bc"
+      },
+      {
+        "path": "Code/deferral/run_alert.py",
+        "bytes": 13394,
+        "sha256": "6dc66cc563374d63052f7ed8c5eb4690cae7e3844539a5266524d6cbd5399757"
+      },
+      {
+        "path": "Code/expert_models/cfg.yaml",
+        "bytes": 57,
+        "sha256": "6f5a801862f58d70c9df9d2c7dd94ff6e6a1d1912072e2336662402cfa648f59"
+      },
+      {
+        "path": "Code/expert_models/hpo.py",
+        "bytes": 5802,
+        "sha256": "95ef870b9da1492f3c01a28140f139103f6ed2cf5d6bb3c61ec693509c7c7de8"
+      },
+      {
+        "path": "Code/expert_models/run_deccaf.py",
+        "bytes": 5139,
+        "sha256": "dd5cb14783e1e4b4d1b8a825121434c109a4fa28a42fa1c5153c61194d9a8db0"
+      },
+      {
+        "path": "Code/expert_models/run_ova.py",
+        "bytes": 5305,
+        "sha256": "e0e2b3771048013bc9169a761144fc497f34a606054e44a9ee0c16aa2f457c63"
+      },
+      {
+        "path": "Code/experts/expert_analysis.ipynb",
+        "bytes": 449481,
+        "sha256": "0d6e83de658aeea90b6967b2b3236fa29dd2e751de8ec98258bb45c1f01ae9e8"
+      },
+      {
+        "path": "LICENSE.txt",
+        "bytes": 11499,
+        "sha256": "203d41b6d61eea959894fc12893733edfc8694b8455fa0254f4e57c2ae4ff317"
+      },
+      {
+        "path": "README.md",
+        "bytes": 6392,
+        "sha256": "4b902d843dda3042857031e4644507fb2183115e9fa13f55f8da03bc2c24b047"
+      },
+      {
+        "path": "environment.yml",
+        "bytes": 360,
+        "sha256": "371d0bb3d76864eb36dc74116015383681e74e88020fd69da4bce97ef8a688cd"
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "repository": "abdulbasit12312/VR-FraudNet",
+    "url": "https://github.com/abdulbasit12312/VR-FraudNet",
+    "commit": "7f552994bde0efe4e6706ceccdfb398d8e6450d0",
+    "commit_date": "2026-09-18T13:11:59Z",
+    "default_branch": "main",
+    "github_license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "snapshot_tar_sha256": "0614a5fe8faaf6d4540ad07c3cf569acd0e5c5e248bc5d310b03b3ea40d85475",
+    "files": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "bytes": 4738,
+        "sha256": "1eb0ff6beae9f300e25228ff127e2461180b15983b1ddf6c6d9eaf9e2c43bc5a"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1357,
+        "sha256": "fc3bb75bc1918178964015b21564f0fda4e6348ae82c2234fb5cd48137cd0a9e"
+      },
+      {
+        "path": "README.md",
+        "bytes": 17688,
+        "sha256": "057d6f8223f83b7846181ba610b41319c108a91fbcf48f2b2e5500388413a4e6"
+      },
+      {
+        "path": "REPRODUCIBILITY_MANIFEST.json",
+        "bytes": 24527,
+        "sha256": "3718cfd45668eee8223b68488c953f062558c9b285ab735a7195ba22d8fd5c88"
+      },
+      {
+        "path": "adversarial/families/edit_families.yaml",
+        "bytes": 4854,
+        "sha256": "641a374623f4c79cf51f5d67405e30bc7d568ed28d94d5d9c1281d9baae949c5"
+      },
+      {
+        "path": "artifacts/lora/README.md",
+        "bytes": 5566,
+        "sha256": "0592f10a54e6bd0b341a6c1fd0b8cae61b77d2c4ccc7c6bfc3d0665846a0312b"
+      },
+      {
+        "path": "configs/ablations.yaml",
+        "bytes": 1989,
+        "sha256": "83d1eb014e5a173449a1384f21a4019ef0e2c4068f854f2917823c340a1e980c"
+      },
+      {
+        "path": "configs/base.yaml",
+        "bytes": 6609,
+        "sha256": "a0223624c7c87bff42aff44f48a2938c0311c16be238a035375ac863102076e9"
+      },
+      {
+        "path": "configs/baselines.yaml",
+        "bytes": 1948,
+        "sha256": "9d1c62d054f5271bbd75d7550668cf036b82839c90784ef2398f986607e9ae7d"
+      },
+      {
+        "path": "configs/costs.yaml",
+        "bytes": 1352,
+        "sha256": "36f5d01a9d4194214d9fd63e93df201da75ec4d84ac00d644e36268f859fcf71"
+      },
+      {
+        "path": "configs/d1.yaml",
+        "bytes": 1349,
+        "sha256": "8666410381e232169f846251f9489e06dd047081cf7a8a38663b6e83ff7932c1"
+      },
+      {
+        "path": "configs/d2.yaml",
+        "bytes": 1088,
+        "sha256": "d248c805436d743c1b079fe8160351ec6cdd2c13e2cd191463c0aa3e3303420c"
+      },
+      {
+        "path": "configs/d3.yaml",
+        "bytes": 2138,
+        "sha256": "6af8b6d6df4ab6329f8343d49c215d36ab78d0007b331c1a40cd8119a706ea9e"
+      },
+      {
+        "path": "configs/d4.yaml",
+        "bytes": 1199,
+        "sha256": "172af7345391f7aaaf319668b9339472456a16dd3c7cd3bcd79866153adcca9b"
+      },
+      {
+        "path": "configs/d5.yaml",
+        "bytes": 880,
+        "sha256": "225a17ba4bb603cf208911852c7e690cb42044a6dfee6d780f0af7ad0f131740"
+      },
+      {
+        "path": "configs/manuscript_seeds.yaml",
+        "bytes": 1249,
+        "sha256": "31823cfd9deb10c5c0d6635a0be343f20e8232e82d7f4aa7071a101185699af4"
+      },
+      {
+        "path": "configs/stage2_lora.yaml",
+        "bytes": 10207,
+        "sha256": "448f13a03ec711cf950500f53a6bd171f1eb0ebfff6bf89ad33064eddb78645d"
+      },
+      {
+        "path": "datasets/README.md",
+        "bytes": 754,
+        "sha256": "131e6053839f6d5a2edb12c4151a36f3521ff7c1fbd82c5aca4945c958553b6b"
+      },
+      {
+        "path": "datasets/checksums/README.md",
+        "bytes": 116,
+        "sha256": "535c3865a161158eaeafc26f0c133feb9d41f8efefe0edfbbccef843182fac4d"
+      },
+      {
+        "path": "docs/ARTIFACT_AVAILABILITY.md",
+        "bytes": 10146,
+        "sha256": "be7d4f4874aa433dba5b6c0a139c086eab39309febe809b47acaef1b5b3d71d3"
+      },
+      {
+        "path": "docs/DATA_AVAILABILITY.md",
+        "bytes": 5680,
+        "sha256": "050aa45633554df2cc244299d9628309cf59413221fefa3f5d662909f7455758"
+      },
+      {
+        "path": "docs/DECODING_GRAMMAR.md",
+        "bytes": 7814,
+        "sha256": "db77c6072ad380bafbb6cd046aebb6c90e23a7d2928f5c00e63b3286c074adfc"
+      },
+      {
+        "path": "docs/EDIT_GENERATORS.md",
+        "bytes": 10795,
+        "sha256": "4107c7fdadfd516f52161123b414ae1f5eefa7baeed36a0d96d32d5803e4501a"
+      },
+      {
+        "path": "docs/KNOWN_LIMITATIONS.md",
+        "bytes": 16714,
+        "sha256": "e12694bc7588dde2aed945fe0af80a9c28b0881e934266a293ee43302235d499"
+      },
+      {
+        "path": "docs/MANUSCRIPT_AUDIT.md",
+        "bytes": 23143,
+        "sha256": "f439c1dee74f12e33d6cfea447161a92bfde67f5150f8a7556788adf9541b3a8"
+      },
+      {
+        "path": "docs/MANUSCRIPT_CODE_MAP.md",
+        "bytes": 11962,
+        "sha256": "3b296efb363557ef608de74daa37e15c63e27ae4484d0a0ded5858ce328c879e"
+      },
+      {
+        "path": "docs/RELEASE.md",
+        "bytes": 4491,
+        "sha256": "f731247cb811bb0f6d2b30b98f84cc1d25f367599953136084c50ec6c9ee3d99"
+      },
+      {
+        "path": "docs/RELEASE_NOTES_v1.0.0-manuscript-revision.md",
+        "bytes": 5714,
+        "sha256": "2d3966a58e8a8aae12ea8e01e5fa1fda71363efebf7b6b3086b4b86f59b03649"
+      },
+      {
+        "path": "docs/REPRODUCIBILITY.md",
+        "bytes": 10469,
+        "sha256": "82a8cdbe05b53c28458700823a435ceb23043db1c24a8f7905ece15e1eb3f241"
+      },
+      {
+        "path": "docs/RETRIEVAL_SETUP.md",
+        "bytes": 7872,
+        "sha256": "848b9b68098e120e17de48373029672f52c3c239306c1d91cbec334b9b4f2f72"
+      },
+      {
+        "path": "docs/REVIEWER_REPRODUCIBILITY.md",
+        "bytes": 13044,
+        "sha256": "10a7922f39d79167085d9db972e2bd9ec6fe3e7d24367f83581601276855b077"
+      },
+      {
+        "path": "docs/STAGE2_LORA.md",
+        "bytes": 11056,
+        "sha256": "46b3ce1816d568b9f94bfcda1f3b743004965a266c76ab3076848b216faa238c"
+      },
+      {
+        "path": "environment.yml",
+        "bytes": 556,
+        "sha256": "d015bc7b7fc4d9e7b28feb8c87ce0830022a8235a70bef01803d3883cfd771fd"
+      },
+      {
+        "path": "evaluation/protocols/latency.yaml",
+        "bytes": 1451,
+        "sha256": "2def14cab38b31dd22e1a8efa22367fd15a1377946d5856eddf19a6fab16f8dd"
+      },
+      {
+        "path": "evaluation/protocols/metrics.yaml",
+        "bytes": 1692,
+        "sha256": "ffb9eac77f83094765e371de2be871ba745b17b4b49d812cd11849ca24d4fe30"
+      },
+      {
+        "path": "evaluation/protocols/temporal.yaml",
+        "bytes": 1670,
+        "sha256": "389f0f8d294f3a0a6283084b214dbcff0234afbd0272ea49dc4936a29f4af368"
+      },
+      {
+        "path": "evaluation/protocols/transfer.yaml",
+        "bytes": 1903,
+        "sha256": "7ac5981c40194077c4f04ce0491de20f48d7938d0c0026e425285fc96a200578"
+      },
+      {
+        "path": "examples/evidence_example.json",
+        "bytes": 604,
+        "sha256": "03ad61db7069516e918979beb3d6bfa21f85b44e432b475ccf794c94658f9f04"
+      },
+      {
+        "path": "examples/rationale_accepted.json",
+        "bytes": 886,
+        "sha256": "8cf9304fe982f7fb079fa4fb3a1859979e06480dda5c51a0b0bddb1123958d97"
+      },
+      {
+        "path": "examples/rationale_rejected.json",
+        "bytes": 740,
+        "sha256": "df56b098379fad4652d1b9a14167d6082108648f95a5ac0a2aeae40561d08317"
+      },
+      {
+        "path": "examples/run_minimal_demo.py",
+        "bytes": 6097,
+        "sha256": "79c12b1ebbb3e7da8cf624a5739e24969ab938730871639fc0bcf228cf763b74"
+      },
+      {
+        "path": "pyproject.toml",
+        "bytes": 813,
+        "sha256": "44a30ff0a8f999a3c28e6c16e6e1ff10560330be57d689e5c411b011755d50d9"
+      },
+      {
+        "path": "reproduce_all.sh",
+        "bytes": 5215,
+        "sha256": "e643d2ed9af96eb60b7eef976d46f183904e008b90c85a70adaeae940c90de0e"
+      },
+      {
+        "path": "requirements-optional.txt",
+        "bytes": 1051,
+        "sha256": "9542e46a1c583b83d4df02296643fb841535ca91cbf6773c72426c385901547d"
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 1888,
+        "sha256": "dee2ed09e27358068ef98e3ead94688f1a92f61b5982ff4586556c09234ed811"
+      },
+      {
+        "path": "results/README.md",
+        "bytes": 1376,
+        "sha256": "ae6d8fb582cdabfd0dac7392d42025a892bddab5c27387c050a88e4ab570809a"
+      },
+      {
+        "path": "retrieval/config/retrieval.yaml",
+        "bytes": 5227,
+        "sha256": "60ef2bf442169fd51ea8c3634da2f0a8a2c8f4dac2bb33c65bc00512d8639134"
+      },
+      {
+        "path": "schemas/rationale_schema.json",
+        "bytes": 4202,
+        "sha256": "d266378bb6399897f962eb266b2c6cb57946e2d94d3796d05187508dfc648387"
+      },
+      {
+        "path": "scripts/_common.py",
+        "bytes": 4311,
+        "sha256": "8543ead25b2f3e01f38429e26fca3cd66467c39c0a93f496ac5f98a933e7357f"
+      },
+      {
+        "path": "scripts/audit_manuscript.py",
+        "bytes": 11172,
+        "sha256": "64c843dd45c3b2f7faa66aacf88768506f7287b32fb01995d8fbca2076ccd9cf"
+      },
+      {
+        "path": "scripts/audit_reviewer_artifacts.py",
+        "bytes": 7133,
+        "sha256": "9ee576a7c860dfddb16a325cfdac2461b99f14c4e86b8182040e2fff9c730305"
+      },
+      {
+        "path": "scripts/build_reproducibility_bundle.py",
+        "bytes": 6042,
+        "sha256": "3d623bf07e508d4cfeca5fc98cd407341a251be14dc47a9f9bcbf7035cdc4145"
+      },
+      {
+        "path": "scripts/build_retrieval_index.py",
+        "bytes": 8058,
+        "sha256": "afb5427071b1fc89c194ec1d6f8fcf71b7ead12295ac15e6ff69ec4caec87697"
+      },
+      {
+        "path": "scripts/calibrate.py",
+        "bytes": 4504,
+        "sha256": "486f3c5582d5e052a32f58054fa51443157dfa9871c9646e1f931196ac3de138"
+      },
+      {
+        "path": "scripts/evaluate.py",
+        "bytes": 3071,
+        "sha256": "023e6a3aae543818fafcb512a9877225f322b5d6fec16c7664dda9577051bc3d"
+      },
+      {
+        "path": "scripts/latency_bench.py",
+        "bytes": 4570,
+        "sha256": "125aebafad2bcf768cc8e0db448246e4073a65a205136f848c4db48beb988926"
+      },
+      {
+        "path": "scripts/make_tables.py",
+        "bytes": 2778,
+        "sha256": "8d97ee938e8f73227d7ccef2b73645361ecb60866af732f7546a1f3707facc79"
+      },
+      {
+        "path": "scripts/prepare_data.py",
+        "bytes": 3355,
+        "sha256": "c4cb23492ba5b4e37668734ad4cdf86bc689d8466397e880d9b0eeb5f834f58c"
+      },
+      {
+        "path": "scripts/robustness.py",
+        "bytes": 10151,
+        "sha256": "039e6983654a784a94d6a20da1032d9f37c0e2463dc6d6654e5e12c775f01c24"
+      },
+      {
+        "path": "scripts/stats.py",
+        "bytes": 10510,
+        "sha256": "f0792afff2362efd69e121e098049214c6fd41b15ad0fcdbe858b6c44b7ab5cd"
+      },
+      {
+        "path": "scripts/train.py",
+        "bytes": 12277,
+        "sha256": "4aebd79e16e3a18c0e3aa29e2bfccb32bba2235d7ec1056cbee151ac904acdc6"
+      },
+      {
+        "path": "scripts/train_stage2_lora.py",
+        "bytes": 26342,
+        "sha256": "2f1259b96aa9489e55e2dae366627a9f47edf6aec0adca95f97cd73cf8b0e8ba"
+      },
+      {
+        "path": "scripts/transfer.py",
+        "bytes": 6882,
+        "sha256": "ff71b357a728738b1a4fe96ed9881417354886a0e3f19dc104a6067ce26f24e9"
+      },
+      {
+        "path": "scripts/validate_rationale_schema.py",
+        "bytes": 8782,
+        "sha256": "4b948a9c0a0d36902284acf9be22d390199ccc625df4585192eafb463d0216fa"
+      },
+      {
+        "path": "scripts/validate_stage2_adapter.py",
+        "bytes": 5841,
+        "sha256": "46ad0376979115c29e1404a2d7deb7ac95046b2ed34effe5aa74c32ae28a53ac"
+      },
+      {
+        "path": "scripts/verify_reproducibility_bundle.py",
+        "bytes": 2665,
+        "sha256": "dd5b237d65fd3465d5ed994f6d129ee44bbbdbb57ee9f962f77161d1028fe49a"
+      },
+      {
+        "path": "src/vrfraudnet/__init__.py",
+        "bytes": 1221,
+        "sha256": "fbbe64277a1554082a5fea0892891d874fe4c56dc704cd6c4c2aa5a9d4eef5f6"
+      },
+      {
+        "path": "src/vrfraudnet/adversarial/__init__.py",
+        "bytes": 78,
+        "sha256": "1d81ed641840e57937a0d742c72a7c30760159fbaf8d6ea507e30bd32f8aee44"
+      },
+      {
+        "path": "src/vrfraudnet/adversarial/applicability.py",
+        "bytes": 7739,
+        "sha256": "a47e75a66e7611f8f4bac3187d999afdcb5a48bc4ea1a58d2d741f8fc90336dd"
+      },
+      {
+        "path": "src/vrfraudnet/adversarial/edits.py",
+        "bytes": 11267,
+        "sha256": "86f2c91a33ad06c483be629640e8663d254440a0de13d44637b7f3b6aa338e5f"
+      },
+      {
+        "path": "src/vrfraudnet/baselines/__init__.py",
+        "bytes": 48,
+        "sha256": "63c463325cfd2eb34570b4419e727acfa33e1e1d36c34436310584936dfd639d"
+      },
+      {
+        "path": "src/vrfraudnet/baselines/neural.py",
+        "bytes": 8545,
+        "sha256": "99f94617aebf1289de52e28e8d4da8cc9c5de37d370cea6a4080325bd885c72f"
+      },
+      {
+        "path": "src/vrfraudnet/baselines/registry.py",
+        "bytes": 6110,
+        "sha256": "d0dab3d8f34d89bb675468f02e9ac49385235f49eadff979ca29c9d6788951dc"
+      },
+      {
+        "path": "src/vrfraudnet/config.py",
+        "bytes": 6599,
+        "sha256": "c5a7a3f016730be3f06893ac97098746511c6e433f10c93218d13d873fb4bbb3"
+      },
+      {
+        "path": "src/vrfraudnet/data/__init__.py",
+        "bytes": 2024,
+        "sha256": "6e4978252ef97c85d94563cdc3908dc7c86a6c55c96a25d344086c8a6556e0be"
+      },
+      {
+        "path": "src/vrfraudnet/data/amlworld.py",
+        "bytes": 9592,
+        "sha256": "baa54319a35e8aa0ade84d22d55a0f1cb665ce822a36a5e9bc6f4f8b6b827d02"
+      },
+      {
+        "path": "src/vrfraudnet/data/baf.py",
+        "bytes": 5921,
+        "sha256": "0efa6aa0c4f1ffae096ebfcf82a89f1ae6bf4e4ccb488b7b8892ff86bb734e54"
+      },
+      {
+        "path": "src/vrfraudnet/data/dgraph.py",
+        "bytes": 5035,
+        "sha256": "c20d79f6a7aadcb3a3b2f482e3f63975a71d626b0e730df7ea9e9a8b05340e93"
+      },
+      {
+        "path": "src/vrfraudnet/data/elliptic_pp.py",
+        "bytes": 8213,
+        "sha256": "abc636d3fe3d7ab7303898443638bd0d97db3a62fdbb540cd49b43f3b3d4bcbe"
+      },
+      {
+        "path": "src/vrfraudnet/data/ieee_cis.py",
+        "bytes": 6340,
+        "sha256": "286229265e3e51bb74d3bd69447ea9fa057d06ee0f2b81e2e0d9d6123fac308f"
+      },
+      {
+        "path": "src/vrfraudnet/data/preprocess_base.py",
+        "bytes": 10327,
+        "sha256": "f47a7dcf613bcf37b9119a1dd1b184a48ac62cb485755e6ee30ef16dbd9d0298"
+      },
+      {
+        "path": "src/vrfraudnet/data/registry.py",
+        "bytes": 7529,
+        "sha256": "668eb0c58e5910ad021199c85834d9e7410aedb68cdc3426c7ad7595a674faad"
+      },
+      {
+        "path": "src/vrfraudnet/data/splits.py",
+        "bytes": 16500,
+        "sha256": "fff163de9990fa385d808a60ee97618d65b035163c6792ae09e8843de5bf39a6"
+      },
+      {
+        "path": "src/vrfraudnet/data/types.py",
+        "bytes": 4140,
+        "sha256": "0b13e7ca979a82627e44c956c8e9073d43e80dea92906ce88c9a95d7b9d375f5"
+      },
+      {
+        "path": "src/vrfraudnet/determinism.py",
+        "bytes": 3994,
+        "sha256": "d97fbc04ca12962295996051497c6fef5d0abe74c15d45d7e978f420ed3e47fd"
+      },
+      {
+        "path": "src/vrfraudnet/errors.py",
+        "bytes": 2056,
+        "sha256": "c1075287baf58c871f02cedcea60ec2647c98cf2f19361603add9833c8a5b31b"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/__init__.py",
+        "bytes": 74,
+        "sha256": "f32dc6331e39dc32d42666087b7c32a3345558981508360ef091b9aaccecc223"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/cost_eval.py",
+        "bytes": 3791,
+        "sha256": "e1bcfbe99fbc3f59bac99cf9b9e6b8bfecadd703cb8602e867ed3cdfd8d43816"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/latency.py",
+        "bytes": 8416,
+        "sha256": "16079ede5d4f90c217767992023c65c512c69a9dd53870c67a447c3f48dee0c6"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/metrics.py",
+        "bytes": 10000,
+        "sha256": "2600c835a10ae5755a3b2d3d16735bd8aa06254894ffb3909dbdb251303b8bbd"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/temporal.py",
+        "bytes": 7444,
+        "sha256": "0ee575d2db3152aed21b447adc0786c21205777a0dca9e398492eedec736d06f"
+      },
+      {
+        "path": "src/vrfraudnet/evaluation/transfer.py",
+        "bytes": 7846,
+        "sha256": "bed6b2ec60d71e11c380ed938c693612ed009b2a31495a0b153a9a9df7ea68e6"
+      },
+      {
+        "path": "src/vrfraudnet/io_utils.py",
+        "bytes": 6025,
+        "sha256": "d3c669e8b4021363e07e06ec1290ebdda60fbbfa8e284edaa7ddf89195c44114"
+      },
+      {
+        "path": "src/vrfraudnet/losses/__init__.py",
+        "bytes": 52,
+        "sha256": "8d04a2224e7c98e1280dd678d8643cb052ebaae505ff9c20cfb9b093def93551"
+      },
+      {
+        "path": "src/vrfraudnet/losses/cost_sensitive.py",
+        "bytes": 6529,
+        "sha256": "f1ef43c1d5bb12f32616ec509a0fe7fafd4413e0eb8ae78646a6a0954bc2272f"
+      },
+      {
+        "path": "src/vrfraudnet/losses/counterfactual.py",
+        "bytes": 7643,
+        "sha256": "18ee2285d4b4f459dd904800dd7eddc01dcb99ffd7025b21ad543150ad989010"
+      },
+      {
+        "path": "src/vrfraudnet/losses/focal.py",
+        "bytes": 4101,
+        "sha256": "cad28d66cc90e5deec9af004aa68ea45931e883d51898fd9e5429d69fe405857"
+      },
+      {
+        "path": "src/vrfraudnet/models/__init__.py",
+        "bytes": 64,
+        "sha256": "f784b033ec0e804f777dfa09c5c0a08d6d5f9acb03c3b06d723c960e740a66fb"
+      },
+      {
+        "path": "src/vrfraudnet/models/grammar.py",
+        "bytes": 14725,
+        "sha256": "d67328e20b72c1c775a2255b904d2295598085097c0b50b6b85ded89e3157e23"
+      },
+      {
+        "path": "src/vrfraudnet/models/pipeline.py",
+        "bytes": 8700,
+        "sha256": "78c746e9acf8380457b69e0231f580155ad7d077bab8266d1c2624c84bc4cdfa"
+      },
+      {
+        "path": "src/vrfraudnet/models/stage0_spectral.py",
+        "bytes": 11204,
+        "sha256": "58216f163e8e00819f1640511131ad41aeb2e3cdef19b632960185077eb5750b"
+      },
+      {
+        "path": "src/vrfraudnet/models/stage1_triage.py",
+        "bytes": 10312,
+        "sha256": "dce9d157d61e402987df6ae87b39cff5255f72337ea702a384bafdaaee2b039d"
+      },
+      {
+        "path": "src/vrfraudnet/models/stage2_rationale.py",
+        "bytes": 19058,
+        "sha256": "ade4633316ab2f9d7e68b53a2c811cae41a5696a33bf82d2766da07938127952"
+      },
+      {
+        "path": "src/vrfraudnet/models/stage4_calibration.py",
+        "bytes": 11062,
+        "sha256": "a60410f4a9ded6bdfe6f11047d979215f0893b4d62531ff6b990454928ac0cff"
+      },
+      {
+        "path": "src/vrfraudnet/reproducibility.py",
+        "bytes": 26986,
+        "sha256": "5cc5fc28c07b3dbd29caf5f1e2c665f7609b4646c90268e0051b624daea0a38b"
+      },
+      {
+        "path": "src/vrfraudnet/retrieval/__init__.py",
+        "bytes": 64,
+        "sha256": "77f1b68b41b8e79d9b7a8858b9eef140b41e2a1fdf0c45dacb66ac19b270ea00"
+      },
+      {
+        "path": "src/vrfraudnet/retrieval/index.py",
+        "bytes": 13678,
+        "sha256": "25c2d0d38fb131f045fff399a7ca800c74a58abba8c102406bd7d063e87b9b2b"
+      },
+      {
+        "path": "src/vrfraudnet/seeds.py",
+        "bytes": 2007,
+        "sha256": "8bed70b9e13de869e77133b50ad5c3ab9ef68a3baec31a42cbaa048699f79897"
+      },
+      {
+        "path": "src/vrfraudnet/statistics/__init__.py",
+        "bytes": 50,
+        "sha256": "439416bf833eee655ce86b165499e3ba2dec34c1273b1e327cac5909026ca648"
+      },
+      {
+        "path": "src/vrfraudnet/statistics/delong.py",
+        "bytes": 6027,
+        "sha256": "b3c9730154b14f272e51e744711790f187d81cc828af07e822fe0b4f4522a1dc"
+      },
+      {
+        "path": "src/vrfraudnet/statistics/holm.py",
+        "bytes": 2606,
+        "sha256": "91c1d9354f5bcc86046802941662e663ea704b9e43b385b59d6c1359fbf2c273"
+      },
+      {
+        "path": "src/vrfraudnet/statistics/wilcoxon.py",
+        "bytes": 6808,
+        "sha256": "b0dae74c73870ac4e5d548fa5a5e40fdf0080f3f9b4c40f78b8186274b913ede"
+      },
+      {
+        "path": "src/vrfraudnet/tables/__init__.py",
+        "bytes": 82,
+        "sha256": "7a1bc60793128e91597eb73080a24a93a854aeaca5c555eb3bfc41aab152973f"
+      },
+      {
+        "path": "src/vrfraudnet/tables/build_tables.py",
+        "bytes": 13408,
+        "sha256": "1b6b1740452218e9b294fbbca3ce6a6cb3b3bb27e5144e47938829ea32aa1391"
+      },
+      {
+        "path": "src/vrfraudnet/verifier/__init__.py",
+        "bytes": 671,
+        "sha256": "069ad440aec4142bc1659cf2c514891f1b7865f458bb64534f6d030870d2f82b"
+      },
+      {
+        "path": "src/vrfraudnet/verifier/engine.py",
+        "bytes": 14156,
+        "sha256": "ec0417fc68361603491bd79f86dd0f8b39bb8047ddfb86bc3b29068d2976aa19"
+      },
+      {
+        "path": "src/vrfraudnet/verifier/evidence.py",
+        "bytes": 7425,
+        "sha256": "576d07eb250515da44df873a886cfd766868b8b78a69e9ebf546452b1c1b6b58"
+      },
+      {
+        "path": "src/vrfraudnet/verifier/primitives.py",
+        "bytes": 10366,
+        "sha256": "98c9cd184f2acbef6ab6396ef9b11ef965c66d314a21cd5ded060d8b19decae2"
+      },
+      {
+        "path": "statistics/tests/tests.yaml",
+        "bytes": 2587,
+        "sha256": "f4a4711b56b3dfc74dc6e7646cbe87eecac03c67e59d54ddcd222e8e303fab99"
+      },
+      {
+        "path": "tests/conftest.py",
+        "bytes": 860,
+        "sha256": "0d8f0e313a1d1e1f30f2368a16267c1b2b1b403fd6d93ed57a7fa1339350f89f"
+      },
+      {
+        "path": "tests/test_adversarial_edits.py",
+        "bytes": 5195,
+        "sha256": "ec548e5c55dc975dd74830ad0a44c9090772d42bc313ed34b1a4d1834fb85356"
+      },
+      {
+        "path": "tests/test_calibration.py",
+        "bytes": 4070,
+        "sha256": "ae259ca6ebdd70685a011e497d8bc4d528c4967b94f8348c59600796c7879930"
+      },
+      {
+        "path": "tests/test_config_and_registry.py",
+        "bytes": 5895,
+        "sha256": "9239094bb7c4424bb25d821dc8c086a390d65da9d984d3c5249957be696b5c96"
+      },
+      {
+        "path": "tests/test_determinism.py",
+        "bytes": 2797,
+        "sha256": "8180fe6d4403341f5950134093dc716c3651abb3eef276b007c68a3e410fe30e"
+      },
+      {
+        "path": "tests/test_grammar_masking.py",
+        "bytes": 3918,
+        "sha256": "ceb0308606a5e3d78e2bdea40ff22715ef79e18ba863a7c355e0ae0fc106a1f8"
+      },
+      {
+        "path": "tests/test_graph_temporal_cutoff.py",
+        "bytes": 5305,
+        "sha256": "b1a72cac133c439c649abe410a11f7f5f1620f6c4add05e692b8ac3703e51704"
+      },
+      {
+        "path": "tests/test_losses.py",
+        "bytes": 5969,
+        "sha256": "2ac1b0b1f1a65082c2b76aef412c33da4326a1201091c27d686cf993a2278c40"
+      },
+      {
+        "path": "tests/test_metrics.py",
+        "bytes": 4571,
+        "sha256": "6c580592c4f586498c4340c7bb90c91b381727f37d01c23c5a50e022a56bf18f"
+      },
+      {
+        "path": "tests/test_pipeline.py",
+        "bytes": 4547,
+        "sha256": "4dcf0b2ef1658b278acb3fd87317e7d53de9d26d801871ae8e62f7f3e021c8a2"
+      },
+      {
+        "path": "tests/test_preprocess_train_only.py",
+        "bytes": 4386,
+        "sha256": "9053907afa35b4d527f2ece5de9b957eb2de1db4c2f49c61dfb92b0ce8a86887"
+      },
+      {
+        "path": "tests/test_repo_hygiene.py",
+        "bytes": 9088,
+        "sha256": "7983faee3147dd62f455e9e53c42addac9ea083c201f3d2aebffa3f349595e22"
+      },
+      {
+        "path": "tests/test_retrieval_leakage.py",
+        "bytes": 3787,
+        "sha256": "01607b8598327e72b8bb5d6fa02ef3f090f8e46f3ffdb04544fe68ea944dd5eb"
+      },
+      {
+        "path": "tests/test_reviewer_artifacts.py",
+        "bytes": 23724,
+        "sha256": "3b49c20e9e10402378c398bca33ce51eb718ce86a714a7f69906851a8c211782"
+      },
+      {
+        "path": "tests/test_splits_leakage.py",
+        "bytes": 4404,
+        "sha256": "d248bd0886aec845e17f004c20836accaec2578ab41200e721da44e87cd1767f"
+      },
+      {
+        "path": "tests/test_statistics.py",
+        "bytes": 4917,
+        "sha256": "1bb8681132a980c4062d4b90f2ed4a58d66f85b9ca96d692d701a6dc32b41da8"
+      },
+      {
+        "path": "tests/test_verifier.py",
+        "bytes": 8051,
+        "sha256": "7e14bbd418c4a2188cc63238f49262bd57f084b0ee724fd382ca90067b6b8bc1"
+      },
+      {
+        "path": "verifier/rules/claim_primitives.yaml",
+        "bytes": 5824,
+        "sha256": "4c1723fce9e5fb057afa8456de0758a8b7ac2ae95b5f7c337659cb59dd0ce5c9"
+      }
+    ],
+    "status": "downloaded"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "paper": "Objective over Architecture: Fraud Detection Under Extreme Imbalance in Bank Account Opening",
+  "doi": "10.3390/computation13120290",
+  "paper_url": "https://www.mdpi.com/2079-3197/13/12/290",
+  "repo": "https://github.com/wn-nwN/fraud-detection-project-Nov2025",
+  "commit": "6e8252cb9080378905b2aae30033c5946b72335b",
+  "notebook_url": "https://raw.githubusercontent.com/wn-nwN/fraud-detection-project-Nov2025/6e8252cb9080378905b2aae30033c5946b72335b/Binary_class_variable_analysis_github.ipynb",
+  "notebook_sha256": "5391e269bb5388ac5c0dde44662a950de1285e0f5f81c6b02315d466e3422e41",
+  "cells_zero_indexed": {
+    "features": 2,
+    "outer_split_and_preprocessing": 3,
+    "inner_split_and_dataset": 27,
+    "model": 28,
+    "random_hpo_not_repeated": 29,
+    "fixed_training": 30,
+    "test": 33
+  },
+  "fixed_config": {
+    "embedding_dim": 186,
+    "hidden_dim": 733,
+    "lr": 0.000448103301026688,
+    "epochs": 8,
+    "batch_size": 256,
+    "dropout": 0.3
+  },
+  "status": "source inspected; not yet trained on BAF by this package",
+  "refactor": {
+    "module": "src/gru.py",
+    "class": "TabularGRU",
+    "changes": "model and training merged; class renamed; formatting and reusable API",
+    "architecture_check": "copied author state_dict produces identical logits and gradients in the same CPU environment",
+    "no_BAF_score_reproduction_claim": true
+  }
+}

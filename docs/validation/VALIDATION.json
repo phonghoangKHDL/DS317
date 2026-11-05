@@ -1,0 +1,29 @@
+{
+  "scope": "SYNTHETIC ONLY; not BAF research results",
+  "frontend_notebooks": 6,
+  "predictor_fits": 40,
+  "review_packages_verified": [
+    "evaluation_ccaacbcb_review.zip",
+    "lsr_53f817ea_review.zip",
+    "xgboost_8a707624_review.zip",
+    "meta_9fa6bed6_review.zip",
+    "losses_15154335_review.zip"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "psutil": "7.2.2",
+      "lightgbm": "4.7.0",
+      "torch": "2.15.0+cpu",
+      "xgboost": "3.4.1",
+      "nbformat": "5.11.1",
+      "ipython": "9.17.1",
+      "joblib": "1.5.3"
+    }
+  },
+  "baf_module_sha256": "c6d70e56c4c8fe0aaac2bb2cb5cb75cb1fdd9be6b21baae2326a077026e7cebe"
+}

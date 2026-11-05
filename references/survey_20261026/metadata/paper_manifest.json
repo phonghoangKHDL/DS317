@@ -1,0 +1,51 @@
+[
+  {
+    "name": "baf2022",
+    "url": "https://papers.neurips.cc/paper_files/paper/2022/file/d9696563856bd350e4e7ac5e5812f23c-Paper-Datasets_and_Benchmarks.pdf",
+    "sha256": "b05cfbe15916173c0ae79728cd6e314ebd92ad82191ea7ddf2929a3280373641",
+    "bytes": 319263,
+    "status": "downloaded"
+  },
+  {
+    "name": "objective2025",
+    "url": "https://www.mdpi.com/2079-3197/13/12/290/pdf",
+    "sha256": "4fbecb2606852f6a3084c87c0a7a0d622494b988460fa113a0fd4924a8eb6d6b",
+    "bytes": 731713,
+    "status": "downloaded"
+  },
+  {
+    "name": "deccaf2024",
+    "url": "https://research.feedzai.com/oshuzuxa/2024/08/Alves_Cost_Sensitive_Learning_TMLR_2024.pdf",
+    "sha256": "b4c1f07e97e24a44ef540f4a73e593213ed36186cc8d14eb16d9842ab382392a",
+    "bytes": 1002238,
+    "status": "downloaded"
+  },
+  {
+    "name": "templar2026",
+    "url": "https://link.springer.com/content/pdf/10.1007/s44248-026-00117-y.pdf",
+    "sha256": "ad11ad4062df1a37c5738e364022e63e9001a2a7d696f6c37323ab15a7836fd8",
+    "bytes": 3608721,
+    "status": "downloaded"
+  },
+  {
+    "name": "vrfraud2026",
+    "url": "https://link.springer.com/content/pdf/10.1007/s44163-026-02355-0.pdf",
+    "sha256": "d26ee608ec074e14652819bc188668d193fd6c86b44e82ed89550cf53800397c",
+    "bytes": 2693214,
+    "status": "downloaded"
+  },
+  {
+    "name": "explainability2026",
+    "url": "https://www.mdpi.com/2674-1032/5/3/77/pdf",
+    "sha256": "fea643459e31c0bf629243749a607c3859b38c4a0fb15904ac7a068c38588c27",
+    "bytes": 1572722,
+    "status": "downloaded"
+  },
+  {
+    "name": "rhoss2026",
+    "url": "https://arxiv.org/pdf/2508.16915v3",
+    "sha256": "fa82f92818d9b2b0b2ac39f3c91736b62eb60bd63d53f5106d3bcc2f9062ad78",
+    "bytes": 3034656,
+    "status": "downloaded"
+  }
+]

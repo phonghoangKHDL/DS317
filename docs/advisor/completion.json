@@ -1,0 +1,32 @@
+{
+  "step1": {
+    "status": "executed",
+    "methods": 20,
+    "scores_verified": 60,
+    "test_rows": 96843
+  },
+  "step2": {
+    "status": "ready_for_local_BAF_run",
+    "new_fits": 5
+  },
+  "step3": {
+    "status": "ready_for_local_BAF_run",
+    "new_fits": 20
+  },
+  "step4": {
+    "status": "small_original_dataset_checks_executed",
+    "new_fits": 15,
+    "seeds": [
+      42,
+      317,
+      2026
+    ],
+    "datasets": [
+      "MNIST 4/9",
+      "CIFAR-10"
+    ],
+    "numerical_checks_passed": 8,
+    "run": "results/advisor_runs/original_checks_3848ef4489af"
+  },
+  "scope": "Source-dataset scaled checks, not full-paper score reproduction; BAF additions pending local cache"
+}
