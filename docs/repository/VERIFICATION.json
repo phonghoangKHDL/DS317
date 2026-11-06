@@ -1,0 +1,54 @@
+{
+  "official_files_present": 1107,
+  "inventory_file_sizes_checked": 1107,
+  "inventory_file_sha256_checked": 1106,
+  "inventory_self_reference": "Own byte size checked; own SHA-256 intentionally empty; all other official SHA-256 values required",
+  "python_files_parsed": 16,
+  "notebooks_validated": 47,
+  "evidence_hashes_checked": 1011,
+  "historical_survey_bytes": 6673,
+  "historical_survey_sha256": "aa0e443c862f6761c784a92c517fe848ea2afe4206d0f6670e11a94d2ce9aa79",
+  "notebook20_run_selection": {
+    "passed": 14,
+    "checks": [
+      "default_ignores_unrelated_old_run_and_does_not_write",
+      "default_changes_path_with_config",
+      "default_changes_path_with_source",
+      "default_changes_path_with_environment",
+      "default_accepts_matching_identity",
+      "explicit_accepts_matching_canonical_run",
+      "explicit_rejects_changed_config",
+      "explicit_rejects_changed_source",
+      "explicit_rejects_changed_environment",
+      "default_rejects_existing_mismatched_manifest",
+      "explicit_rejects_extra_manifest_field",
+      "explicit_rejects_missing_manifest",
+      "explicit_rejects_relocated_run_before_launch",
+      "existing_manifests_unchanged"
+    ],
+    "scope": "Extracted selector only; temporary fixtures; no training or real run modifications"
+  },
+  "inventory_validator_checks": {
+    "passed": 8,
+    "checks": [
+      "valid_inventory_and_explicit_self_hash_exception",
+      "rejects_CRLF_to_LF_size_change",
+      "rejects_same_size_content_change",
+      "rejects_missing_nonself_hash",
+      "rejects_fabricated_self_hash",
+      "rejects_official_list_disagreement",
+      "rejects_duplicate_inventory_row",
+      "checks_inventory_own_byte_size"
+    ],
+    "scope": "Temporary byte fixtures only; no experiment execution"
+  },
+  "baf_scores_recomputed": 75,
+  "combined_rows": 81,
+  "combined_groups": 27,
+  "small_original_dataset_fits_recomputed": 30,
+  "max_original_log_loss_difference": 7.583512733333464e-07,
+  "original_log_loss_absolute_tolerance": 1e-06,
+  "training_imports": "passed",
+  "status": "passed",
+  "scope": "All official inventory sizes/SHA-256 (self-inventory digest excepted), historical CSV, notebook20 selector, saved scores/summaries/schemas/imports; no training, downloads, bootstrap rerun, or omitted checkpoints"
+}

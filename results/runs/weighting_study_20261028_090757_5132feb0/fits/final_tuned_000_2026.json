@@ -1,0 +1,41 @@
+{
+  "key": "final_tuned_000_2026",
+  "signature": {
+    "phase": "final",
+    "method": "tuned",
+    "candidate": 0,
+    "seed": 2026,
+    "power": 0.25,
+    "parameters": {
+      "objective": "binary",
+      "class_weight": null,
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 100,
+      "subsample": 0.9,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 1.0,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    }
+  },
+  "fit_seconds": 14.409787399999914,
+  "peak_rss_mib": 463.265625,
+  "validation_ap": 0.18014443325757873,
+  "validation_auc": 0.8941340923646013,
+  "class_weights": [
+    0.9785837019799617,
+    3.067372972824305
+  ],
+  "mean_sample_weight": 0.9999999999999997,
+  "model_file": "models/final_tuned_000_2026.txt.gz",
+  "validation_file": "validation_scores/final_tuned_000_2026.npz",
+  "fitted_trees": 300,
+  "artifacts": {
+    "models/final_tuned_000_2026.txt.gz": "c4657398693787826f7e863496e1e3b593afa8ec4d233c2196c53af97f73a087",
+    "validation_scores/final_tuned_000_2026.npz": "392f996f8d011fa4667f964ca9f7327c8f0da62ac94fb3e6d75e85d602f58858"
+  }
+}

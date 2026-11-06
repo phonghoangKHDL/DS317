@@ -1,0 +1,42 @@
+{
+  "key": "final_balanced_001_317",
+  "signature": {
+    "phase": "final",
+    "method": "balanced",
+    "candidate": 1,
+    "seed": 317,
+    "power": 1.0,
+    "parameters": {
+      "objective": "binary",
+      "class_weight": null,
+      "n_estimators": 1000,
+      "learning_rate": 0.026372815830188905,
+      "num_leaves": 15,
+      "min_child_samples": 99,
+      "subsample": 0.7601645214100093,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.9707925034458094,
+      "reg_lambda": 4.04800426643213,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "max_depth": 8
+    }
+  },
+  "fit_seconds": 38.57685589999983,
+  "peak_rss_mib": 465.2890625,
+  "validation_ap": 0.18257594660084758,
+  "validation_auc": 0.8949794657010968,
+  "class_weights": [
+    0.5051795922413508,
+    48.76634768740032
+  ],
+  "mean_sample_weight": 1.0,
+  "model_file": "models/final_balanced_001_317.txt.gz",
+  "validation_file": "validation_scores/final_balanced_001_317.npz",
+  "fitted_trees": 1000,
+  "artifacts": {
+    "models/final_balanced_001_317.txt.gz": "36797063492b414b8d15aa1864639bbf5c6138b7cb50578fb9253b1fd0f0cdc8",
+    "validation_scores/final_balanced_001_317.npz": "981418e9cf69e4834615885510891a5633d623691ad9de2f19eeafe4e7d57808"
+  }
+}

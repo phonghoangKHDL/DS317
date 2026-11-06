@@ -1,0 +1,54 @@
+D:\UIT\DS317\BAF_project\src\gru.py:292: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  torch.from_numpy(part.fraud_bool.to_numpy(dtype=np.int64)),
+{
+  "protocol": "author_fixed",
+  "mode": "full",
+  "methods": [
+    "none",
+    "balanced"
+  ],
+  "seeds": [
+    1234
+  ],
+  "threads": 4,
+  "device": "auto",
+  "embedding_dim": 186,
+  "hidden_dim": 733,
+  "learning_rate": 0.000448103301026688,
+  "epochs": 8,
+  "batch_size": 256,
+  "dropout": 0.3,
+  "pilot_train": 8192,
+  "pilot_eval": 4096,
+  "save_models": true,
+  "dataset_tag": "BAF_Base",
+  "evaluation_partitions": [
+    "validation",
+    "random_test"
+  ]
+}
+                  n positive                    months
+train        640000     7058  [0, 1, 2, 3, 4, 5, 6, 7]
+validation   160000     1765  [0, 1, 2, 3, 4, 5, 6, 7]
+random_test  200000     2206  [0, 1, 2, 3, 4, 5, 6, 7]
+Author fixed recipe: random64/16/20, preprocessing fit outer80% as code. Inner validation features enter preprocessing. No HPO. Seed reset and paired unweighted ablation added. Random split includes month7.
+EPOCH {"method": "none", "seed": 1234, "epoch": 1, "loss_batch_mean": 0.050815234273066744, "seconds": 88.4463564000016}
+EPOCH {"method": "none", "seed": 1234, "epoch": 2, "loss_batch_mean": 0.04863196232337504, "seconds": 85.37088799999947}
+EPOCH {"method": "none", "seed": 1234, "epoch": 3, "loss_batch_mean": 0.04716860837340355, "seconds": 83.51264120000087}
+EPOCH {"method": "none", "seed": 1234, "epoch": 4, "loss_batch_mean": 0.04649194275178015, "seconds": 84.45271630000025}
+EPOCH {"method": "none", "seed": 1234, "epoch": 5, "loss_batch_mean": 0.04629630348179489, "seconds": 83.61052240000026}
+EPOCH {"method": "none", "seed": 1234, "epoch": 6, "loss_batch_mean": 0.04589051070343703, "seconds": 83.14375350000046}
+EPOCH {"method": "none", "seed": 1234, "epoch": 7, "loss_batch_mean": 0.04555738394986838, "seconds": 85.13037620000068}
+EPOCH {"method": "none", "seed": 1234, "epoch": 8, "loss_batch_mean": 0.04516537769604474, "seconds": 83.22251919999871}
+METRICS {"protocol": "author_fixed", "mode": "full", "method": "gru_none", "seed": 1234, "partition": "validation", "threshold": 0.059153396636247635, "fit_seconds": 676.9406421000003, "peak_rss_mib": 1929.32421875, "peak_cuda_allocated_mib": 405.203125, "initial_model_sha256": "e00a83b98708a70d9412a23dbb7313461a79f986166f1e95131ce6c71a49e96b", "memory_warning": "", "weight_negative": 1.0, "weight_positive": 1.0, "warnings": "", "ap": 0.15339229216915468, "roc_auc": 0.8824073994008444, "recall_at_fpr5_curve": 0.5048158640226629, "recall_frozen_threshold": 0.5048158640226629, "fpr_frozen_threshold": 0.04996998135684267, "precision_frozen_threshold": 0.1012730165946806, "alert_rate_frozen_threshold": 0.0549875, "recall_at_0p5": 0.027762039660056657, "precision_at_0p5": 0.6901408450704225, "f1_weighted_at_0p5": 0.9841552315922066, "accuracy_at_0p5": 0.9891375, "tn": 150328, "fp": 7907, "fn": 874, "tp": 891}
+METRICS {"protocol": "author_fixed", "mode": "full", "method": "gru_none", "seed": 1234, "partition": "random_test", "threshold": 0.059153396636247635, "fit_seconds": 676.9406421000003, "peak_rss_mib": 1929.32421875, "peak_cuda_allocated_mib": 405.203125, "initial_model_sha256": "e00a83b98708a70d9412a23dbb7313461a79f986166f1e95131ce6c71a49e96b", "memory_warning": "", "weight_negative": 1.0, "weight_positive": 1.0, "warnings": "", "ap": 0.16297081722699022, "roc_auc": 0.8875979249673307, "recall_at_fpr5_curve": 0.5154125113327289, "recall_frozen_threshold": 0.5154125113327289, "fpr_frozen_threshold": 0.04991051295792592, "precision_frozen_threshold": 0.10327913525297484, "alert_rate_frozen_threshold": 0.055045, "recall_at_0p5": 0.024478694469628286, "precision_at_0p5": 0.6923076923076923, "f1_weighted_at_0p5": 0.9840806656699772, "accuracy_at_0p5": 0.98912, "tn": 187922, "fp": 9872, "fn": 1069, "tp": 1137}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 1, "loss_batch_mean": 0.4954113469004631, "seconds": 85.2703220000003}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 2, "loss_batch_mean": 0.4747034435093403, "seconds": 84.76784529999895}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 3, "loss_batch_mean": 0.44824402517676354, "seconds": 84.01697290000084}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 4, "loss_batch_mean": 0.4348822252511978, "seconds": 83.94338319999952}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 5, "loss_batch_mean": 0.4283029366374016, "seconds": 84.39871250000033}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 6, "loss_batch_mean": 0.42337643426656724, "seconds": 83.55417519999901}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 7, "loss_batch_mean": 0.41751265779137614, "seconds": 83.55232239999896}
+EPOCH {"method": "balanced", "seed": 1234, "epoch": 8, "loss_batch_mean": 0.40703071628808973, "seconds": 83.90242259999832}
+METRICS {"protocol": "author_fixed", "mode": "full", "method": "gru_balanced", "seed": 1234, "partition": "validation", "threshold": 0.8513369560241699, "fit_seconds": 673.4561769000011, "peak_rss_mib": 1940.73046875, "peak_cuda_allocated_mib": 405.025390625, "initial_model_sha256": "e00a83b98708a70d9412a23dbb7313461a79f986166f1e95131ce6c71a49e96b", "memory_warning": "", "weight_negative": 0.5055755503663842, "weight_positive": 45.33862283933126, "warnings": "", "ap": 0.15637315039282784, "roc_auc": 0.8767283447513384, "recall_at_fpr5_curve": 0.5019830028328612, "recall_frozen_threshold": 0.5019830028328612, "fpr_frozen_threshold": 0.04983726735551553, "precision_frozen_threshold": 0.10100319197446421, "alert_rate_frozen_threshold": 0.054825, "recall_at_0p5": 0.8220963172804533, "precision_at_0p5": 0.039559420922053494, "f1_weighted_at_0p5": 0.8649597680176714, "accuracy_at_0p5": 0.7778625, "tn": 150349, "fp": 7886, "fn": 879, "tp": 886}
+METRICS {"protocol": "author_fixed", "mode": "full", "method": "gru_balanced", "seed": 1234, "partition": "random_test", "threshold": 0.8513369560241699, "fit_seconds": 673.4561769000011, "peak_rss_mib": 1940.73046875, "peak_cuda_allocated_mib": 405.025390625, "initial_model_sha256": "e00a83b98708a70d9412a23dbb7313461a79f986166f1e95131ce6c71a49e96b", "memory_warning": "", "weight_negative": 0.5055755503663842, "weight_positive": 45.33862283933126, "warnings": "", "ap": 0.15602304459586294, "roc_auc": 0.8831536885849103, "recall_at_fpr5_curve": 0.5185856754306437, "recall_frozen_threshold": 0.5181323662737988, "fpr_frozen_threshold": 0.049642557408212586, "precision_frozen_threshold": 0.10426929392446634, "alert_rate_frozen_threshold": 0.05481, "recall_at_0p5": 0.828195829555757, "precision_at_0p5": 0.03994141051987233, "f1_weighted_at_0p5": 0.8653816861904651, "accuracy_at_0p5": 0.77853, "tn": 187975, "fp": 9819, "fn": 1063, "tp": 1143}

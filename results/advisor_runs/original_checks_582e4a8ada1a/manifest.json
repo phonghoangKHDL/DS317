@@ -1,0 +1,39 @@
+{
+  "version": "advisor-20261030-v1",
+  "tag": "original_checks",
+  "config": {
+    "datasets": [
+      "mnist",
+      "cifar10"
+    ],
+    "majority": 1000,
+    "imbalance": 100,
+    "epochs": 10,
+    "seeds": [
+      42,
+      317,
+      2026
+    ],
+    "threads": 4,
+    "device": "auto"
+  },
+  "source": {
+    "src\\baf.py": "c6d70e56c4c8fe0aaac2bb2cb5cb75cb1fdd9be6b21baae2326a077026e7cebe",
+    "src\\gru.py": "ecb673080dfd591a6a1c9116c3f5e78efc0ec3f99932e1d5cf9bd17434d107f6",
+    "supplement\\reporting.py": "74342fe0e3ece2977629530387ed6da9b6f52ee66d3952b112f4ff809dafae0f",
+    "supplement\\training.py": "41a93331ec5fceea1676eb0abfd396e596254c1b0427e9eb98d691e6b80462f7"
+  },
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "d:\\UIT\\.venvs\\ml-gpu\\Scripts\\python.exe",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1+cu130",
+      "lightgbm": "4.7.0",
+      "nbformat": "5.11.1",
+      "ipython": "9.17.1"
+    }
+  }
+}

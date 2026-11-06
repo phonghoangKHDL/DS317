@@ -1,0 +1,29 @@
+{
+  "xgb_focal": {
+    "method": "xgb_focal",
+    "family": "xgboost",
+    "candidate": 1,
+    "depth": 5,
+    "gamma": 2.0,
+    "alpha": 9.902365202050971,
+    "feature": "dense"
+  },
+  "xgb_none": {
+    "method": "xgb_none",
+    "family": "xgboost",
+    "candidate": 1,
+    "depth": 5,
+    "gamma": 2.0,
+    "alpha": 9.902365202050971,
+    "feature": "dense"
+  },
+  "xgb_weighted": {
+    "method": "xgb_weighted",
+    "family": "xgboost",
+    "candidate": 1,
+    "depth": 5,
+    "gamma": 2.0,
+    "alpha": 9.902365202050971,
+    "feature": "dense"
+  }
+}

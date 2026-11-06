@@ -1,0 +1,297 @@
+BEGIN_STAGE 1
+                 n positive              months
+train       794989     8151  [0, 1, 2, 3, 4, 5]
+validation  108168     1450                 [6]
+test         96843     1428                 [7]
+END_STAGE 1
+BEGIN_STAGE 2
+SEARCH_METHOD none candidates= 24
+FIT hpo none candidate=1/24 seed=42: requested trees=300
+HEARTBEAT hpo none candidate=1/24 seed=42: trees=64/300, elapsed=15s
+HEARTBEAT hpo none candidate=1/24 seed=42: trees=152/300, elapsed=30s
+HEARTBEAT hpo none candidate=1/24 seed=42: trees=267/300, elapsed=45s
+DONE hpo_none_000_42: validation AP=0.181368, fit=48.7s
+FIT hpo none candidate=2/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=91/1000, elapsed=15s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=196/1000, elapsed=30s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=304/1000, elapsed=45s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=418/1000, elapsed=60s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=550/1000, elapsed=75s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=693/1000, elapsed=90s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=842/1000, elapsed=105s
+HEARTBEAT hpo none candidate=2/24 seed=42: trees=980/1000, elapsed=120s
+DONE hpo_none_001_42: validation AP=0.182771, fit=122.2s
+FIT hpo none candidate=3/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=73/1000, elapsed=15s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=161/1000, elapsed=30s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=266/1000, elapsed=45s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=392/1000, elapsed=60s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=532/1000, elapsed=75s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=672/1000, elapsed=90s
+HEARTBEAT hpo none candidate=3/24 seed=42: trees=816/1000, elapsed=105s
+DONE hpo_none_002_42: validation AP=0.176973, fit=114.3s
+FIT hpo none candidate=4/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=4/24 seed=42: trees=115/1000, elapsed=15s
+HEARTBEAT hpo none candidate=4/24 seed=42: trees=288/1000, elapsed=30s
+HEARTBEAT hpo none candidate=4/24 seed=42: trees=450/1000, elapsed=45s
+HEARTBEAT hpo none candidate=4/24 seed=42: trees=959/1000, elapsed=60s
+DONE hpo_none_003_42: validation AP=0.180775, fit=61.2s
+FIT hpo none candidate=5/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=5/24 seed=42: trees=478/1000, elapsed=15s
+DONE hpo_none_004_42: validation AP=0.168630, fit=29.5s
+FIT hpo none candidate=6/24 seed=42: requested trees=600
+HEARTBEAT hpo none candidate=6/24 seed=42: trees=410/600, elapsed=15s
+DONE hpo_none_005_42: validation AP=0.176067, fit=20.7s
+FIT hpo none candidate=7/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=7/24 seed=42: trees=269/1000, elapsed=15s
+HEARTBEAT hpo none candidate=7/24 seed=42: trees=669/1000, elapsed=30s
+DONE hpo_none_006_42: validation AP=0.168469, fit=41.6s
+FIT hpo none candidate=8/24 seed=42: requested trees=150
+DONE hpo_none_007_42: validation AP=0.176592, fit=8.1s
+FIT hpo none candidate=9/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=9/24 seed=42: trees=254/1000, elapsed=15s
+HEARTBEAT hpo none candidate=9/24 seed=42: trees=602/1000, elapsed=30s
+HEARTBEAT hpo none candidate=9/24 seed=42: trees=971/1000, elapsed=45s
+DONE hpo_none_008_42: validation AP=0.166326, fit=46.4s
+FIT hpo none candidate=10/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=10/24 seed=42: trees=276/1000, elapsed=15s
+HEARTBEAT hpo none candidate=10/24 seed=42: trees=650/1000, elapsed=30s
+DONE hpo_none_009_42: validation AP=0.178920, fit=42.5s
+FIT hpo none candidate=11/24 seed=42: requested trees=300
+DONE hpo_none_010_42: validation AP=0.182043, fit=11.8s
+FIT hpo none candidate=12/24 seed=42: requested trees=150
+DONE hpo_none_011_42: validation AP=0.179765, fit=14.9s
+FIT hpo none candidate=13/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=13/24 seed=42: trees=166/1000, elapsed=15s
+HEARTBEAT hpo none candidate=13/24 seed=42: trees=377/1000, elapsed=30s
+HEARTBEAT hpo none candidate=13/24 seed=42: trees=609/1000, elapsed=45s
+HEARTBEAT hpo none candidate=13/24 seed=42: trees=848/1000, elapsed=60s
+DONE hpo_none_012_42: validation AP=0.175817, fit=69.3s
+FIT hpo none candidate=14/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=14/24 seed=42: trees=153/1000, elapsed=15s
+HEARTBEAT hpo none candidate=14/24 seed=42: trees=374/1000, elapsed=30s
+HEARTBEAT hpo none candidate=14/24 seed=42: trees=611/1000, elapsed=45s
+HEARTBEAT hpo none candidate=14/24 seed=42: trees=848/1000, elapsed=60s
+DONE hpo_none_013_42: validation AP=0.172049, fit=65.1s
+FIT hpo none candidate=15/24 seed=42: requested trees=150
+DONE hpo_none_014_42: validation AP=0.180541, fit=9.4s
+FIT hpo none candidate=16/24 seed=42: requested trees=300
+DONE hpo_none_015_42: validation AP=0.180512, fit=13.1s
+FIT hpo none candidate=17/24 seed=42: requested trees=600
+HEARTBEAT hpo none candidate=17/24 seed=42: trees=314/600, elapsed=15s
+DONE hpo_none_016_42: validation AP=0.181522, fit=26.1s
+FIT hpo none candidate=18/24 seed=42: requested trees=600
+HEARTBEAT hpo none candidate=18/24 seed=42: trees=291/600, elapsed=15s
+DONE hpo_none_017_42: validation AP=0.177393, fit=28.3s
+FIT hpo none candidate=19/24 seed=42: requested trees=600
+HEARTBEAT hpo none candidate=19/24 seed=42: trees=389/600, elapsed=15s
+DONE hpo_none_018_42: validation AP=0.170257, fit=21.8s
+FIT hpo none candidate=20/24 seed=42: requested trees=1000
+HEARTBEAT hpo none candidate=20/24 seed=42: trees=297/1000, elapsed=15s
+HEARTBEAT hpo none candidate=20/24 seed=42: trees=730/1000, elapsed=30s
+DONE hpo_none_019_42: validation AP=0.179388, fit=38.4s
+FIT hpo none candidate=21/24 seed=42: requested trees=150
+DONE hpo_none_020_42: validation AP=0.180436, fit=6.4s
+FIT hpo none candidate=22/24 seed=42: requested trees=600
+HEARTBEAT hpo none candidate=22/24 seed=42: trees=350/600, elapsed=15s
+DONE hpo_none_021_42: validation AP=0.170748, fit=22.9s
+FIT hpo none candidate=23/24 seed=42: requested trees=150
+DONE hpo_none_022_42: validation AP=0.175201, fit=9.3s
+FIT hpo none candidate=24/24 seed=42: requested trees=150
+DONE hpo_none_023_42: validation AP=0.177257, fit=8.9s
+SEARCH_METHOD balanced candidates= 24
+FIT hpo balanced candidate=1/24 seed=42: requested trees=300
+HEARTBEAT hpo balanced candidate=1/24 seed=42: trees=278/300, elapsed=15s
+DONE hpo_balanced_000_42: validation AP=0.182084, fit=15.8s
+FIT hpo balanced candidate=2/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=2/24 seed=42: trees=313/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=2/24 seed=42: trees=500/1000, elapsed=30s
+HEARTBEAT hpo balanced candidate=2/24 seed=42: trees=717/1000, elapsed=45s
+HEARTBEAT hpo balanced candidate=2/24 seed=42: trees=947/1000, elapsed=60s
+DONE hpo_balanced_001_42: validation AP=0.183200, fit=63.6s
+FIT hpo balanced candidate=3/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=3/24 seed=42: trees=118/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=3/24 seed=42: trees=273/1000, elapsed=30s
+HEARTBEAT hpo balanced candidate=3/24 seed=42: trees=465/1000, elapsed=45s
+HEARTBEAT hpo balanced candidate=3/24 seed=42: trees=672/1000, elapsed=60s
+HEARTBEAT hpo balanced candidate=3/24 seed=42: trees=894/1000, elapsed=75s
+DONE hpo_balanced_002_42: validation AP=0.180399, fit=82.6s
+FIT hpo balanced candidate=4/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=4/24 seed=42: trees=142/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=4/24 seed=42: trees=312/1000, elapsed=30s
+HEARTBEAT hpo balanced candidate=4/24 seed=42: trees=485/1000, elapsed=45s
+HEARTBEAT hpo balanced candidate=4/24 seed=42: trees=679/1000, elapsed=60s
+HEARTBEAT hpo balanced candidate=4/24 seed=42: trees=899/1000, elapsed=75s
+DONE hpo_balanced_003_42: validation AP=0.182045, fit=81.8s
+FIT hpo balanced candidate=5/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=5/24 seed=42: trees=146/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=5/24 seed=42: trees=373/1000, elapsed=30s
+HEARTBEAT hpo balanced candidate=5/24 seed=42: trees=616/1000, elapsed=45s
+HEARTBEAT hpo balanced candidate=5/24 seed=42: trees=873/1000, elapsed=60s
+DONE hpo_balanced_004_42: validation AP=0.173163, fit=68.1s
+FIT hpo balanced candidate=6/24 seed=42: requested trees=600
+HEARTBEAT hpo balanced candidate=6/24 seed=42: trees=146/600, elapsed=15s
+HEARTBEAT hpo balanced candidate=6/24 seed=42: trees=367/600, elapsed=30s
+DONE hpo_balanced_005_42: validation AP=0.179949, fit=40.0s
+FIT hpo balanced candidate=7/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=7/24 seed=42: trees=214/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=7/24 seed=42: trees=523/1000, elapsed=30s
+HEARTBEAT hpo balanced candidate=7/24 seed=42: trees=877/1000, elapsed=45s
+DONE hpo_balanced_006_42: validation AP=0.175157, fit=50.3s
+FIT hpo balanced candidate=8/24 seed=42: requested trees=150
+DONE hpo_balanced_007_42: validation AP=0.180734, fit=8.5s
+FIT hpo balanced candidate=9/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=9/24 seed=42: trees=264/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=9/24 seed=42: trees=646/1000, elapsed=30s
+DONE hpo_balanced_008_42: validation AP=0.170363, fit=43.3s
+FIT hpo balanced candidate=10/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=10/24 seed=42: trees=280/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=10/24 seed=42: trees=618/1000, elapsed=30s
+DONE hpo_balanced_009_42: validation AP=0.180234, fit=44.9s
+FIT hpo balanced candidate=11/24 seed=42: requested trees=300
+DONE hpo_balanced_010_42: validation AP=0.180317, fit=11.7s
+FIT hpo balanced candidate=12/24 seed=42: requested trees=150
+DONE hpo_balanced_011_42: validation AP=0.181877, fit=7.0s
+FIT hpo balanced candidate=13/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=13/24 seed=42: trees=426/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=13/24 seed=42: trees=987/1000, elapsed=30s
+DONE hpo_balanced_012_42: validation AP=0.182053, fit=30.4s
+FIT hpo balanced candidate=14/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=14/24 seed=42: trees=444/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=14/24 seed=42: trees=904/1000, elapsed=30s
+DONE hpo_balanced_013_42: validation AP=0.172447, fit=36.1s
+FIT hpo balanced candidate=15/24 seed=42: requested trees=150
+HEARTBEAT hpo balanced candidate=15/24 seed=42: trees=100/150, elapsed=15s
+DONE hpo_balanced_014_42: validation AP=0.174600, fit=21.3s
+FIT hpo balanced candidate=16/24 seed=42: requested trees=300
+HEARTBEAT hpo balanced candidate=16/24 seed=42: trees=150/300, elapsed=15s
+DONE hpo_balanced_015_42: validation AP=0.181390, fit=23.4s
+FIT hpo balanced candidate=17/24 seed=42: requested trees=600
+HEARTBEAT hpo balanced candidate=17/24 seed=42: trees=299/600, elapsed=15s
+DONE hpo_balanced_016_42: validation AP=0.182431, fit=26.8s
+FIT hpo balanced candidate=18/24 seed=42: requested trees=600
+HEARTBEAT hpo balanced candidate=18/24 seed=42: trees=256/600, elapsed=15s
+HEARTBEAT hpo balanced candidate=18/24 seed=42: trees=575/600, elapsed=30s
+DONE hpo_balanced_017_42: validation AP=0.177313, fit=31.3s
+FIT hpo balanced candidate=19/24 seed=42: requested trees=600
+HEARTBEAT hpo balanced candidate=19/24 seed=42: trees=337/600, elapsed=15s
+DONE hpo_balanced_018_42: validation AP=0.174523, fit=24.2s
+FIT hpo balanced candidate=20/24 seed=42: requested trees=1000
+HEARTBEAT hpo balanced candidate=20/24 seed=42: trees=263/1000, elapsed=15s
+HEARTBEAT hpo balanced candidate=20/24 seed=42: trees=628/1000, elapsed=30s
+DONE hpo_balanced_019_42: validation AP=0.182811, fit=42.0s
+FIT hpo balanced candidate=21/24 seed=42: requested trees=150
+DONE hpo_balanced_020_42: validation AP=0.179609, fit=6.5s
+FIT hpo balanced candidate=22/24 seed=42: requested trees=600
+HEARTBEAT hpo balanced candidate=22/24 seed=42: trees=322/600, elapsed=15s
+DONE hpo_balanced_021_42: validation AP=0.177285, fit=24.7s
+FIT hpo balanced candidate=23/24 seed=42: requested trees=150
+DONE hpo_balanced_022_42: validation AP=0.161950, fit=10.9s
+FIT hpo balanced candidate=24/24 seed=42: requested trees=150
+DONE hpo_balanced_023_42: validation AP=0.177468, fit=10.1s
+SEARCH_METHOD tuned candidates= 24
+FIT hpo tuned candidate=1/24 seed=42: requested trees=300
+DONE hpo_tuned_000_42: validation AP=0.183933, fit=14.0s
+FIT hpo tuned candidate=2/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=2/24 seed=42: trees=350/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=2/24 seed=42: trees=824/1000, elapsed=30s
+DONE hpo_tuned_001_42: validation AP=0.183475, fit=35.4s
+FIT hpo tuned candidate=3/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=3/24 seed=42: trees=291/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=3/24 seed=42: trees=708/1000, elapsed=30s
+DONE hpo_tuned_002_42: validation AP=0.177364, fit=39.7s
+FIT hpo tuned candidate=4/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=4/24 seed=42: trees=333/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=4/24 seed=42: trees=761/1000, elapsed=30s
+DONE hpo_tuned_003_42: validation AP=0.183835, fit=36.9s
+FIT hpo tuned candidate=5/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=5/24 seed=42: trees=467/1000, elapsed=15s
+DONE hpo_tuned_004_42: validation AP=0.172782, fit=29.1s
+FIT hpo tuned candidate=6/24 seed=42: requested trees=600
+HEARTBEAT hpo tuned candidate=6/24 seed=42: trees=429/600, elapsed=15s
+DONE hpo_tuned_005_42: validation AP=0.176067, fit=20.0s
+FIT hpo tuned candidate=7/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=7/24 seed=42: trees=216/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=7/24 seed=42: trees=523/1000, elapsed=30s
+HEARTBEAT hpo tuned candidate=7/24 seed=42: trees=862/1000, elapsed=45s
+DONE hpo_tuned_006_42: validation AP=0.168592, fit=51.2s
+FIT hpo tuned candidate=8/24 seed=42: requested trees=150
+DONE hpo_tuned_007_42: validation AP=0.176592, fit=8.2s
+FIT hpo tuned candidate=9/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=9/24 seed=42: trees=162/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=9/24 seed=42: trees=314/1000, elapsed=30s
+HEARTBEAT hpo tuned candidate=9/24 seed=42: trees=481/1000, elapsed=45s
+HEARTBEAT hpo tuned candidate=9/24 seed=42: trees=642/1000, elapsed=60s
+HEARTBEAT hpo tuned candidate=9/24 seed=42: trees=815/1000, elapsed=75s
+DONE hpo_tuned_008_42: validation AP=0.170926, fit=88.8s
+FIT hpo tuned candidate=10/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=10/24 seed=42: trees=242/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=10/24 seed=42: trees=473/1000, elapsed=30s
+HEARTBEAT hpo tuned candidate=10/24 seed=42: trees=870/1000, elapsed=45s
+DONE hpo_tuned_009_42: validation AP=0.182557, fit=49.9s
+FIT hpo tuned candidate=11/24 seed=42: requested trees=300
+DONE hpo_tuned_010_42: validation AP=0.182144, fit=11.2s
+FIT hpo tuned candidate=12/24 seed=42: requested trees=150
+DONE hpo_tuned_011_42: validation AP=0.181810, fit=6.6s
+FIT hpo tuned candidate=13/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=13/24 seed=42: trees=391/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=13/24 seed=42: trees=900/1000, elapsed=30s
+DONE hpo_tuned_012_42: validation AP=0.178696, fit=33.0s
+FIT hpo tuned candidate=14/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=14/24 seed=42: trees=404/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=14/24 seed=42: trees=913/1000, elapsed=30s
+DONE hpo_tuned_013_42: validation AP=0.173774, fit=32.7s
+FIT hpo tuned candidate=15/24 seed=42: requested trees=150
+DONE hpo_tuned_014_42: validation AP=0.180541, fit=9.9s
+FIT hpo tuned candidate=16/24 seed=42: requested trees=300
+DONE hpo_tuned_015_42: validation AP=0.175892, fit=12.8s
+FIT hpo tuned candidate=17/24 seed=42: requested trees=600
+HEARTBEAT hpo tuned candidate=17/24 seed=42: trees=309/600, elapsed=15s
+DONE hpo_tuned_016_42: validation AP=0.182732, fit=26.1s
+FIT hpo tuned candidate=18/24 seed=42: requested trees=600
+HEARTBEAT hpo tuned candidate=18/24 seed=42: trees=262/600, elapsed=15s
+HEARTBEAT hpo tuned candidate=18/24 seed=42: trees=586/600, elapsed=30s
+DONE hpo_tuned_017_42: validation AP=0.178488, fit=30.8s
+FIT hpo tuned candidate=19/24 seed=42: requested trees=600
+HEARTBEAT hpo tuned candidate=19/24 seed=42: trees=343/600, elapsed=15s
+DONE hpo_tuned_018_42: validation AP=0.178206, fit=23.5s
+FIT hpo tuned candidate=20/24 seed=42: requested trees=1000
+HEARTBEAT hpo tuned candidate=20/24 seed=42: trees=245/1000, elapsed=15s
+HEARTBEAT hpo tuned candidate=20/24 seed=42: trees=594/1000, elapsed=30s
+DONE hpo_tuned_019_42: validation AP=0.182811, fit=43.1s
+FIT hpo tuned candidate=21/24 seed=42: requested trees=150
+DONE hpo_tuned_020_42: validation AP=0.179609, fit=6.3s
+FIT hpo tuned candidate=22/24 seed=42: requested trees=600
+HEARTBEAT hpo tuned candidate=22/24 seed=42: trees=349/600, elapsed=15s
+DONE hpo_tuned_021_42: validation AP=0.173085, fit=23.1s
+FIT hpo tuned candidate=23/24 seed=42: requested trees=150
+DONE hpo_tuned_022_42: validation AP=0.161950, fit=10.4s
+FIT hpo tuned candidate=24/24 seed=42: requested trees=150
+DONE hpo_tuned_023_42: validation AP=0.177257, fit=10.0s
+END_STAGE 2
+BEGIN_STAGE 3
+FIT final none candidate=2/24 seed=317: requested trees=1000
+HEARTBEAT final none candidate=2/24 seed=317: trees=297/1000, elapsed=15s
+HEARTBEAT final none candidate=2/24 seed=317: trees=649/1000, elapsed=30s
+DONE final_none_001_317: validation AP=0.180968, fit=41.3s
+FIT final none candidate=2/24 seed=2026: requested trees=1000
+HEARTBEAT final none candidate=2/24 seed=2026: trees=334/1000, elapsed=15s
+HEARTBEAT final none candidate=2/24 seed=2026: trees=795/1000, elapsed=30s
+DONE final_none_001_2026: validation AP=0.181196, fit=36.4s
+FIT final balanced candidate=2/24 seed=317: requested trees=1000
+HEARTBEAT final balanced candidate=2/24 seed=317: trees=317/1000, elapsed=15s
+HEARTBEAT final balanced candidate=2/24 seed=317: trees=734/1000, elapsed=30s
+DONE final_balanced_001_317: validation AP=0.182576, fit=38.6s
+FIT final balanced candidate=2/24 seed=2026: requested trees=1000
+HEARTBEAT final balanced candidate=2/24 seed=2026: trees=262/1000, elapsed=15s
+HEARTBEAT final balanced candidate=2/24 seed=2026: trees=656/1000, elapsed=30s
+DONE final_balanced_001_2026: validation AP=0.183527, fit=40.9s
+FIT final tuned candidate=1/24 seed=317: requested trees=300
+DONE final_tuned_000_317: validation AP=0.180217, fit=14.0s
+FIT final tuned candidate=1/24 seed=2026: requested trees=300
+DONE final_tuned_000_2026: validation AP=0.180144, fit=14.4s
+ALL_MODELS_AND_THRESHOLDS_FROZEN 9
+END_STAGE 3
+BEGIN_STAGE 4
+WEIGHTING_STUDY_TEST_COMPLETE 9
+END_STAGE 4

@@ -1,0 +1,40 @@
+{
+  "label_encoder_classes": {
+    "payment_type": [
+      "AA",
+      "AB",
+      "AC",
+      "AD",
+      "AE"
+    ],
+    "employment_status": [
+      "CA",
+      "CB",
+      "CC",
+      "CD",
+      "CE",
+      "CF",
+      "CG"
+    ],
+    "housing_status": [
+      "BA",
+      "BB",
+      "BC",
+      "BD",
+      "BE",
+      "BF",
+      "BG"
+    ],
+    "source": [
+      "INTERNET",
+      "TELEAPP"
+    ],
+    "device_os": [
+      "linux",
+      "macintosh",
+      "other",
+      "windows",
+      "x11"
+    ]
+  }
+}

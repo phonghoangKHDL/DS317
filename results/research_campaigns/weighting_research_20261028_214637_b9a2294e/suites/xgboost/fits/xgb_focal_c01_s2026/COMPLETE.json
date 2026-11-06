@@ -1,0 +1,54 @@
+{
+  "name": "xgb_focal_c01_s2026",
+  "recipe": {
+    "method": "xgb_focal",
+    "family": "xgboost",
+    "candidate": 1,
+    "depth": 5,
+    "gamma": 2.0,
+    "alpha": 9.902365202050971,
+    "feature": "dense"
+  },
+  "seed": 2026,
+  "threshold": 0.2360910028219223,
+  "threshold_is_posinf": false,
+  "fit_seconds": 56.63800859999901,
+  "peak_rss_mib": 1355.7421875,
+  "metrics": {
+    "ap": 0.17861663878225714,
+    "roc_auc": 0.8921525115176252,
+    "recall_at_fpr5_curve": 0.5193103448275862,
+    "recall_frozen_threshold": 0.5193103448275862,
+    "fpr_frozen_threshold": 0.04974793380685545,
+    "precision_frozen_threshold": 0.12421643022104915,
+    "alert_rate_frozen_threshold": 0.05604245248132535,
+    "recall_at_0p5": 0.03310344827586207,
+    "precision_at_0p5": 0.6075949367088608,
+    "f1_weighted_at_0p5": 0.9808549010582506,
+    "accuracy_at_0p5": 0.9867520893425042,
+    "tn": 101409,
+    "fp": 5309,
+    "fn": 697,
+    "tp": 753
+  },
+  "fairness": {
+    "younger_fpr": 0.03480046880258073,
+    "younger_tpr": 0.4391353811149033,
+    "younger_n": 87056,
+    "older_fpr": 0.11245801080765298,
+    "older_tpr": 0.6427320490367776,
+    "older_n": 21112,
+    "fpr_gap_older_minus_younger": 0.07765754200507224,
+    "fpr_ratio_min_max": 0.3094529998587926
+  },
+  "model_file": "model.ubj",
+  "best_rounds": 293,
+  "score_link": "sigmoid_raw_margin",
+  "comparison_group": "xgboost_raw",
+  "hashes": {
+    "history.json": "078599bc15e0ff4097a942ca714ba94301707a3f8d705f7af9aa3934a908b77d",
+    "model.ubj": "13d462c33da62f1adaf35af0f05504be4247c5422b1c7cfcfc08c913c1a73c89",
+    "validation_score.npy": "c22fe231b584e4b56410ccff82e31951738b8b13579102ffeab27cc25d2a7882",
+    "weight_summary.json": "850fe12a10c67937a443feb1d6c6066b123d6042f1be54ac59cf940a5cc509c2"
+  }
+}

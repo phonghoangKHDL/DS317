@@ -1,0 +1,4 @@
+method,candidate,power,validation_ap
+none,1,0.0,0.1827706313974266
+balanced,1,1.0,0.1832000084686161
+tuned,0,0.25,0.1839331763073578

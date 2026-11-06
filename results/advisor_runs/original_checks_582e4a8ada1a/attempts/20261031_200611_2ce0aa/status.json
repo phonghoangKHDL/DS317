@@ -1,0 +1,5 @@
+{
+  "state": "failed_or_interrupted",
+  "attempt": "D:\\UIT\\DS317\\BAF_project\\results\\advisor_runs\\original_checks_582e4a8ada1a\\attempts\\20261031_200611_2ce0aa",
+  "error": "RuntimeError('Execution failed; completed fits retained for resume.')"
+}

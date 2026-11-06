@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "kind": "classical",
+  "data_name": "Base.csv",
+  "data_sha256": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809",
+  "data_rows": 1000000,
+  "dataset_tag": "BAF_Base",
+  "protocol": "temporal",
+  "mode": "full",
+  "config": {
+    "methods": [
+      "lgbm_cost_0.0114",
+      "lgbm_cost_0.057",
+      "lgbm_cost_0.285"
+    ],
+    "seeds": [
+      42,
+      317,
+      2026
+    ],
+    "threads": 4,
+    "tree_parameters": {
+      "objective": "binary",
+      "class_weight": null,
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "min_child_samples": 100,
+      "subsample": 0.9,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 1.0,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "protocol": "temporal",
+    "mode": "full",
+    "evaluation_partitions": [
+      "validation"
+    ],
+    "dataset_tag": "BAF_Base"
+  },
+  "partitions": {
+    "train": {
+      "n": 794989,
+      "positive": 8151,
+      "months": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "validation": {
+      "n": 108168,
+      "positive": 1450,
+      "months": [
+        6
+      ]
+    },
+    "test": {
+      "n": 96843,
+      "positive": 1428,
+      "months": [
+        7
+      ]
+    }
+  },
+  "python": "3.14.3",
+  "packages": {
+    "numpy": "2.4.2",
+    "pandas": "3.0.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.7.2",
+    "psutil": "7.2.2",
+    "lightgbm": "4.7.0"
+  },
+  "source_hashes": {
+    "baf.py": "0d888da1ce96e33adabb22d44d8fc0ed25da5cf3a4226e862d9dfeac39c3aa12"
+  },
+  "test_evaluated": false,
+  "holdout_history": "Earlier group notebooks inspected month 7; scores are exploratory"
+}

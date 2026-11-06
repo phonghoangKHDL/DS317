@@ -1,0 +1,62 @@
+BEGIN_STAGE 1
+END_STAGE 1
+BEGIN_STAGE 2
+RESEARCH_STUDY xgboost mode= full device= cuda
+END_STAGE 2
+BEGIN_STAGE 3
+FIT_BEGIN xgb_none_c00_s42 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 0, 'depth': 3, 'gamma': 2.0, 'alpha': 3.1468023773429072, 'feature': 'dense'}
+[31m---------------------------------------------------------------------------[39m
+[31mModuleNotFoundError[39m                       Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m table = [30;43mstudy[39;49m[30;43m.[39;49m[30;43mrun[39;49m[30;43m([39;49m[30;43m)[39;49m
+[32m      2[39m [38;5;28mprint[39m(table.to_string(index=[38;5;28;01mFalse[39;00m))
+
+[36mFile [39m[32mD:\UIT\DS317\BAF_project\src\gru.py:1375[39m, in [36mResearchStudy.run[39m[34m(self)[39m
+[32m   1373[39m [38;5;28;01mif[39;00m [38;5;28mself[39m.suite == [33m"[39m[33mlsr[39m[33m"[39m:
+[32m   1374[39m     research_fit_lsr_auxiliary([38;5;28mself[39m)
+[32m-> [39m[32m1375[39m records = [[30;43mself[39;49m[30;43m.[39;49m[30;43mfit[39;49m[30;43m([39;49m[30;43mrecipe[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mconfig[39;49m[30;43m.[39;49m[30;43mseeds[39;49m[30;43m[[39;49m[30;43m0[39;49m[30;43m][39;49m[30;43m)[39;49m [38;5;28;01mfor[39;00m recipe [38;5;129;01min[39;00m [38;5;28mself[39m.recipes]
+[32m   1376[39m selections = {}
+[32m   1377[39m [38;5;28;01mfor[39;00m method [38;5;129;01min[39;00m [38;5;28msorted[39m({r[[33m"[39m[33mrecipe[39m[33m"[39m][[33m"[39m[33mmethod[39m[33m"[39m] [38;5;28;01mfor[39;00m r [38;5;129;01min[39;00m records}):
+
+[36mFile [39m[32mD:\UIT\DS317\BAF_project\src\gru.py:1333[39m, in [36mResearchStudy.fit[39m[34m(self, recipe, seed)[39m
+[32m   1331[39m     result = research_fit_neural([38;5;28mself[39m, recipe, seed, folder)
+[32m   1332[39m [38;5;28;01melif[39;00m recipe[[33m"[39m[33mfamily[39m[33m"[39m] == [33m"[39m[33mxgboost[39m[33m"[39m:
+[32m-> [39m[32m1333[39m     result = [30;43mresearch_fit_xgboost[39;49m[30;43m([39;49m[30;43mself[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mrecipe[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mseed[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mfolder[39;49m[30;43m)[39;49m
+[32m   1334[39m [38;5;28;01melif[39;00m recipe[[33m"[39m[33mfamily[39m[33m"[39m] == [33m"[39m[33mlsr_lgbm[39m[33m"[39m:
+[32m   1335[39m     result = research_fit_lgbm([38;5;28mself[39m, recipe, seed, folder)
+
+[36mFile [39m[32mD:\UIT\DS317\BAF_project\src\gru.py:1665[39m, in [36mresearch_fit_xgboost[39m[34m(study, recipe, seed, folder)[39m
+[32m   1664[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mresearch_fit_xgboost[39m(study, recipe, seed, folder):
+[32m-> [39m[32m1665[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mxgboost[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mxgb[39;00m
+[32m   1667[39m     config = study.config
+[32m   1668[39m     dtrain = xgb.DMatrix(
+[32m   1669[39m         study.feature([33m"[39m[33mtrain[39m[33m"[39m), label=study.train_rows[[33m"[39m[33my[39m[33m"[39m], nthread=config.threads
+[32m   1670[39m     )
+
+[31mModuleNotFoundError[39m: No module named 'xgboost'
+Traceback (most recent call last):
+  File [35m"d:\UIT\.venvs\ml-gpu\Lib\site-packages\IPython\core\interactiveshell.py"[0m, line [35m3823[0m, in [35mrun_code[0m
+    [31mexec[0m[1;31m(code_obj, self.user_global_ns, self.user_ns)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"<ipython-input-3-38ec5119ccbf>"[0m, line [35m1[0m, in [35m<module>[0m
+    table = study.run()
+  File [35m"D:\UIT\DS317\BAF_project\src\gru.py"[0m, line [35m1375[0m, in [35mrun[0m
+    records = [[31mself.fit[0m[1;31m(recipe, self.config.seeds[0])[0m for recipe in self.recipes]
+               [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"D:\UIT\DS317\BAF_project\src\gru.py"[0m, line [35m1333[0m, in [35mfit[0m
+    result = research_fit_xgboost(self, recipe, seed, folder)
+  File [35m"D:\UIT\DS317\BAF_project\src\gru.py"[0m, line [35m1665[0m, in [35mresearch_fit_xgboost[0m
+    import xgboost as xgb
+[1;35mModuleNotFoundError[0m: [35mNo module named 'xgboost'[0m
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File [35m"<string>"[0m, line [35m1[0m, in [35m<module>[0m
+    import sys; sys.path.insert(0, sys.argv[1]); import baf; [31mbaf.execute_weighting_recipe[0m[1;31m(sys.argv[2])[0m
+                                                             [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^[0m
+  File [35m"D:\UIT\DS317\BAF_project\src\baf.py"[0m, line [35m1998[0m, in [35mexecute_weighting_recipe[0m
+    raise RuntimeError(
+        "Weighting stage failed; keep completed fits for resume"
+    ) from error
+[1;35mRuntimeError[0m: [35mWeighting stage failed; keep completed fits for resume[0m

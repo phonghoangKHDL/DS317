@@ -1,0 +1,70 @@
+{
+  "manifest_sha256": "26b34d4d45da26c2c96b18fe84872c4fd0bcd34dc07c1c9f057caf7925d337c0",
+  "selections": {
+    "xgb_focal": {
+      "method": "xgb_focal",
+      "family": "xgboost",
+      "candidate": 1,
+      "depth": 5,
+      "gamma": 2.0,
+      "alpha": 9.902365202050971,
+      "feature": "dense"
+    },
+    "xgb_none": {
+      "method": "xgb_none",
+      "family": "xgboost",
+      "candidate": 1,
+      "depth": 5,
+      "gamma": 2.0,
+      "alpha": 9.902365202050971,
+      "feature": "dense"
+    },
+    "xgb_weighted": {
+      "method": "xgb_weighted",
+      "family": "xgboost",
+      "candidate": 1,
+      "depth": 5,
+      "gamma": 2.0,
+      "alpha": 9.902365202050971,
+      "feature": "dense"
+    }
+  },
+  "final": [
+    {
+      "name": "xgb_focal_c01_s42",
+      "record_sha256": "707d77f2bd0769e6d45dea76ad5a44bf322b2553085094e6b6b6c7705a88f8b6"
+    },
+    {
+      "name": "xgb_focal_c01_s317",
+      "record_sha256": "3ee170d51538500611409c96090b944f06b05b5897de850c61ffb95f731d8222"
+    },
+    {
+      "name": "xgb_focal_c01_s2026",
+      "record_sha256": "d2f6e0b565c039e54ad91c263f6d8f3f4bc2d70032f2c30aaf1d055f9c1a44ab"
+    },
+    {
+      "name": "xgb_none_c01_s42",
+      "record_sha256": "81d6c94b4e8f783ee3cc4c3e8b650f263e5cbd20a737e73eebd706eb9ed49120"
+    },
+    {
+      "name": "xgb_none_c01_s317",
+      "record_sha256": "26d523cf6ec833348d4da7158a580bc02d63130e26ebe9a8278e45a604ffc085"
+    },
+    {
+      "name": "xgb_none_c01_s2026",
+      "record_sha256": "ca5c7a0597f00cf39e403796036aa1be88a220e315238a16157c394472e93ec6"
+    },
+    {
+      "name": "xgb_weighted_c01_s42",
+      "record_sha256": "b1e76d11d3167732fa6161e5470ee15720b6255ab1ff4a7a9e479c853e1ee4a9"
+    },
+    {
+      "name": "xgb_weighted_c01_s317",
+      "record_sha256": "45c39b10785ec3bb02d1fb2bb73d39615b3228cd6a7d6220158c3472fd4ba8a7"
+    },
+    {
+      "name": "xgb_weighted_c01_s2026",
+      "record_sha256": "e13fde1b4e986ad56ecc6ac140b73533a3fa075747dcbf96f1eb510ee189294b"
+    }
+  ]
+}

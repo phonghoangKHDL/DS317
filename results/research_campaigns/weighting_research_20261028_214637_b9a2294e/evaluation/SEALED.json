@@ -1,0 +1,10 @@
+{
+  "campaign_sha256": "0dc243ec8fda0d4734f080e735d97d5c04c32f1cedcbf587dde3f6bc088bdb8a",
+  "frozen_suites": {
+    "losses": "28bb251f83abe4305e673f2649533d9161eb2273c26aab5c261443296d8fca17",
+    "meta": "b02357873f54b91754a17b956b8ec2ff75a42ce8e695bcf82ed648c7c029fd44",
+    "lsr": "d5ccc90dee5a3dab51757d7abe4565fa06ede9ea251d96f0cf609a6fafe8c442",
+    "xgboost": "724bab867187a9a09eca9ead1e9dae33f474db0dbce5f96a294676271fe76ffd"
+  },
+  "rule": "All requested methods/configurations and validation thresholds frozen before test stage; Base test is previously inspected development data"
+}

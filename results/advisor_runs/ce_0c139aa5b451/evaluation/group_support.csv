@@ -1,0 +1,4 @@
+suite,comparison_group,method,seed,older_n,older_negative_n,older_positive_n,younger_n,younger_negative_n,younger_positive_n
+advisor_ce,meta_matched_batch256,ce_batch256,42,12667,12249,418,84176,83166,1010
+advisor_ce,meta_matched_batch256,ce_batch256,317,12667,12249,418,84176,83166,1010
+advisor_ce,meta_matched_batch256,ce_batch256,2026,12667,12249,418,84176,83166,1010

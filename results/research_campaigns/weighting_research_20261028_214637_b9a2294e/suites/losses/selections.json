@@ -1,0 +1,78 @@
+{
+  "balanced": {
+    "method": "balanced",
+    "lr": 0.03,
+    "candidate": 1,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense"
+  },
+  "cb_ce": {
+    "method": "cb_ce",
+    "lr": 0.03,
+    "candidate": 1,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense",
+    "beta": 0.99999
+  },
+  "cb_focal": {
+    "method": "cb_focal",
+    "lr": 0.03,
+    "candidate": 0,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense",
+    "beta": 0.9999
+  },
+  "ce": {
+    "method": "ce",
+    "lr": 0.1,
+    "candidate": 2,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense"
+  },
+  "drw": {
+    "method": "drw",
+    "lr": 0.1,
+    "candidate": 2,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense"
+  },
+  "focal": {
+    "method": "focal",
+    "lr": 0.03,
+    "candidate": 1,
+    "family": "nn",
+    "normed": false,
+    "feature": "dense",
+    "gamma": 2.0,
+    "alpha": 0.75
+  },
+  "ldam": {
+    "method": "ldam",
+    "lr": 0.01,
+    "candidate": 0,
+    "family": "nn",
+    "normed": true,
+    "feature": "dense"
+  },
+  "ldam_drw": {
+    "method": "ldam_drw",
+    "lr": 0.01,
+    "candidate": 0,
+    "family": "nn",
+    "normed": true,
+    "feature": "dense"
+  },
+  "norm_ce": {
+    "method": "norm_ce",
+    "lr": 0.03,
+    "candidate": 1,
+    "family": "nn",
+    "normed": true,
+    "feature": "dense"
+  }
+}

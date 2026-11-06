@@ -1,0 +1,266 @@
+{
+  "review_date": "2026-11-06",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "interpreter": "D:\\UIT\\.venvs\\ml-gpu\\Scripts\\python.exe",
+  "torch": "2.14.1+cu130",
+  "cuda_build": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "pip_check": {
+    "returncode": 0,
+    "output": "No broken requirements found.",
+    "stderr": ""
+  },
+  "requirement_profiles": {
+    "requirements-author07.txt": [
+      {
+        "requirement": "nbformat>=5.10",
+        "installed_version": "5.11.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipython>=8.20",
+        "installed_version": "9.17.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "tqdm>=4.66",
+        "installed_version": "4.70.1",
+        "satisfies": true
+      }
+    ],
+    "requirements-feedzai08.txt": [
+      {
+        "requirement": "lightgbm==4.7.0",
+        "installed_version": "4.7.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "nbformat==5.11.1",
+        "installed_version": "5.11.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipython==9.17.1",
+        "installed_version": "9.17.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "PyYAML==6.0.3",
+        "installed_version": "6.0.3",
+        "satisfies": true
+      },
+      {
+        "requirement": "seaborn>=0.13.2",
+        "installed_version": "0.13.2",
+        "satisfies": true
+      }
+    ],
+    "requirements-research.txt": [
+      {
+        "requirement": "numpy>=2.0,<3",
+        "installed_version": "2.5.4",
+        "satisfies": true
+      },
+      {
+        "requirement": "pandas>=2.2,<4",
+        "installed_version": "3.1.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "scipy>=1.14,<2",
+        "installed_version": "1.18.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "scikit-learn>=1.6,<2",
+        "installed_version": "1.9.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "lightgbm>=4.5,<5",
+        "installed_version": "4.7.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "xgboost>=3.1,<4",
+        "installed_version": "3.4.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "joblib>=1.4,<2",
+        "installed_version": "1.6.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "psutil>=6,<8",
+        "installed_version": "7.2.2",
+        "satisfies": true
+      },
+      {
+        "requirement": "nbformat>=5.10,<6",
+        "installed_version": "5.11.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipython>=8,<10",
+        "installed_version": "9.17.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipykernel>=6,<8",
+        "installed_version": "7.4.0",
+        "satisfies": true
+      }
+    ],
+    "requirements-step09.txt": [
+      {
+        "requirement": "lightgbm==4.7.0",
+        "installed_version": "4.7.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "nbformat==5.11.1",
+        "installed_version": "5.11.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipython==9.17.1",
+        "installed_version": "9.17.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "psutil==7.2.2",
+        "installed_version": "7.2.2",
+        "satisfies": true
+      },
+      {
+        "requirement": "matplotlib>=3.8",
+        "installed_version": "3.11.2",
+        "satisfies": true
+      }
+    ],
+    "requirements.txt": [
+      {
+        "requirement": "numpy>=1.26",
+        "installed_version": "2.5.4",
+        "satisfies": true
+      },
+      {
+        "requirement": "pandas>=2.1",
+        "installed_version": "3.1.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "scipy>=1.11",
+        "installed_version": "1.18.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "scikit-learn>=1.4",
+        "installed_version": "1.9.1",
+        "satisfies": true
+      },
+      {
+        "requirement": "lightgbm>=4.0",
+        "installed_version": "4.7.0",
+        "satisfies": true
+      },
+      {
+        "requirement": "psutil>=5.9",
+        "installed_version": "7.2.2",
+        "satisfies": true
+      },
+      {
+        "requirement": "ipykernel>=6.29",
+        "installed_version": "7.4.0",
+        "satisfies": true
+      }
+    ]
+  },
+  "installed_packages": {
+    "asttokens": "3.0.2",
+    "attrs": "26.1.0",
+    "bruitfm-course-project": "0.1.0",
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "comm": "0.2.3",
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "debugpy": "1.8.22",
+    "decorator": "5.3.1",
+    "executing": "2.3.0",
+    "fastjsonschema": "2.22.2",
+    "filelock": "3.32.3",
+    "fonttools": "4.68.0",
+    "fsspec": "2026.7.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "ipykernel": "7.4.0",
+    "ipython": "9.17.1",
+    "ipython_pygments_lexers": "1.1.1",
+    "jedi": "0.20.1",
+    "Jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "jupyter_client": "8.10.0",
+    "jupyter_core": "5.9.1",
+    "kiwisolver": "1.5.1",
+    "lightgbm": "4.7.0",
+    "lxml": "6.1.3",
+    "MarkupSafe": "3.0.3",
+    "matplotlib": "3.11.2",
+    "matplotlib-inline": "0.2.2",
+    "mpmath": "1.3.0",
+    "narwhals": "2.27.1",
+    "nbformat": "5.11.1",
+    "nest-asyncio2": "1.7.4",
+    "networkx": "3.6.1",
+    "numpy": "2.5.4",
+    "obspy": "1.5.1",
+    "packaging": "26.3",
+    "pandas": "3.1.0",
+    "parso": "0.8.7",
+    "pillow": "13.0.0",
+    "pip": "26.2.2",
+    "platformdirs": "4.13.5",
+    "pluggy": "1.7.0",
+    "prompt_toolkit": "3.0.53",
+    "psutil": "7.2.2",
+    "pure_eval": "0.2.4",
+    "Pygments": "2.21.0",
+    "pyparsing": "3.3.3",
+    "pytest": "9.2.0",
+    "python-dateutil": "3.0.0",
+    "PyYAML": "6.0.3",
+    "pyzmq": "27.2.0",
+    "referencing": "0.37.0",
+    "requests": "2.34.2",
+    "rpds-py": "2026.9.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "seaborn": "0.13.2",
+    "setuptools": "78.1.0",
+    "six": "1.17.0",
+    "SQLAlchemy": "2.1.6",
+    "stack-data": "0.6.3",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.7.0",
+    "tiskitpy": "2.3.1",
+    "torch": "2.14.1+cu130",
+    "tornado": "6.6",
+    "tqdm": "4.70.1",
+    "traitlets": "5.16.1",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0",
+    "wcwidth": "0.9.4",
+    "xarray": "2026.9.0",
+    "xgboost": "3.4.1"
+  },
+  "note": "Observed current environment, not an instruction to reinstall. Original per-run manifests remain authoritative for historical experiments. Existing requirements profiles were not merged or modified; no packages were installed or upgraded."
+}

@@ -1,0 +1,34 @@
+{
+  "trial": 45,
+  "sampling_seed": 212423,
+  "hyperparams": {
+    "n_estimators": 75,
+    "max_depth": 14,
+    "learning_rate": 0.04832799454148141,
+    "num_leaves": 15,
+    "boosting_type": "gbdt",
+    "min_data_in_leaf": 39,
+    "max_bin": 483,
+    "enable_bundle": false
+  },
+  "fit_seconds": 2.2621719999988272,
+  "source_results": {
+    "recall": 0.5302293259207783,
+    "recall Older": 0.6643073811931244,
+    "recall Younger": 0.45950238221281103,
+    "fpr Older": 0.11726136017078377,
+    "fpr Younger": 0.036570746945548384
+  },
+  "source_threshold": 0.03571547253189704,
+  "source_threshold_is_posinf": false,
+  "source_roc_recall": 0.5302293259207783,
+  "binary_recall_strict_gt": 0.5298818624044476,
+  "binary_fpr_strict_gt": 0.049660372131220536,
+  "average_precision": 0.1826096903131477,
+  "roc_auc": 0.8870120620496924,
+  "tn": 192095,
+  "fp": 10038,
+  "fn": 1353,
+  "tp": 1525,
+  "fitted_trees": 75
+}

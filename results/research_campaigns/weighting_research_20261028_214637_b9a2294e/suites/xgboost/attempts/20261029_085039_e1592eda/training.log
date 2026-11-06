@@ -1,0 +1,241 @@
+BEGIN_STAGE 1
+END_STAGE 1
+BEGIN_STAGE 2
+RESEARCH_STUDY xgboost mode= full device= cuda
+END_STAGE 2
+BEGIN_STAGE 3
+FIT_BEGIN xgb_none_c00_s42 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 0, 'depth': 3, 'gamma': 2.0, 'alpha': 3.1468023773429072, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.06264
+[25]	validation-unweighted_AP:0.09501
+[50]	validation-unweighted_AP:0.10371
+[75]	validation-unweighted_AP:0.12247
+[100]	validation-unweighted_AP:0.13742
+[125]	validation-unweighted_AP:0.14934
+[150]	validation-unweighted_AP:0.15702
+[175]	validation-unweighted_AP:0.16246
+[200]	validation-unweighted_AP:0.16768
+[225]	validation-unweighted_AP:0.17136
+[250]	validation-unweighted_AP:0.17399
+[275]	validation-unweighted_AP:0.17647
+[299]	validation-unweighted_AP:0.17774
+FIT_COMPLETE xgb_none_c00_s42 validation_AP= 0.17773585119202398
+FIT_BEGIN xgb_none_c01_s42 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07726
+[25]	validation-unweighted_AP:0.11557
+[50]	validation-unweighted_AP:0.13004
+[75]	validation-unweighted_AP:0.14595
+[100]	validation-unweighted_AP:0.15738
+[125]	validation-unweighted_AP:0.16534
+[150]	validation-unweighted_AP:0.17179
+[175]	validation-unweighted_AP:0.17612
+[200]	validation-unweighted_AP:0.17819
+[225]	validation-unweighted_AP:0.17980
+[250]	validation-unweighted_AP:0.18045
+[275]	validation-unweighted_AP:0.18111
+[299]	validation-unweighted_AP:0.18150
+FIT_COMPLETE xgb_none_c01_s42 validation_AP= 0.1815025638255338
+FIT_BEGIN xgb_none_c02_s42 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 2, 'depth': 7, 'gamma': 2.0, 'alpha': 98.05683659478998, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.08787
+[25]	validation-unweighted_AP:0.12912
+[50]	validation-unweighted_AP:0.14402
+[75]	validation-unweighted_AP:0.15623
+[100]	validation-unweighted_AP:0.16599
+[125]	validation-unweighted_AP:0.17073
+[150]	validation-unweighted_AP:0.17350
+[175]	validation-unweighted_AP:0.17553
+[200]	validation-unweighted_AP:0.17562
+[225]	validation-unweighted_AP:0.17645
+[250]	validation-unweighted_AP:0.17658
+[275]	validation-unweighted_AP:0.17690
+[299]	validation-unweighted_AP:0.17664
+FIT_COMPLETE xgb_none_c02_s42 validation_AP= 0.17696722965432704
+FIT_BEGIN xgb_weighted_c00_s42 {'method': 'xgb_weighted', 'family': 'xgboost', 'candidate': 0, 'depth': 3, 'gamma': 2.0, 'alpha': 3.1468023773429072, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.06258
+[25]	validation-unweighted_AP:0.10172
+[50]	validation-unweighted_AP:0.12100
+[75]	validation-unweighted_AP:0.13666
+[100]	validation-unweighted_AP:0.14852
+[125]	validation-unweighted_AP:0.15625
+[150]	validation-unweighted_AP:0.16248
+[175]	validation-unweighted_AP:0.16757
+[200]	validation-unweighted_AP:0.17192
+[225]	validation-unweighted_AP:0.17388
+[250]	validation-unweighted_AP:0.17546
+[275]	validation-unweighted_AP:0.17737
+[299]	validation-unweighted_AP:0.17830
+FIT_COMPLETE xgb_weighted_c00_s42 validation_AP= 0.17830169401674156
+FIT_BEGIN xgb_weighted_c01_s42 {'method': 'xgb_weighted', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.08111
+[25]	validation-unweighted_AP:0.13172
+[50]	validation-unweighted_AP:0.14730
+[75]	validation-unweighted_AP:0.15813
+[100]	validation-unweighted_AP:0.16557
+[125]	validation-unweighted_AP:0.17183
+[150]	validation-unweighted_AP:0.17514
+[175]	validation-unweighted_AP:0.17673
+[200]	validation-unweighted_AP:0.17845
+[225]	validation-unweighted_AP:0.17900
+[250]	validation-unweighted_AP:0.17944
+[275]	validation-unweighted_AP:0.17968
+[299]	validation-unweighted_AP:0.17978
+FIT_COMPLETE xgb_weighted_c01_s42 validation_AP= 0.17982262195072726
+FIT_BEGIN xgb_weighted_c02_s42 {'method': 'xgb_weighted', 'family': 'xgboost', 'candidate': 2, 'depth': 7, 'gamma': 2.0, 'alpha': 98.05683659478998, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.08883
+[25]	validation-unweighted_AP:0.13481
+[50]	validation-unweighted_AP:0.15571
+[75]	validation-unweighted_AP:0.16559
+[100]	validation-unweighted_AP:0.16915
+[125]	validation-unweighted_AP:0.17294
+[150]	validation-unweighted_AP:0.17279
+[175]	validation-unweighted_AP:0.17319
+[184]	validation-unweighted_AP:0.17316
+FIT_COMPLETE xgb_weighted_c02_s42 validation_AP= 0.17353119411060003
+FIT_BEGIN xgb_focal_c00_s42 {'method': 'xgb_focal', 'family': 'xgboost', 'candidate': 0, 'depth': 3, 'gamma': 2.0, 'alpha': 3.1468023773429072, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.06258
+[25]	validation-unweighted_AP:0.09856
+[50]	validation-unweighted_AP:0.11285
+[75]	validation-unweighted_AP:0.12946
+[100]	validation-unweighted_AP:0.14359
+[125]	validation-unweighted_AP:0.15235
+[150]	validation-unweighted_AP:0.16013
+[175]	validation-unweighted_AP:0.16493
+[200]	validation-unweighted_AP:0.16968
+[225]	validation-unweighted_AP:0.17346
+[250]	validation-unweighted_AP:0.17559
+[275]	validation-unweighted_AP:0.17768
+[299]	validation-unweighted_AP:0.17899
+FIT_COMPLETE xgb_focal_c00_s42 validation_AP= 0.17898575023405272
+FIT_BEGIN xgb_focal_c01_s42 {'method': 'xgb_focal', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07700
+[25]	validation-unweighted_AP:0.12180
+[50]	validation-unweighted_AP:0.13534
+[75]	validation-unweighted_AP:0.14870
+[100]	validation-unweighted_AP:0.15721
+[125]	validation-unweighted_AP:0.16521
+[150]	validation-unweighted_AP:0.17146
+[175]	validation-unweighted_AP:0.17509
+[200]	validation-unweighted_AP:0.17670
+[225]	validation-unweighted_AP:0.17830
+[250]	validation-unweighted_AP:0.17974
+[275]	validation-unweighted_AP:0.18018
+[299]	validation-unweighted_AP:0.18011
+FIT_COMPLETE xgb_focal_c01_s42 validation_AP= 0.1804275211521273
+FIT_BEGIN xgb_focal_c02_s42 {'method': 'xgb_focal', 'family': 'xgboost', 'candidate': 2, 'depth': 7, 'gamma': 2.0, 'alpha': 98.05683659478998, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.08910
+[25]	validation-unweighted_AP:0.13593
+[50]	validation-unweighted_AP:0.14874
+[75]	validation-unweighted_AP:0.15996
+[100]	validation-unweighted_AP:0.16727
+[125]	validation-unweighted_AP:0.17307
+[150]	validation-unweighted_AP:0.17593
+[175]	validation-unweighted_AP:0.17706
+[200]	validation-unweighted_AP:0.17895
+[225]	validation-unweighted_AP:0.17894
+[250]	validation-unweighted_AP:0.17918
+[264]	validation-unweighted_AP:0.17880
+FIT_COMPLETE xgb_focal_c02_s42 validation_AP= 0.17952113860324914
+FIT_REUSED xgb_focal_c01_s42
+FIT_BEGIN xgb_focal_c01_s317 {'method': 'xgb_focal', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07762
+[25]	validation-unweighted_AP:0.12071
+[50]	validation-unweighted_AP:0.13647
+[75]	validation-unweighted_AP:0.14834
+[100]	validation-unweighted_AP:0.15790
+[125]	validation-unweighted_AP:0.16451
+[150]	validation-unweighted_AP:0.17136
+[175]	validation-unweighted_AP:0.17452
+[200]	validation-unweighted_AP:0.17659
+[225]	validation-unweighted_AP:0.17778
+[250]	validation-unweighted_AP:0.17807
+[275]	validation-unweighted_AP:0.17857
+[299]	validation-unweighted_AP:0.17934
+FIT_COMPLETE xgb_focal_c01_s317 validation_AP= 0.179369077591436
+FIT_BEGIN xgb_focal_c01_s2026 {'method': 'xgb_focal', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07783
+[25]	validation-unweighted_AP:0.12124
+[50]	validation-unweighted_AP:0.13590
+[75]	validation-unweighted_AP:0.14744
+[100]	validation-unweighted_AP:0.15701
+[125]	validation-unweighted_AP:0.16378
+[150]	validation-unweighted_AP:0.16969
+[175]	validation-unweighted_AP:0.17363
+[200]	validation-unweighted_AP:0.17603
+[225]	validation-unweighted_AP:0.17694
+[250]	validation-unweighted_AP:0.17743
+[275]	validation-unweighted_AP:0.17817
+[299]	validation-unweighted_AP:0.17841
+FIT_COMPLETE xgb_focal_c01_s2026 validation_AP= 0.17861663878225714
+FIT_REUSED xgb_none_c01_s42
+FIT_BEGIN xgb_none_c01_s317 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07759
+[25]	validation-unweighted_AP:0.11594
+[50]	validation-unweighted_AP:0.13214
+[75]	validation-unweighted_AP:0.14609
+[100]	validation-unweighted_AP:0.15560
+[125]	validation-unweighted_AP:0.16366
+[150]	validation-unweighted_AP:0.16978
+[175]	validation-unweighted_AP:0.17421
+[200]	validation-unweighted_AP:0.17629
+[225]	validation-unweighted_AP:0.17781
+[250]	validation-unweighted_AP:0.17869
+[275]	validation-unweighted_AP:0.17920
+[299]	validation-unweighted_AP:0.17930
+FIT_COMPLETE xgb_none_c01_s317 validation_AP= 0.17970615903738466
+FIT_BEGIN xgb_none_c01_s2026 {'method': 'xgb_none', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07712
+[25]	validation-unweighted_AP:0.11834
+[50]	validation-unweighted_AP:0.13229
+[75]	validation-unweighted_AP:0.14619
+[100]	validation-unweighted_AP:0.15617
+[125]	validation-unweighted_AP:0.16461
+[150]	validation-unweighted_AP:0.17162
+[175]	validation-unweighted_AP:0.17588
+[200]	validation-unweighted_AP:0.17874
+[225]	validation-unweighted_AP:0.18042
+[250]	validation-unweighted_AP:0.18101
+[275]	validation-unweighted_AP:0.18123
+[291]	validation-unweighted_AP:0.18135
+FIT_COMPLETE xgb_none_c01_s2026 validation_AP= 0.18153623273944544
+FIT_REUSED xgb_weighted_c01_s42
+FIT_BEGIN xgb_weighted_c01_s317 {'method': 'xgb_weighted', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07804
+[25]	validation-unweighted_AP:0.13216
+[50]	validation-unweighted_AP:0.14956
+[75]	validation-unweighted_AP:0.15975
+[100]	validation-unweighted_AP:0.16691
+[125]	validation-unweighted_AP:0.17276
+[150]	validation-unweighted_AP:0.17639
+[175]	validation-unweighted_AP:0.17797
+[200]	validation-unweighted_AP:0.18020
+[225]	validation-unweighted_AP:0.18112
+[250]	validation-unweighted_AP:0.18124
+[275]	validation-unweighted_AP:0.18142
+[299]	validation-unweighted_AP:0.18170
+FIT_COMPLETE xgb_weighted_c01_s317 validation_AP= 0.18197381099415005
+FIT_BEGIN xgb_weighted_c01_s2026 {'method': 'xgb_weighted', 'family': 'xgboost', 'candidate': 1, 'depth': 5, 'gamma': 2.0, 'alpha': 9.902365202050971, 'feature': 'dense'}
+[0]	validation-unweighted_AP:0.07980
+[25]	validation-unweighted_AP:0.13304
+[50]	validation-unweighted_AP:0.15087
+[75]	validation-unweighted_AP:0.15963
+[100]	validation-unweighted_AP:0.16845
+[125]	validation-unweighted_AP:0.17318
+[150]	validation-unweighted_AP:0.17648
+[175]	validation-unweighted_AP:0.17829
+[200]	validation-unweighted_AP:0.17985
+[225]	validation-unweighted_AP:0.18111
+[250]	validation-unweighted_AP:0.18177
+[275]	validation-unweighted_AP:0.18187
+[299]	validation-unweighted_AP:0.18249
+FIT_COMPLETE xgb_weighted_c01_s2026 validation_AP= 0.18259498261776283
+ALL_RESEARCH_MODELS_AND_THRESHOLDS_FROZEN 9
+      method  seed  validation_ap  threshold  fit_seconds  family feature
+   xgb_focal    42       0.180428   0.235303    57.431179 xgboost   dense
+   xgb_focal   317       0.179369   0.235457    57.135962 xgboost   dense
+   xgb_focal  2026       0.178617   0.236091    56.638009 xgboost   dense
+    xgb_none    42       0.181503   0.042400    26.000013 xgboost   dense
+    xgb_none   317       0.179706   0.041689    31.083082 xgboost   dense
+    xgb_none  2026       0.181536   0.041641    24.477419 xgboost   dense
+xgb_weighted    42       0.179823   0.295406    32.237048 xgboost   dense
+xgb_weighted   317       0.181974   0.294826    32.176602 xgboost   dense
+xgb_weighted  2026       0.182595   0.296123    30.739584 xgboost   dense
+END_STAGE 3

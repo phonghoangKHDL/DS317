@@ -1,0 +1,28 @@
+{
+  "name": "lgbm_none_c01_s317",
+  "recipe": {
+    "method": "lgbm_none",
+    "sampling": "none",
+    "ratio": 0.1,
+    "candidate": 1,
+    "leaves": 31,
+    "family": "lsr_lgbm",
+    "feature": "dense"
+  },
+  "seed": 317,
+  "model_file": "model.txt",
+  "best_rounds": 171,
+  "score_link": "probability",
+  "comparison_group": "sampling_matched_lightgbm",
+  "threshold": 0.04076428711414337,
+  "threshold_is_posinf": false,
+  "validation_ap": 0.17406892495857998,
+  "fit_seconds": 12.33123869999963,
+  "hashes": {
+    "model.txt": "cebd5ab79990d576097c73f8a082bef7de7187096176d9c38685485d3173d421",
+    "sampled_indices.npy": "1eb6dfeebb2aa372cfb5e96c58525458328a7364a04160107864092d6d2f217f",
+    "sampling.json": "5a5c9cd1e0ae270ffd51f54551b616e83fcd77753b73efda2b32e3fa31a2408b",
+    "validation_score.npy": "e10f4c8cc88cd9432daf9ebd7c8e29cd601d69e0e945b3c5da2c5a6cfd13d7e1",
+    "weight_summary.json": "850fe12a10c67937a443feb1d6c6066b123d6042f1be54ac59cf940a5cc509c2"
+  }
+}

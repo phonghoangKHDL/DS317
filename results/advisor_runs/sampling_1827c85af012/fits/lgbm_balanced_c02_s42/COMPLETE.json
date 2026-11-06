@@ -1,0 +1,28 @@
+{
+  "name": "lgbm_balanced_c02_s42",
+  "recipe": {
+    "method": "lgbm_balanced",
+    "sampling": "balanced",
+    "ratio": 0.1,
+    "candidate": 2,
+    "leaves": 63,
+    "family": "lsr_lgbm",
+    "feature": "dense"
+  },
+  "seed": 42,
+  "model_file": "model.txt",
+  "best_rounds": 189,
+  "score_link": "probability",
+  "comparison_group": "sampling_matched_lightgbm",
+  "threshold": 0.7932310104370117,
+  "threshold_is_posinf": false,
+  "validation_ap": 0.1784768841648966,
+  "fit_seconds": 15.197016300000541,
+  "hashes": {
+    "model.txt": "37ec6892942df340ba503ab64037ea9d2fc88840426d8fab0565f62d30a731bc",
+    "sampled_indices.npy": "86361f51d437612074b33699120407861d30c940f39e99e53a1a23e3ff0b2486",
+    "sampling.json": "8e1128382e123fc86727118d59990f142e3ebf5c42578119e1ab6d9fcbf16d35",
+    "validation_score.npy": "e260fc8a98874c2942876eb9ca42dab281d0b3b2991ba52272e8ad435f6ec430",
+    "weight_summary.json": "37a7881a3e69331272783958b2233ab1373047eab7c39c051d4e58fca5083d55"
+  }
+}

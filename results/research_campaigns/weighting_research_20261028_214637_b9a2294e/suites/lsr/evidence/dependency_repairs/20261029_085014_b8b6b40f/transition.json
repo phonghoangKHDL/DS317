@@ -1,0 +1,38 @@
+{
+  "kind": "ADD_PREVIOUSLY_MISSING_XGBOOST_ONLY",
+  "note": "Environment field now describes resume environment. Earlier fits ran under original_training_environment. No fits/scores/config/source were changed.",
+  "before": {
+    "python": "3.14.3",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "psutil": "7.2.2",
+      "lightgbm": "4.7.0",
+      "torch": "2.14.1+cu130",
+      "xgboost": "not installed",
+      "nbformat": "5.11.1",
+      "ipython": "9.17.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "after": {
+    "python": "3.14.3",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "psutil": "7.2.2",
+      "lightgbm": "4.7.0",
+      "torch": "2.14.1+cu130",
+      "xgboost": "3.4.1",
+      "nbformat": "5.11.1",
+      "ipython": "9.17.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "original_manifest_sha256": "e543d4ffaafb21033e611eed65988cfdc38860734b3dc2396f48c1c4d38f4de2",
+  "backup": "D:\\UIT\\DS317\\BAF_project\\results\\research_campaigns\\weighting_research_20261028_214637_b9a2294e\\dependency_repairs\\20261029_085014_b8b6b40f\\suites\\lsr"
+}

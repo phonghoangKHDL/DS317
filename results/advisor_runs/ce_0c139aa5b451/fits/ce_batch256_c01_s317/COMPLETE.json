@@ -1,0 +1,26 @@
+{
+  "name": "ce_batch256_c01_s317",
+  "recipe": {
+    "method": "ce_batch256",
+    "candidate": 1,
+    "lr": 0.03,
+    "family": "nn",
+    "feature": "dense"
+  },
+  "seed": 317,
+  "model_file": "model.pt",
+  "initial_model_hash": "1ae3953484923fa467615d25bc581e33bc915d1f2eae622353881edbba358050",
+  "best_epoch": 7,
+  "score_link": "softmax",
+  "comparison_group": "meta_matched_batch256",
+  "threshold": 0.03843478485941887,
+  "threshold_is_posinf": false,
+  "validation_ap": 0.16349935413385994,
+  "fit_seconds": 127.7069762000001,
+  "hashes": {
+    "epochs.csv": "14c044ccb818d2df4b9d2199807175f57e5273075a1db9fff881ef6bd53e206a",
+    "model.pt": "096e917c8fd02838c921f6af4aca28333d2b3fe4e07760f0495ca30a7e8c942b",
+    "validation_score.npy": "08a6169c050db4c584ace1869e3bc80b1b5d1d5002091e11c39199b0c0f6ec44",
+    "weight_observations.json": "549918b2ec560367a7cef8ac220c2aa4544bad34fe9e2b5592dab385d920cdb9"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "BUNDLE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "README_ADVISOR.md",
+      "supplement/training.py",
+      "supplement/reporting.py",
+      "scripts/Extract-BAFAdvisor.ps1",
+      "scripts/Install-BAFAdvisorDeps.ps1",
+      "docs/advisor/IMPLEMENTATION_SCOPE.md",
+      "docs/advisor/SURVEY_PROTOCOL.md",
+      "docs/advisor/source_lock.json",
+      "docs/advisor/original_source_sha256.json",
+      "docs/advisor/STATUS.md",
+      "docs/advisor/completion.json",
+      "docs/advisor/VALIDATION.md",
+      "docs/advisor/upstream/lre/README.md",
+      "docs/advisor/upstream/lre/LICENSE",
+      "docs/advisor/upstream/lre/NOTICE",
+      "docs/advisor/upstream/mwn/README.md",
+      "docs/advisor/upstream/mwn/LICENSE",
+      "docs/advisor/upstream/mwn/meta-weight-net-class-imbalance.py",
+      "docs/advisor/upstream/mwn/resnet.py",
+      "docs/advisor/upstream/cb/README.md",
+      "docs/advisor/upstream/cb/LICENSE",
+      "docs/advisor/upstream/lre/mnist/reweight.py",
+      "docs/advisor/upstream/lre/models/reweight_model.py",
+      "docs/advisor/upstream/cb/src/cifar_main.py",
+      "results/advisor_step1/original_paper_research_table.csv",
+      "results/advisor_step1/original_paired_bootstrap.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/original_dataset_metrics.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/manifest.json",
+      "results/advisor_runs/original_checks_3848ef4489af/sha256.json",
+      "results/advisor_runs/original_checks_3848ef4489af/PROOF_SCOPE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/original_dataset_summary.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/history_recovery.json",
+      "results/advisor_runs/original_checks_3848ef4489af/checks/numerical_checks.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/checks/source_hash_checks.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/evidence/supplement/training.py",
+      "results/advisor_runs/original_checks_3848ef4489af/evidence/supplement/reporting.py",
+      "results/advisor_runs/original_checks_3848ef4489af/evidence/src/baf.py",
+      "results/advisor_runs/original_checks_3848ef4489af/evidence/src/gru.py",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s42/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s42/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s42/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s317/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s317/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s317/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s317/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s317/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s317/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s2026/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s2026/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/ce_s2026/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s2026/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s2026/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s2026/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s42/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s42/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/mnist/lre_s42/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s2026/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s2026/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s2026/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s42/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s42/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s42/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s317/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s317/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s317/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s2026/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s2026/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/ce_s2026/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s42/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s42/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s42/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s317/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s317/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/mwn_s317/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s317/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s317/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s317/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s42/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s42/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s42/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s2026/epochs.csv",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s2026/test_predictions.npz",
+      "results/advisor_runs/original_checks_3848ef4489af/cifar10/cb_ce_s2026/COMPLETE.json",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_075634_8b287f/status.json",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_075634_8b287f/executed.ipynb",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_075634_8b287f/execution.log",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_080313_4ec8da/status.json",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_080313_4ec8da/executed.ipynb",
+      "results/advisor_runs/original_checks_3848ef4489af/attempts/20261030_080313_4ec8da/execution.log"
+    ],
+    "changed_since_package": [
+      "notebooks/21_BAF_merge_supplement_tables.ipynb",
+      "notebooks/20_Original_dataset_weighting_checks.ipynb",
+      "notebooks/18_BAF_CE_batch256.ipynb",
+      "notebooks/19_BAF_sampling_baselines.ipynb",
+      "notebooks/17_BAF_advisor_metrics.ipynb",
+      "results/advisor_step1/research_table_display.csv",
+      "results/advisor_step1/RESEARCH_TABLE.md",
+      "results/advisor_step1/test_metrics_verified.csv",
+      "results/advisor_step1/all_metrics_mean_sd.csv",
+      "results/advisor_step1/sha256.json",
+      "results/advisor_step1/PROOF_SCOPE.json",
+      "results/advisor_step1/group_support.csv",
+      "results/advisor_step1/score_audit.csv",
+      "results/advisor_step1/provenance.json"
+    ],
+    "absent_in_current_structure": []
+  },
+  "PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "README.md",
+      "requirements.txt",
+      "docs/VALIDATION.md",
+      "docs/SOURCE_GUIDE.md",
+      "results/README.md",
+      "references/gru_author/source_manifest.json",
+      "references/gru_author/author_notebook_original.ipynb",
+      "references/survey_20261026/paper_survey.csv",
+      "references/survey_20261026/Khao_sat_BAF.xlsx",
+      "references/survey_20261026/Bao_cao_khao_sat_BAF.md",
+      "references/survey_20261026/metadata/artifact_hashes.json",
+      "references/survey_20261026/metadata/research_data.json",
+      "references/survey_20261026/metadata/repository_manifest.json",
+      "references/survey_20261026/metadata/paper_manifest.json",
+      "data/raw/README.md",
+      "results/checks/refactor_verification.json"
+    ],
+    "changed_since_package": [
+      "notebooks/03_BAF_comparison.ipynb",
+      "notebooks/02_BAF_cost_weighting.ipynb",
+      "notebooks/04_BAF_GRU_reproduction.ipynb",
+      "notebooks/01_BAF_class_weighting.ipynb",
+      "src/baf.py",
+      "src/gru.py"
+    ],
+    "absent_in_current_structure": []
+  },
+  "STEP05_PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "docs/STEP05_GRU_full.md",
+      "docs/STEP05_VALIDATION.json"
+    ],
+    "changed_since_package": [
+      "notebooks/05_BAF_GRU_full.ipynb"
+    ],
+    "absent_in_current_structure": []
+  },
+  "STEP06_PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "docs/STEP06.md",
+      "docs/STEP06_VALIDATION.json"
+    ],
+    "changed_since_package": [
+      "src/baf.py",
+      "src/gru.py",
+      "notebooks/06_BAF_GRU_three_seeds.ipynb"
+    ],
+    "absent_in_current_structure": []
+  },
+  "STEP07_PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "requirements-author07.txt",
+      "docs/STEP07.md",
+      "docs/STEP07_VALIDATION.json"
+    ],
+    "changed_since_package": [
+      "notebooks/07_BAF_GRU_author_original.ipynb"
+    ],
+    "absent_in_current_structure": []
+  },
+  "STEP08_PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "docs/STEP08.md",
+      "docs/STEP08_VALIDATION.json",
+      "docs/feedzai08_parameters.json",
+      "requirements-feedzai08.txt"
+    ],
+    "changed_since_package": [
+      "notebooks/08_BAF_Feedzai_original.ipynb"
+    ],
+    "absent_in_current_structure": []
+  },
+  "STEP09_PACKAGE_SHA256.json": {
+    "scope": "Compared with pre-review file bytes, before README/documentation edits",
+    "matches": [
+      "src/baf.py",
+      "requirements-step09.txt",
+      "docs/STEP09.md",
+      "docs/STEP09_VALIDATION.json"
+    ],
+    "changed_since_package": [
+      "notebooks/09_BAF_class_weight_selection.ipynb"
+    ],
+    "absent_in_current_structure": []
+  }
+}

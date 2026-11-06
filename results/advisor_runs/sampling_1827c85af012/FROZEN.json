@@ -1,0 +1,91 @@
+{
+  "selections": {
+    "lgbm_balanced": {
+      "method": "lgbm_balanced",
+      "sampling": "balanced",
+      "ratio": 0.1,
+      "candidate": 1,
+      "leaves": 31,
+      "family": "lsr_lgbm",
+      "feature": "dense"
+    },
+    "lgbm_none": {
+      "method": "lgbm_none",
+      "sampling": "none",
+      "ratio": 0.1,
+      "candidate": 1,
+      "leaves": 31,
+      "family": "lsr_lgbm",
+      "feature": "dense"
+    },
+    "lgbm_ros": {
+      "method": "lgbm_ros",
+      "sampling": "ros",
+      "ratio": 0.1,
+      "candidate": 1,
+      "leaves": 31,
+      "family": "lsr_lgbm",
+      "feature": "dense"
+    },
+    "lgbm_rus": {
+      "method": "lgbm_rus",
+      "sampling": "rus",
+      "ratio": 0.1,
+      "candidate": 0,
+      "leaves": 15,
+      "family": "lsr_lgbm",
+      "feature": "dense"
+    }
+  },
+  "final": [
+    {
+      "name": "lgbm_balanced_c01_s42",
+      "record_sha256": "de84cfb3ca4764f1662988475cd2cc5b9d4780bdb67e7e466a4a79374d6d4d5f"
+    },
+    {
+      "name": "lgbm_balanced_c01_s317",
+      "record_sha256": "d8bd8aee718b81d3679a9ccdd1fde0ca335672eec1ced502a244e94f9f4a4764"
+    },
+    {
+      "name": "lgbm_balanced_c01_s2026",
+      "record_sha256": "af4740fa01eeb75a9da88b8f97045871d712625ae57cfa95637bf2341443d544"
+    },
+    {
+      "name": "lgbm_none_c01_s42",
+      "record_sha256": "3c465a6182bac57e59a295cc8237d8daffd2463a95a91370fefa71cea5b0ec88"
+    },
+    {
+      "name": "lgbm_none_c01_s317",
+      "record_sha256": "99dbcd7f84bf61295833c8dad42361bda9f7f76baec89f4cd5b7c1999850cf79"
+    },
+    {
+      "name": "lgbm_none_c01_s2026",
+      "record_sha256": "9b930d82e92456730badd3c74428636e636c005e20f3804f84d62deb5457fa65"
+    },
+    {
+      "name": "lgbm_ros_c01_s42",
+      "record_sha256": "d8d50a0fadd8a251d361babd08520bc7d078c4e089ee23eddab5211128d65ba7"
+    },
+    {
+      "name": "lgbm_ros_c01_s317",
+      "record_sha256": "7f53bb6617f2e9cd4b4bd5ab47be063240540a57d396a32a12f90eab64e29e48"
+    },
+    {
+      "name": "lgbm_ros_c01_s2026",
+      "record_sha256": "59ec98ae024b00390d5883242cc39d25125a5e7094ee9cfac82e84fdc34232c2"
+    },
+    {
+      "name": "lgbm_rus_c00_s42",
+      "record_sha256": "d7cc2c7a30f7d0428f6d8f0ca75d8769bc14e026fe33d36bf82d436177c82831"
+    },
+    {
+      "name": "lgbm_rus_c00_s317",
+      "record_sha256": "a22b618af2fbca82615b9bf83a7f441289b33cd325b486ec008233d0bf73b606"
+    },
+    {
+      "name": "lgbm_rus_c00_s2026",
+      "record_sha256": "e1ef117804732d6aeacb5fe94956c6388461bd7ff601cceea71e601abb05ff88"
+    }
+  ],
+  "rule": "Selected using unweighted month6 AP only; all selected fits complete before test"
+}

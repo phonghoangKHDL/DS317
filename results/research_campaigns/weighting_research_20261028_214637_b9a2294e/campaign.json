@@ -1,0 +1,58 @@
+{
+  "version": "baf-research-20261028-v1",
+  "project": "D:\\UIT\\DS317\\BAF_project",
+  "cache": "D:\\UIT\\DS317\\BAF_project\\results\\research_data\\80bcacc462d4de92",
+  "config": {
+    "mode": "full",
+    "seeds": [
+      42,
+      317,
+      2026
+    ],
+    "threads": 4,
+    "device": "auto",
+    "meta_per_class": 128,
+    "epochs": 20,
+    "batch_size": 2048,
+    "meta_batch_size": 256,
+    "hidden": [
+      128,
+      64
+    ],
+    "learning_rates": [
+      0.01,
+      0.03,
+      0.1
+    ],
+    "weight_decay": 0.0001,
+    "momentum": 0.9,
+    "patience": 5,
+    "max_fpr": 0.05,
+    "tree_rounds": 300,
+    "vae_epochs": 30,
+    "diffusion_epochs": 50,
+    "auxiliary_patience": 10,
+    "auxiliary_batch_size": 1024,
+    "diffusion_width": 1024,
+    "score_batch_size": 2048,
+    "score_noise_repeats": 32,
+    "score_steps": 10,
+    "score_noise_chunk": 4,
+    "auxiliary_seed": 42,
+    "lsr_centering": "author",
+    "bootstrap_repeats": 1000,
+    "pilot_train": 20000,
+    "pilot_eval": 10000
+  },
+  "suites": [
+    "losses",
+    "meta",
+    "lsr",
+    "xgboost"
+  ],
+  "mode": "full",
+  "source": {
+    "baf.py": "c6d70e56c4c8fe0aaac2bb2cb5cb75cb1fdd9be6b21baae2326a077026e7cebe",
+    "gru.py": "ecb673080dfd591a6a1c9116c3f5e78efc0ec3f99932e1d5cf9bd17434d107f6"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "auxiliary_seed": 42,
+  "auxiliary_seconds": 5878.140105600003,
+  "centering": "author",
+  "centering_note": "author: class-centered training, globally centered scoring, as source; shared: explicit alternative transfer",
+  "streaming_note": "EDM-weighted squared errors reduced over latent dimensions/noise/scales before saving; same arithmetic mean, different RNG draw order from the author tensor allocation",
+  "budgets": {
+    "vae_epochs": 30,
+    "diffusion_epochs": 50,
+    "noise_repeats": 32,
+    "sigma_steps": 10
+  },
+  "scope": "Author VAE/diffusion classes; BAF train-only preprocessing, balanced in-train meta validation, capped training budget; not original reported dataset scores"
+}

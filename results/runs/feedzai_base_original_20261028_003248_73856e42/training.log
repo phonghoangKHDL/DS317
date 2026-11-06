@@ -1,0 +1,329 @@
+BEGIN_CELL evidence
+END_CELL evidence
+BEGIN_CELL 0
+END_CELL 0
+BEGIN_CELL 1
+END_CELL 1
+BEGIN_CELL 2
+END_CELL 2
+BEGIN_CELL 3
+Out[5]: 
+{'LightGBM': {'classpath': 'lightgbm.LGBMClassifier',
+  'kwargs': {'n_estimators': {'type': 'int',
+    'range': [20, 10000],
+    'log': True},
+   'max_depth': {'type': 'int', 'range': [3, 30]},
+   'learning_rate': {'type': 'float', 'range': [0.02, 0.1], 'log': True},
+   'num_leaves': {'type': 'int', 'range': [10, 100], 'log': True},
+   'boosting_type': ['gbdt', 'goss'],
+   'min_data_in_leaf': {'type': 'int', 'range': [5, 200], 'log': True},
+   'max_bin': {'type': 'int', 'range': [100, 500]},
+   'enable_bundle': [True, False]}}}
+END_CELL 3
+BEGIN_CELL 4
+Out[6]: 
+{'classpath': 'lightgbm.LGBMClassifier',
+ 'n_estimators': 263,
+ 'max_depth': 23,
+ 'learning_rate': 0.020003681922217444,
+ 'num_leaves': 19,
+ 'boosting_type': 'gbdt',
+ 'min_data_in_leaf': 9,
+ 'max_bin': 238,
+ 'enable_bundle': False}
+END_CELL 4
+BEGIN_CELL 5
+END_CELL 5
+BEGIN_CELL 6
+END_CELL 6
+BEGIN_CELL 7
+END_CELL 7
+BEGIN_CELL 8
+END_CELL 8
+BEGIN_CELL 9
+END_CELL 9
+BEGIN_CELL 10
+FIT_TRIAL 1 {'n_estimators': 282, 'max_depth': 5, 'learning_rate': 0.08045625153147128, 'num_leaves': 65, 'boosting_type': 'goss', 'min_data_in_leaf': 22, 'max_bin': 220, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=22, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=22
+[LightGBM] [Warning] Found boosting=goss. For backwards compatibility reasons, LightGBM interprets this as boosting=gbdt, data_sample_strategy=goss.To suppress this warning, set data_sample_strategy=goss instead.
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+FEEDZAI_TRIAL 1/100 recall=0.530577 AP=0.181734 fit=12.9s
+FIT_TRIAL 2 {'n_estimators': 20, 'max_depth': 4, 'learning_rate': 0.07306386606820443, 'num_leaves': 11, 'boosting_type': 'goss', 'min_data_in_leaf': 9, 'max_bin': 254, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=9, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=9
+FEEDZAI_TRIAL 2/100 recall=0.485407 AP=0.158916 fit=2.7s
+FIT_TRIAL 3 {'n_estimators': 1552, 'max_depth': 11, 'learning_rate': 0.08828967356645136, 'num_leaves': 44, 'boosting_type': 'gbdt', 'min_data_in_leaf': 7, 'max_bin': 435, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=7, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=7
+FEEDZAI_TRIAL 3/100 recall=0.464559 AP=0.100532 fit=91.0s
+FIT_TRIAL 4 {'n_estimators': 80, 'max_depth': 7, 'learning_rate': 0.03565464242050792, 'num_leaves': 90, 'boosting_type': 'goss', 'min_data_in_leaf': 44, 'max_bin': 341, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=44, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=44
+FEEDZAI_TRIAL 4/100 recall=0.530924 AP=0.184894 fit=10.3s
+FIT_TRIAL 5 {'n_estimators': 594, 'max_depth': 11, 'learning_rate': 0.04387521153073488, 'num_leaves': 13, 'boosting_type': 'goss', 'min_data_in_leaf': 16, 'max_bin': 417, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=16, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=16
+FEEDZAI_TRIAL 5/100 recall=0.548297 AP=0.189004 fit=36.3s
+FIT_TRIAL 6 {'n_estimators': 4196, 'max_depth': 13, 'learning_rate': 0.04520890768623836, 'num_leaves': 23, 'boosting_type': 'gbdt', 'min_data_in_leaf': 42, 'max_bin': 110, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=42, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=42
+FEEDZAI_TRIAL 6/100 recall=0.491313 AP=0.159443 fit=158.9s
+FIT_TRIAL 7 {'n_estimators': 1122, 'max_depth': 5, 'learning_rate': 0.0390715620153219, 'num_leaves': 63, 'boosting_type': 'goss', 'min_data_in_leaf': 109, 'max_bin': 106, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=109, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=109
+FEEDZAI_TRIAL 7/100 recall=0.530229 AP=0.187184 fit=74.0s
+FIT_TRIAL 8 {'n_estimators': 227, 'max_depth': 30, 'learning_rate': 0.06070433398329268, 'num_leaves': 43, 'boosting_type': 'goss', 'min_data_in_leaf': 48, 'max_bin': 496, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=48, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=48
+FEEDZAI_TRIAL 8/100 recall=0.533704 AP=0.181649 fit=19.3s
+FIT_TRIAL 9 {'n_estimators': 142, 'max_depth': 9, 'learning_rate': 0.02766593500229461, 'num_leaves': 17, 'boosting_type': 'gbdt', 'min_data_in_leaf': 97, 'max_bin': 190, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=97, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=97
+FEEDZAI_TRIAL 9/100 recall=0.539611 AP=0.187891 fit=11.6s
+FIT_TRIAL 10 {'n_estimators': 77, 'max_depth': 15, 'learning_rate': 0.09998722600126628, 'num_leaves': 72, 'boosting_type': 'goss', 'min_data_in_leaf': 143, 'max_bin': 147, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=143, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=143
+FEEDZAI_TRIAL 10/100 recall=0.531272 AP=0.174179 fit=8.9s
+FIT_TRIAL 11 {'n_estimators': 8099, 'max_depth': 13, 'learning_rate': 0.0380977142591111, 'num_leaves': 17, 'boosting_type': 'goss', 'min_data_in_leaf': 67, 'max_bin': 150, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=67, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=67
+FEEDZAI_TRIAL 11/100 recall=0.503822 AP=0.167791 fit=361.5s
+FIT_TRIAL 12 {'n_estimators': 9721, 'max_depth': 3, 'learning_rate': 0.07363689671855975, 'num_leaves': 39, 'boosting_type': 'gbdt', 'min_data_in_leaf': 12, 'max_bin': 402, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=12, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=12
+FEEDZAI_TRIAL 12/100 recall=0.487491 AP=0.149373 fit=345.0s
+FIT_TRIAL 13 {'n_estimators': 168, 'max_depth': 21, 'learning_rate': 0.06846034447123696, 'num_leaves': 20, 'boosting_type': 'gbdt', 'min_data_in_leaf': 63, 'max_bin': 470, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=63, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=63
+FEEDZAI_TRIAL 13/100 recall=0.541348 AP=0.190642 fit=13.8s
+FIT_TRIAL 14 {'n_estimators': 242, 'max_depth': 21, 'learning_rate': 0.0731335037699405, 'num_leaves': 47, 'boosting_type': 'goss', 'min_data_in_leaf': 59, 'max_bin': 106, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=59, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=59
+FEEDZAI_TRIAL 14/100 recall=0.532314 AP=0.178608 fit=17.6s
+FIT_TRIAL 15 {'n_estimators': 491, 'max_depth': 13, 'learning_rate': 0.027268149078013143, 'num_leaves': 10, 'boosting_type': 'gbdt', 'min_data_in_leaf': 7, 'max_bin': 135, 'enable_bundle': True}
+FEEDZAI_TRIAL 15/100 recall=0.551772 AP=0.199609 fit=11.7s
+FIT_TRIAL 16 {'n_estimators': 80, 'max_depth': 12, 'learning_rate': 0.03576919594046163, 'num_leaves': 24, 'boosting_type': 'gbdt', 'min_data_in_leaf': 16, 'max_bin': 113, 'enable_bundle': False}
+FEEDZAI_TRIAL 16/100 recall=0.531619 AP=0.185755 fit=2.7s
+FIT_TRIAL 17 {'n_estimators': 3871, 'max_depth': 23, 'learning_rate': 0.04002944822462608, 'num_leaves': 24, 'boosting_type': 'goss', 'min_data_in_leaf': 47, 'max_bin': 235, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=47, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=47
+FEEDZAI_TRIAL 17/100 recall=0.501390 AP=0.161757 fit=82.7s
+FIT_TRIAL 18 {'n_estimators': 34, 'max_depth': 25, 'learning_rate': 0.0764042722329116, 'num_leaves': 69, 'boosting_type': 'gbdt', 'min_data_in_leaf': 66, 'max_bin': 281, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=66, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=66
+FEEDZAI_TRIAL 18/100 recall=0.525017 AP=0.169082 fit=2.0s
+FIT_TRIAL 19 {'n_estimators': 3039, 'max_depth': 3, 'learning_rate': 0.05394126997649839, 'num_leaves': 16, 'boosting_type': 'goss', 'min_data_in_leaf': 66, 'max_bin': 490, 'enable_bundle': True}
+FEEDZAI_TRIAL 19/100 recall=0.533704 AP=0.183904 fit=62.4s
+FIT_TRIAL 20 {'n_estimators': 237, 'max_depth': 23, 'learning_rate': 0.029076144386473185, 'num_leaves': 10, 'boosting_type': 'gbdt', 'min_data_in_leaf': 33, 'max_bin': 233, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=33, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=33
+FEEDZAI_TRIAL 20/100 recall=0.542391 AP=0.193006 fit=5.2s
+FIT_TRIAL 21 {'n_estimators': 205, 'max_depth': 22, 'learning_rate': 0.06465433267686285, 'num_leaves': 14, 'boosting_type': 'goss', 'min_data_in_leaf': 24, 'max_bin': 256, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=24, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=24
+FEEDZAI_TRIAL 21/100 recall=0.552467 AP=0.193422 fit=5.4s
+FIT_TRIAL 22 {'n_estimators': 691, 'max_depth': 7, 'learning_rate': 0.040720530467110105, 'num_leaves': 42, 'boosting_type': 'goss', 'min_data_in_leaf': 121, 'max_bin': 337, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=121, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=121
+FEEDZAI_TRIAL 22/100 recall=0.537526 AP=0.183532 fit=18.0s
+FIT_TRIAL 23 {'n_estimators': 1359, 'max_depth': 15, 'learning_rate': 0.035430591908450354, 'num_leaves': 62, 'boosting_type': 'gbdt', 'min_data_in_leaf': 17, 'max_bin': 282, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=17, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=17
+FEEDZAI_TRIAL 23/100 recall=0.529187 AP=0.174329 fit=25.9s
+FIT_TRIAL 24 {'n_estimators': 878, 'max_depth': 14, 'learning_rate': 0.07552140441797132, 'num_leaves': 81, 'boosting_type': 'goss', 'min_data_in_leaf': 23, 'max_bin': 204, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=23, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=23
+FEEDZAI_TRIAL 24/100 recall=0.486101 AP=0.150556 fit=19.5s
+FIT_TRIAL 25 {'n_estimators': 256, 'max_depth': 29, 'learning_rate': 0.05590731210391591, 'num_leaves': 100, 'boosting_type': 'goss', 'min_data_in_leaf': 84, 'max_bin': 279, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=84, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=84
+FEEDZAI_TRIAL 25/100 recall=0.526407 AP=0.173854 fit=7.6s
+FIT_TRIAL 26 {'n_estimators': 1119, 'max_depth': 18, 'learning_rate': 0.04822857502970215, 'num_leaves': 22, 'boosting_type': 'goss', 'min_data_in_leaf': 12, 'max_bin': 413, 'enable_bundle': True}
+FEEDZAI_TRIAL 26/100 recall=0.523975 AP=0.170984 fit=25.5s
+FIT_TRIAL 27 {'n_estimators': 105, 'max_depth': 27, 'learning_rate': 0.04860983853399012, 'num_leaves': 14, 'boosting_type': 'gbdt', 'min_data_in_leaf': 105, 'max_bin': 127, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=105, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=105
+FEEDZAI_TRIAL 27/100 recall=0.535441 AP=0.188456 fit=2.9s
+FIT_TRIAL 28 {'n_estimators': 227, 'max_depth': 28, 'learning_rate': 0.0973627104357782, 'num_leaves': 19, 'boosting_type': 'gbdt', 'min_data_in_leaf': 9, 'max_bin': 477, 'enable_bundle': True}
+FEEDZAI_TRIAL 28/100 recall=0.507644 AP=0.123475 fit=5.2s
+FIT_TRIAL 29 {'n_estimators': 36, 'max_depth': 14, 'learning_rate': 0.09079409620552673, 'num_leaves': 71, 'boosting_type': 'goss', 'min_data_in_leaf': 6, 'max_bin': 188, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=6, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=6
+FEEDZAI_TRIAL 29/100 recall=0.504170 AP=0.131027 fit=1.6s
+FIT_TRIAL 30 {'n_estimators': 137, 'max_depth': 10, 'learning_rate': 0.03227031969481615, 'num_leaves': 63, 'boosting_type': 'goss', 'min_data_in_leaf': 11, 'max_bin': 473, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=11, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=11
+FEEDZAI_TRIAL 30/100 recall=0.536136 AP=0.176828 fit=5.1s
+FIT_TRIAL 31 {'n_estimators': 5541, 'max_depth': 20, 'learning_rate': 0.021607129587006942, 'num_leaves': 41, 'boosting_type': 'gbdt', 'min_data_in_leaf': 7, 'max_bin': 361, 'enable_bundle': False}
+FEEDZAI_TRIAL 31/100 recall=0.513551 AP=0.165976 fit=87.3s
+FIT_TRIAL 32 {'n_estimators': 24, 'max_depth': 18, 'learning_rate': 0.041887619543750636, 'num_leaves': 22, 'boosting_type': 'gbdt', 'min_data_in_leaf': 128, 'max_bin': 459, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=128, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=128
+FEEDZAI_TRIAL 32/100 recall=0.496178 AP=0.165160 fit=1.3s
+FIT_TRIAL 33 {'n_estimators': 90, 'max_depth': 4, 'learning_rate': 0.021473637789780054, 'num_leaves': 68, 'boosting_type': 'goss', 'min_data_in_leaf': 200, 'max_bin': 471, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=200, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=200
+FEEDZAI_TRIAL 33/100 recall=0.497568 AP=0.170129 fit=2.6s
+FIT_TRIAL 34 {'n_estimators': 34, 'max_depth': 12, 'learning_rate': 0.03688393852717681, 'num_leaves': 55, 'boosting_type': 'goss', 'min_data_in_leaf': 5, 'max_bin': 361, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=5, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=5
+FEEDZAI_TRIAL 34/100 recall=0.511814 AP=0.144045 fit=1.7s
+FIT_TRIAL 35 {'n_estimators': 5184, 'max_depth': 27, 'learning_rate': 0.030418058310053963, 'num_leaves': 24, 'boosting_type': 'goss', 'min_data_in_leaf': 93, 'max_bin': 168, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=93, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=93
+FEEDZAI_TRIAL 35/100 recall=0.510076 AP=0.173795 fit=90.7s
+FIT_TRIAL 36 {'n_estimators': 99, 'max_depth': 29, 'learning_rate': 0.026041046308348515, 'num_leaves': 28, 'boosting_type': 'goss', 'min_data_in_leaf': 22, 'max_bin': 498, 'enable_bundle': True}
+FEEDZAI_TRIAL 36/100 recall=0.536484 AP=0.185392 fit=3.6s
+FIT_TRIAL 37 {'n_estimators': 132, 'max_depth': 4, 'learning_rate': 0.03533489993895282, 'num_leaves': 57, 'boosting_type': 'goss', 'min_data_in_leaf': 172, 'max_bin': 372, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=172, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=172
+FEEDZAI_TRIAL 37/100 recall=0.533009 AP=0.186511 fit=3.4s
+FIT_TRIAL 38 {'n_estimators': 1919, 'max_depth': 26, 'learning_rate': 0.052702703476368296, 'num_leaves': 32, 'boosting_type': 'gbdt', 'min_data_in_leaf': 29, 'max_bin': 160, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=29, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=29
+FEEDZAI_TRIAL 38/100 recall=0.515983 AP=0.179978 fit=28.0s
+FIT_TRIAL 39 {'n_estimators': 260, 'max_depth': 16, 'learning_rate': 0.027773171908334632, 'num_leaves': 23, 'boosting_type': 'gbdt', 'min_data_in_leaf': 18, 'max_bin': 245, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=18, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=18
+FEEDZAI_TRIAL 39/100 recall=0.550035 AP=0.193856 fit=6.8s
+FIT_TRIAL 40 {'n_estimators': 24, 'max_depth': 29, 'learning_rate': 0.02400415573489472, 'num_leaves': 12, 'boosting_type': 'goss', 'min_data_in_leaf': 16, 'max_bin': 313, 'enable_bundle': True}
+FEEDZAI_TRIAL 40/100 recall=0.456915 AP=0.149106 fit=1.1s
+FIT_TRIAL 41 {'n_estimators': 123, 'max_depth': 28, 'learning_rate': 0.0810670927102849, 'num_leaves': 61, 'boosting_type': 'gbdt', 'min_data_in_leaf': 20, 'max_bin': 247, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=20, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=20
+FEEDZAI_TRIAL 41/100 recall=0.518416 AP=0.161500 fit=3.9s
+FIT_TRIAL 42 {'n_estimators': 93, 'max_depth': 27, 'learning_rate': 0.07326248931947076, 'num_leaves': 89, 'boosting_type': 'gbdt', 'min_data_in_leaf': 46, 'max_bin': 152, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=46, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=46
+FEEDZAI_TRIAL 42/100 recall=0.528839 AP=0.168124 fit=3.6s
+FIT_TRIAL 43 {'n_estimators': 488, 'max_depth': 27, 'learning_rate': 0.043111787013503454, 'num_leaves': 68, 'boosting_type': 'gbdt', 'min_data_in_leaf': 86, 'max_bin': 171, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=86, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=86
+FEEDZAI_TRIAL 43/100 recall=0.534399 AP=0.183470 fit=11.5s
+FIT_TRIAL 44 {'n_estimators': 327, 'max_depth': 23, 'learning_rate': 0.08878542044509734, 'num_leaves': 24, 'boosting_type': 'goss', 'min_data_in_leaf': 148, 'max_bin': 269, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=148, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=148
+FEEDZAI_TRIAL 44/100 recall=0.545170 AP=0.183466 fit=7.2s
+FIT_TRIAL 45 {'n_estimators': 75, 'max_depth': 14, 'learning_rate': 0.04832799454148141, 'num_leaves': 15, 'boosting_type': 'gbdt', 'min_data_in_leaf': 39, 'max_bin': 483, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=39, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=39
+FEEDZAI_TRIAL 45/100 recall=0.530229 AP=0.182610 fit=2.3s
+FIT_TRIAL 46 {'n_estimators': 8211, 'max_depth': 25, 'learning_rate': 0.09056364310346829, 'num_leaves': 92, 'boosting_type': 'gbdt', 'min_data_in_leaf': 8, 'max_bin': 253, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=8, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=8
+FEEDZAI_TRIAL 46/100 recall=0.412092 AP=0.094893 fit=207.6s
+FIT_TRIAL 47 {'n_estimators': 74, 'max_depth': 12, 'learning_rate': 0.04067015229728636, 'num_leaves': 35, 'boosting_type': 'goss', 'min_data_in_leaf': 5, 'max_bin': 382, 'enable_bundle': False}
+FEEDZAI_TRIAL 47/100 recall=0.529187 AP=0.168901 fit=2.8s
+FIT_TRIAL 48 {'n_estimators': 3550, 'max_depth': 11, 'learning_rate': 0.05114469339604962, 'num_leaves': 73, 'boosting_type': 'goss', 'min_data_in_leaf': 55, 'max_bin': 369, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=55, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=55
+FEEDZAI_TRIAL 48/100 recall=0.475678 AP=0.149971 fit=78.0s
+FIT_TRIAL 49 {'n_estimators': 22, 'max_depth': 15, 'learning_rate': 0.07685645889095105, 'num_leaves': 72, 'boosting_type': 'gbdt', 'min_data_in_leaf': 5, 'max_bin': 377, 'enable_bundle': True}
+FEEDZAI_TRIAL 49/100 recall=0.507992 AP=0.137837 fit=1.5s
+FIT_TRIAL 50 {'n_estimators': 1178, 'max_depth': 17, 'learning_rate': 0.026288169831600663, 'num_leaves': 45, 'boosting_type': 'gbdt', 'min_data_in_leaf': 13, 'max_bin': 300, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=13, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=13
+FEEDZAI_TRIAL 50/100 recall=0.542043 AP=0.193213 fit=23.0s
+FIT_TRIAL 51 {'n_estimators': 36, 'max_depth': 11, 'learning_rate': 0.03776329090475506, 'num_leaves': 29, 'boosting_type': 'goss', 'min_data_in_leaf': 14, 'max_bin': 380, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=14, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=14
+FEEDZAI_TRIAL 51/100 recall=0.513551 AP=0.174540 fit=1.7s
+FIT_TRIAL 52 {'n_estimators': 103, 'max_depth': 25, 'learning_rate': 0.036923033950976895, 'num_leaves': 10, 'boosting_type': 'goss', 'min_data_in_leaf': 34, 'max_bin': 363, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=34, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=34
+FEEDZAI_TRIAL 52/100 recall=0.532314 AP=0.183610 fit=3.0s
+FIT_TRIAL 53 {'n_estimators': 35, 'max_depth': 3, 'learning_rate': 0.05162661190014198, 'num_leaves': 43, 'boosting_type': 'gbdt', 'min_data_in_leaf': 29, 'max_bin': 399, 'enable_bundle': False}
+FEEDZAI_TRIAL 53/100 recall=0.473940 AP=0.155428 fit=1.1s
+FIT_TRIAL 54 {'n_estimators': 395, 'max_depth': 17, 'learning_rate': 0.052557738875092026, 'num_leaves': 91, 'boosting_type': 'gbdt', 'min_data_in_leaf': 7, 'max_bin': 374, 'enable_bundle': False}
+FEEDZAI_TRIAL 54/100 recall=0.504864 AP=0.140529 fit=11.3s
+FIT_TRIAL 55 {'n_estimators': 132, 'max_depth': 24, 'learning_rate': 0.050669775445454174, 'num_leaves': 17, 'boosting_type': 'gbdt', 'min_data_in_leaf': 21, 'max_bin': 372, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=21, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=21
+FEEDZAI_TRIAL 55/100 recall=0.545865 AP=0.190914 fit=3.7s
+FIT_TRIAL 56 {'n_estimators': 106, 'max_depth': 15, 'learning_rate': 0.06630955976641742, 'num_leaves': 58, 'boosting_type': 'gbdt', 'min_data_in_leaf': 76, 'max_bin': 122, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=76, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=76
+FEEDZAI_TRIAL 56/100 recall=0.539958 AP=0.181492 fit=3.8s
+FIT_TRIAL 57 {'n_estimators': 154, 'max_depth': 23, 'learning_rate': 0.07382998746277918, 'num_leaves': 65, 'boosting_type': 'goss', 'min_data_in_leaf': 9, 'max_bin': 135, 'enable_bundle': False}
+FEEDZAI_TRIAL 57/100 recall=0.513899 AP=0.150685 fit=4.7s
+FIT_TRIAL 58 {'n_estimators': 660, 'max_depth': 23, 'learning_rate': 0.02521404616940407, 'num_leaves': 23, 'boosting_type': 'goss', 'min_data_in_leaf': 5, 'max_bin': 456, 'enable_bundle': False}
+FEEDZAI_TRIAL 58/100 recall=0.547255 AP=0.175419 fit=14.9s
+FIT_TRIAL 59 {'n_estimators': 7059, 'max_depth': 5, 'learning_rate': 0.09579137213318115, 'num_leaves': 45, 'boosting_type': 'goss', 'min_data_in_leaf': 31, 'max_bin': 123, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=31, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=31
+FEEDZAI_TRIAL 59/100 recall=0.404100 AP=0.116658 fit=156.5s
+FIT_TRIAL 60 {'n_estimators': 3463, 'max_depth': 11, 'learning_rate': 0.07449155276722762, 'num_leaves': 19, 'boosting_type': 'goss', 'min_data_in_leaf': 33, 'max_bin': 317, 'enable_bundle': False}
+FEEDZAI_TRIAL 60/100 recall=0.474983 AP=0.151898 fit=63.0s
+FIT_TRIAL 61 {'n_estimators': 719, 'max_depth': 20, 'learning_rate': 0.027351409577714175, 'num_leaves': 24, 'boosting_type': 'goss', 'min_data_in_leaf': 15, 'max_bin': 499, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=15, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=15
+FEEDZAI_TRIAL 61/100 recall=0.547950 AP=0.195078 fit=17.6s
+FIT_TRIAL 62 {'n_estimators': 1950, 'max_depth': 20, 'learning_rate': 0.04826574220447579, 'num_leaves': 29, 'boosting_type': 'goss', 'min_data_in_leaf': 22, 'max_bin': 196, 'enable_bundle': True}
+FEEDZAI_TRIAL 62/100 recall=0.506949 AP=0.171040 fit=39.7s
+FIT_TRIAL 63 {'n_estimators': 363, 'max_depth': 29, 'learning_rate': 0.03935265693434072, 'num_leaves': 20, 'boosting_type': 'goss', 'min_data_in_leaf': 7, 'max_bin': 270, 'enable_bundle': False}
+FEEDZAI_TRIAL 63/100 recall=0.550730 AP=0.178531 fit=8.8s
+FIT_TRIAL 64 {'n_estimators': 307, 'max_depth': 17, 'learning_rate': 0.03311860402945325, 'num_leaves': 17, 'boosting_type': 'gbdt', 'min_data_in_leaf': 156, 'max_bin': 256, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=156, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=156
+FEEDZAI_TRIAL 64/100 recall=0.550035 AP=0.198700 fit=7.4s
+FIT_TRIAL 65 {'n_estimators': 3803, 'max_depth': 19, 'learning_rate': 0.09278163430161729, 'num_leaves': 94, 'boosting_type': 'gbdt', 'min_data_in_leaf': 33, 'max_bin': 271, 'enable_bundle': True}
+FEEDZAI_TRIAL 65/100 recall=0.453787 AP=0.146769 fit=76.3s
+FIT_TRIAL 66 {'n_estimators': 1285, 'max_depth': 27, 'learning_rate': 0.06146305132440698, 'num_leaves': 87, 'boosting_type': 'goss', 'min_data_in_leaf': 123, 'max_bin': 222, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=123, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=123
+FEEDZAI_TRIAL 66/100 recall=0.497915 AP=0.153794 fit=28.5s
+FIT_TRIAL 67 {'n_estimators': 7636, 'max_depth': 4, 'learning_rate': 0.052042408558611926, 'num_leaves': 24, 'boosting_type': 'gbdt', 'min_data_in_leaf': 37, 'max_bin': 171, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=37, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=37
+FEEDZAI_TRIAL 67/100 recall=0.462474 AP=0.147144 fit=111.4s
+FIT_TRIAL 68 {'n_estimators': 1531, 'max_depth': 23, 'learning_rate': 0.041943288079902906, 'num_leaves': 12, 'boosting_type': 'goss', 'min_data_in_leaf': 101, 'max_bin': 466, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=101, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=101
+FEEDZAI_TRIAL 68/100 recall=0.537526 AP=0.188518 fit=32.1s
+FIT_TRIAL 69 {'n_estimators': 5772, 'max_depth': 14, 'learning_rate': 0.040012812877472284, 'num_leaves': 63, 'boosting_type': 'goss', 'min_data_in_leaf': 65, 'max_bin': 148, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=65, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=65
+FEEDZAI_TRIAL 69/100 recall=0.478457 AP=0.153410 fit=110.4s
+FIT_TRIAL 70 {'n_estimators': 1315, 'max_depth': 18, 'learning_rate': 0.08479353775783385, 'num_leaves': 99, 'boosting_type': 'gbdt', 'min_data_in_leaf': 27, 'max_bin': 177, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=27, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=27
+FEEDZAI_TRIAL 70/100 recall=0.469076 AP=0.142809 fit=25.2s
+FIT_TRIAL 71 {'n_estimators': 47, 'max_depth': 15, 'learning_rate': 0.023154600336939633, 'num_leaves': 96, 'boosting_type': 'gbdt', 'min_data_in_leaf': 47, 'max_bin': 122, 'enable_bundle': False}
+FEEDZAI_TRIAL 71/100 recall=0.521195 AP=0.177646 fit=2.3s
+FIT_TRIAL 72 {'n_estimators': 107, 'max_depth': 27, 'learning_rate': 0.09095595820264119, 'num_leaves': 10, 'boosting_type': 'gbdt', 'min_data_in_leaf': 65, 'max_bin': 241, 'enable_bundle': True}
+FEEDZAI_TRIAL 72/100 recall=0.544128 AP=0.194736 fit=2.6s
+FIT_TRIAL 73 {'n_estimators': 83, 'max_depth': 11, 'learning_rate': 0.057940973478145266, 'num_leaves': 10, 'boosting_type': 'gbdt', 'min_data_in_leaf': 33, 'max_bin': 296, 'enable_bundle': True}
+FEEDZAI_TRIAL 73/100 recall=0.531967 AP=0.187163 fit=2.3s
+FIT_TRIAL 74 {'n_estimators': 35, 'max_depth': 15, 'learning_rate': 0.04079752069373483, 'num_leaves': 35, 'boosting_type': 'gbdt', 'min_data_in_leaf': 183, 'max_bin': 449, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=183, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=183
+FEEDZAI_TRIAL 74/100 recall=0.519805 AP=0.178463 fit=1.7s
+FIT_TRIAL 75 {'n_estimators': 53, 'max_depth': 11, 'learning_rate': 0.05138895849137923, 'num_leaves': 26, 'boosting_type': 'goss', 'min_data_in_leaf': 31, 'max_bin': 145, 'enable_bundle': True}
+FEEDZAI_TRIAL 75/100 recall=0.535094 AP=0.183366 fit=2.0s
+FIT_TRIAL 76 {'n_estimators': 2826, 'max_depth': 13, 'learning_rate': 0.023000586631358073, 'num_leaves': 32, 'boosting_type': 'gbdt', 'min_data_in_leaf': 160, 'max_bin': 361, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=160, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=160
+FEEDZAI_TRIAL 76/100 recall=0.525712 AP=0.180897 fit=46.4s
+FIT_TRIAL 77 {'n_estimators': 20, 'max_depth': 23, 'learning_rate': 0.0690327436426626, 'num_leaves': 24, 'boosting_type': 'gbdt', 'min_data_in_leaf': 56, 'max_bin': 304, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=56, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=56
+FEEDZAI_TRIAL 77/100 recall=0.510771 AP=0.163761 fit=1.1s
+FIT_TRIAL 78 {'n_estimators': 99, 'max_depth': 13, 'learning_rate': 0.05151478735976003, 'num_leaves': 49, 'boosting_type': 'goss', 'min_data_in_leaf': 10, 'max_bin': 328, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=10, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=10
+FEEDZAI_TRIAL 78/100 recall=0.534399 AP=0.164176 fit=3.6s
+FIT_TRIAL 79 {'n_estimators': 1830, 'max_depth': 4, 'learning_rate': 0.02063205979444881, 'num_leaves': 35, 'boosting_type': 'gbdt', 'min_data_in_leaf': 30, 'max_bin': 298, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=30, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=30
+FEEDZAI_TRIAL 79/100 recall=0.554899 AP=0.198214 fit=30.5s
+FIT_TRIAL 80 {'n_estimators': 7859, 'max_depth': 30, 'learning_rate': 0.028896217210912387, 'num_leaves': 63, 'boosting_type': 'goss', 'min_data_in_leaf': 24, 'max_bin': 457, 'enable_bundle': False}
+FEEDZAI_TRIAL 80/100 recall=0.475678 AP=0.150881 fit=166.4s
+FIT_TRIAL 81 {'n_estimators': 2263, 'max_depth': 27, 'learning_rate': 0.046361435659097165, 'num_leaves': 80, 'boosting_type': 'gbdt', 'min_data_in_leaf': 51, 'max_bin': 348, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=51, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=51
+FEEDZAI_TRIAL 81/100 recall=0.491661 AP=0.161060 fit=45.0s
+FIT_TRIAL 82 {'n_estimators': 30, 'max_depth': 15, 'learning_rate': 0.026707708135524484, 'num_leaves': 13, 'boosting_type': 'gbdt', 'min_data_in_leaf': 53, 'max_bin': 290, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=53, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=53
+FEEDZAI_TRIAL 82/100 recall=0.472550 AP=0.156416 fit=1.2s
+FIT_TRIAL 83 {'n_estimators': 116, 'max_depth': 22, 'learning_rate': 0.03654236042904557, 'num_leaves': 28, 'boosting_type': 'goss', 'min_data_in_leaf': 29, 'max_bin': 327, 'enable_bundle': True}
+FEEDZAI_TRIAL 83/100 recall=0.540653 AP=0.193047 fit=3.8s
+FIT_TRIAL 84 {'n_estimators': 1036, 'max_depth': 30, 'learning_rate': 0.024569315908171456, 'num_leaves': 11, 'boosting_type': 'goss', 'min_data_in_leaf': 191, 'max_bin': 120, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=191, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=191
+FEEDZAI_TRIAL 84/100 recall=0.557331 AP=0.200558 fit=22.1s
+FIT_TRIAL 85 {'n_estimators': 306, 'max_depth': 28, 'learning_rate': 0.03753974628144455, 'num_leaves': 34, 'boosting_type': 'goss', 'min_data_in_leaf': 72, 'max_bin': 390, 'enable_bundle': True}
+[LightGBM] [Warning] min_data_in_leaf is set=72, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=72
+FEEDZAI_TRIAL 85/100 recall=0.546560 AP=0.190996 fit=8.8s
+FIT_TRIAL 86 {'n_estimators': 2095, 'max_depth': 28, 'learning_rate': 0.02582597238738538, 'num_leaves': 62, 'boosting_type': 'goss', 'min_data_in_leaf': 13, 'max_bin': 257, 'enable_bundle': False}
+FEEDZAI_TRIAL 86/100 recall=0.521890 AP=0.175866 fit=44.6s
+FIT_TRIAL 87 {'n_estimators': 181, 'max_depth': 3, 'learning_rate': 0.027331275550024844, 'num_leaves': 39, 'boosting_type': 'gbdt', 'min_data_in_leaf': 8, 'max_bin': 197, 'enable_bundle': False}
+FEEDZAI_TRIAL 87/100 recall=0.527450 AP=0.181416 fit=3.3s
+FIT_TRIAL 88 {'n_estimators': 156, 'max_depth': 18, 'learning_rate': 0.04927954007635064, 'num_leaves': 13, 'boosting_type': 'goss', 'min_data_in_leaf': 39, 'max_bin': 316, 'enable_bundle': False}
+FEEDZAI_TRIAL 88/100 recall=0.545170 AP=0.193336 fit=4.0s
+FIT_TRIAL 89 {'n_estimators': 3039, 'max_depth': 18, 'learning_rate': 0.04861404050774553, 'num_leaves': 93, 'boosting_type': 'goss', 'min_data_in_leaf': 127, 'max_bin': 430, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=127, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=127
+FEEDZAI_TRIAL 89/100 recall=0.477067 AP=0.153703 fit=74.3s
+FIT_TRIAL 90 {'n_estimators': 308, 'max_depth': 3, 'learning_rate': 0.04105456412347864, 'num_leaves': 25, 'boosting_type': 'goss', 'min_data_in_leaf': 5, 'max_bin': 298, 'enable_bundle': True}
+FEEDZAI_TRIAL 90/100 recall=0.548297 AP=0.196725 fit=7.2s
+FIT_TRIAL 91 {'n_estimators': 1241, 'max_depth': 25, 'learning_rate': 0.0639358676056724, 'num_leaves': 63, 'boosting_type': 'goss', 'min_data_in_leaf': 200, 'max_bin': 209, 'enable_bundle': True}
+FEEDZAI_TRIAL 91/100 recall=0.491661 AP=0.162899 fit=29.6s
+FIT_TRIAL 92 {'n_estimators': 106, 'max_depth': 11, 'learning_rate': 0.05690334137465837, 'num_leaves': 13, 'boosting_type': 'goss', 'min_data_in_leaf': 8, 'max_bin': 345, 'enable_bundle': False}
+FEEDZAI_TRIAL 92/100 recall=0.535094 AP=0.174095 fit=2.9s
+FIT_TRIAL 93 {'n_estimators': 8174, 'max_depth': 11, 'learning_rate': 0.07178454035691424, 'num_leaves': 12, 'boosting_type': 'goss', 'min_data_in_leaf': 14, 'max_bin': 112, 'enable_bundle': True}
+FEEDZAI_TRIAL 93/100 recall=0.465601 AP=0.147330 fit=152.3s
+FIT_TRIAL 94 {'n_estimators': 1016, 'max_depth': 14, 'learning_rate': 0.051430486778854596, 'num_leaves': 87, 'boosting_type': 'gbdt', 'min_data_in_leaf': 12, 'max_bin': 262, 'enable_bundle': True}
+FEEDZAI_TRIAL 94/100 recall=0.502780 AP=0.159894 fit=21.6s
+FIT_TRIAL 95 {'n_estimators': 792, 'max_depth': 5, 'learning_rate': 0.04509512665596711, 'num_leaves': 20, 'boosting_type': 'gbdt', 'min_data_in_leaf': 141, 'max_bin': 159, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=141, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=141
+FEEDZAI_TRIAL 95/100 recall=0.540653 AP=0.189671 fit=14.0s
+FIT_TRIAL 96 {'n_estimators': 96, 'max_depth': 30, 'learning_rate': 0.07262133103677891, 'num_leaves': 18, 'boosting_type': 'gbdt', 'min_data_in_leaf': 20, 'max_bin': 439, 'enable_bundle': False}
+FEEDZAI_TRIAL 96/100 recall=0.540306 AP=0.182210 fit=2.9s
+FIT_TRIAL 97 {'n_estimators': 149, 'max_depth': 26, 'learning_rate': 0.07331816500001795, 'num_leaves': 15, 'boosting_type': 'goss', 'min_data_in_leaf': 5, 'max_bin': 326, 'enable_bundle': False}
+FEEDZAI_TRIAL 97/100 recall=0.544128 AP=0.179304 fit=3.8s
+FIT_TRIAL 98 {'n_estimators': 32, 'max_depth': 28, 'learning_rate': 0.05829818133373689, 'num_leaves': 66, 'boosting_type': 'gbdt', 'min_data_in_leaf': 18, 'max_bin': 351, 'enable_bundle': False}
+FEEDZAI_TRIAL 98/100 recall=0.520153 AP=0.167697 fit=1.7s
+FIT_TRIAL 99 {'n_estimators': 126, 'max_depth': 25, 'learning_rate': 0.04550435658613637, 'num_leaves': 21, 'boosting_type': 'goss', 'min_data_in_leaf': 197, 'max_bin': 436, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=197, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=197
+FEEDZAI_TRIAL 99/100 recall=0.546213 AP=0.193840 fit=3.7s
+FIT_TRIAL 100 {'n_estimators': 837, 'max_depth': 29, 'learning_rate': 0.06359300392998674, 'num_leaves': 16, 'boosting_type': 'goss', 'min_data_in_leaf': 142, 'max_bin': 323, 'enable_bundle': False}
+[LightGBM] [Warning] min_data_in_leaf is set=142, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=142
+FEEDZAI_TRIAL 100/100 recall=0.532314 AP=0.186875 fit=16.2s
+END_CELL 10
+BEGIN_CELL 11
+END_CELL 11
+BEGIN_CELL 12
+END_CELL 12
+BEGIN_CELL 13
+END_CELL 13
+BEGIN_CELL evidence
+FEEDZAI_BASE_RESULTS_READY
+    trial  source_roc_recall  average_precision  fit_seconds
+83     84           0.557331           0.200558    22.058400
+78     79           0.554899           0.198214    30.459648
+20     21           0.552467           0.193422     5.443224
+14     15           0.551772           0.199609    11.706496
+62     63           0.550730           0.178531     8.795873
+END_CELL evidence
+EXECUTED_NOTEBOOK_SAVED D:\UIT\DS317\BAF_project\results\runs\feedzai_base_original_20261028_003248_73856e42\feedzai_base_executed.ipynb

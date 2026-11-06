@@ -1,0 +1,26 @@
+{
+  "name": "ce_batch256_c01_s2026",
+  "recipe": {
+    "method": "ce_batch256",
+    "candidate": 1,
+    "lr": 0.03,
+    "family": "nn",
+    "feature": "dense"
+  },
+  "seed": 2026,
+  "model_file": "model.pt",
+  "initial_model_hash": "947f693819b93b19f49f579b76b60f8851d7ee3b77eacbdf26453f52fbe5e793",
+  "best_epoch": 12,
+  "score_link": "softmax",
+  "comparison_group": "meta_matched_batch256",
+  "threshold": 0.03694997355341911,
+  "threshold_is_posinf": false,
+  "validation_ap": 0.16688596393214297,
+  "fit_seconds": 179.63162909999983,
+  "hashes": {
+    "epochs.csv": "adbf679dea755520b4d2b3c9465b6fa792c09e13d72b68e3133807816304d5c7",
+    "model.pt": "6b1fd472d7fb49b26f614e6423334a4ec364341927a66bde6008bf23073caf76",
+    "validation_score.npy": "5232e2eda82a110a8e9c803a427cc87621594df5d8ceced13bb5884cc0fae22a",
+    "weight_observations.json": "549918b2ec560367a7cef8ac220c2aa4544bad34fe9e2b5592dab385d920cdb9"
+  }
+}

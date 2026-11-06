@@ -1,0 +1,9 @@
+check,max_abs_error,pass
+CB_weights_beta_0,0.0,True
+CB_weights_beta_0.9,0.0,True
+CB_weights_beta_0.9999,1.3322676295501878e-15,True
+CB_weights_beta_0.999999,1.2012613126444194e-13,True
+CB_CE_loss_and_gradient,0.0,True
+CB_focal_sigmoid_formula,0.0,True
+LRE_independent_gradient_alignment,2.7755575615628914e-17,True
+MWN_author_MetaModule_one_step,0.0,True

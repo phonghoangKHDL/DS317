@@ -1,0 +1,12 @@
+{
+  "method": "rus",
+  "ratio_requested": 0.1,
+  "counts": [
+    80230,
+    8023
+  ],
+  "rows": 88253,
+  "unique_rows": 88253,
+  "train_only": true,
+  "inverse_probability_correction": false
+}

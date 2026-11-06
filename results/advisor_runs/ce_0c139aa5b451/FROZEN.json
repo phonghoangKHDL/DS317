@@ -1,0 +1,26 @@
+{
+  "selections": {
+    "ce_batch256": {
+      "method": "ce_batch256",
+      "candidate": 1,
+      "lr": 0.03,
+      "family": "nn",
+      "feature": "dense"
+    }
+  },
+  "final": [
+    {
+      "name": "ce_batch256_c01_s42",
+      "record_sha256": "af4bc84d7f3b4bc83a44e8741135041032e9ee581440e7d80f34a3132d4c729a"
+    },
+    {
+      "name": "ce_batch256_c01_s317",
+      "record_sha256": "321c8d3da465c2b0836acc31de03bf39b8120b5e87857e5b56222249f901c534"
+    },
+    {
+      "name": "ce_batch256_c01_s2026",
+      "record_sha256": "4d0c68d9ff70669ebebe4409521cde479a4172aabf62ccd40e89362fefaa193b"
+    }
+  ],
+  "rule": "Selected using unweighted month6 AP only; all selected fits complete before test"
+}

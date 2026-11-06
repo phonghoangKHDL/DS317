@@ -1,0 +1,21 @@
+{
+  "method": "tuned",
+  "seed": 2026,
+  "freeze_sha256": "fc143005c2d390e60bfc8ff9388ca5ac771bd15fe70b70d40cd3772814519102",
+  "prediction_file": "test_scores/tuned_2026.npz",
+  "artifacts": {
+    "test_scores/tuned_2026.npz": "96c34bd2cf8adfc47655c544bf024cc8752ac9ea490f87026fcc760335709823"
+  },
+  "metrics": {
+    "ap": 0.21574210752179482,
+    "roc_auc": 0.8966808197890065,
+    "recall": 0.5434173669467787,
+    "precision": 0.16430235020114334,
+    "fpr": 0.04136666142640046,
+    "alert_rate": 0.04876965810641967,
+    "tn": 91468,
+    "fp": 3947,
+    "fn": 652,
+    "tp": 776
+  }
+}

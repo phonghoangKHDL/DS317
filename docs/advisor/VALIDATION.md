@@ -1,3 +1,5 @@
+> Cập nhật06/11/2026: nội dung dưới đây mô tả cấu trúc/kiểm tra tại thời điểm bàn giao. Trạng thái thực tế và lệnh chạy hiện tại xem README.md, docs/advisor/STATUS.md và REPOSITORY_REVIEW.md; notebook18/19 đã hoàn tất trên máy.
+
 # Kiểm tra kỹ thuật
 
 - Notebook17: thực thi từ đầu đến cuối, 60 score được tính lại AP/AUC/recall/FPR/fairness khớp file gốc.

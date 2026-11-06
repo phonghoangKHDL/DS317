@@ -1,0 +1,216 @@
+{
+  "signature": "5914c7a4af6ffacc436bf82742bab602b0ca107a8432eb4a47ad2ad8239ff475",
+  "version": "baf-research-20261028-v1",
+  "suite": "lsr",
+  "config": {
+    "mode": "full",
+    "seeds": [
+      42,
+      317,
+      2026
+    ],
+    "threads": 4,
+    "device": "auto",
+    "meta_per_class": 128,
+    "epochs": 20,
+    "batch_size": 2048,
+    "meta_batch_size": 256,
+    "hidden": [
+      128,
+      64
+    ],
+    "learning_rates": [
+      0.01,
+      0.03,
+      0.1
+    ],
+    "weight_decay": 0.0001,
+    "momentum": 0.9,
+    "patience": 5,
+    "max_fpr": 0.05,
+    "tree_rounds": 300,
+    "vae_epochs": 30,
+    "diffusion_epochs": 50,
+    "auxiliary_patience": 10,
+    "auxiliary_batch_size": 1024,
+    "diffusion_width": 1024,
+    "score_batch_size": 2048,
+    "score_noise_repeats": 32,
+    "score_steps": 10,
+    "score_noise_chunk": 4,
+    "auxiliary_seed": 42,
+    "lsr_centering": "author",
+    "bootstrap_repeats": 1000,
+    "pilot_train": 20000,
+    "pilot_eval": 10000
+  },
+  "cache_hash": "cba015a011db216de41004ad201e7c472143331eabb985d178ef6bd9bae56752",
+  "data_metadata": {
+    "version": "baf-research-20261028-v1",
+    "data_sha256": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809",
+    "mode": "full",
+    "meta_per_class": 128,
+    "pilot_train": 20000,
+    "pilot_eval": 10000,
+    "feature_rule": "drop fraud_bool/month; sentinel cleaning; fit core train only",
+    "dataset_label": "BAF_Base",
+    "data_path": "D:\\UIT\\DS317\\BAF_project\\data\\raw\\Base.csv",
+    "counts": {
+      "train": {
+        "n": 794733,
+        "fraud": 8023,
+        "months": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "validation": {
+        "n": 108168,
+        "fraud": 1450,
+        "months": [
+          6
+        ]
+      },
+      "test": {
+        "n": 96843,
+        "fraud": 1428,
+        "months": [
+          7
+        ]
+      },
+      "meta": {
+        "n": 256,
+        "fraud": 128,
+        "months": [
+          5
+        ]
+      }
+    },
+    "categories": {
+      "payment_type": [
+        "AA",
+        "AB",
+        "AC",
+        "AD",
+        "AE"
+      ],
+      "employment_status": [
+        "CA",
+        "CB",
+        "CC",
+        "CD",
+        "CE",
+        "CF",
+        "CG"
+      ],
+      "housing_status": [
+        "BA",
+        "BB",
+        "BC",
+        "BD",
+        "BE",
+        "BF",
+        "BG"
+      ],
+      "source": [
+        "INTERNET",
+        "TELEAPP"
+      ],
+      "device_os": [
+        "linux",
+        "macintosh",
+        "other",
+        "windows",
+        "x11"
+      ]
+    },
+    "cardinalities": [
+      6,
+      8,
+      8,
+      3,
+      6
+    ],
+    "numeric": [
+      "income",
+      "name_email_similarity",
+      "prev_address_months_count",
+      "current_address_months_count",
+      "customer_age",
+      "days_since_request",
+      "intended_balcon_amount",
+      "zip_count_4w",
+      "velocity_6h",
+      "velocity_24h",
+      "velocity_4w",
+      "bank_branch_count_8w",
+      "date_of_birth_distinct_emails_4w",
+      "credit_risk_score",
+      "email_is_free",
+      "phone_home_valid",
+      "phone_mobile_valid",
+      "bank_months_count",
+      "has_other_cards",
+      "proposed_credit_limit",
+      "foreign_request",
+      "session_length_in_minutes",
+      "keep_alive_session",
+      "device_distinct_emails_8w",
+      "device_fraud_count"
+    ],
+    "categorical": [
+      "payment_type",
+      "employment_status",
+      "housing_status",
+      "source",
+      "device_os"
+    ],
+    "meta_rule": "seed317; balanced labels; held out from last train month; removed from all learners",
+    "feature_count": 56,
+    "versions": {
+      "python": "3.14.3",
+      "packages": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "psutil": "7.2.2",
+        "lightgbm": "4.7.0",
+        "torch": "2.14.1+cu130",
+        "xgboost": "not installed",
+        "nbformat": "5.11.1",
+        "ipython": "9.17.1",
+        "joblib": "1.6.0"
+      }
+    }
+  },
+  "source_hashes": {
+    "baf.py": "c6d70e56c4c8fe0aaac2bb2cb5cb75cb1fdd9be6b21baae2326a077026e7cebe",
+    "gru.py": "ecb673080dfd591a6a1c9116c3f5e78efc0ec3f99932e1d5cf9bd17434d107f6"
+  },
+  "author_lock_sha256": "b64b58654968676411c77fd6c6c9d95d8fac68f0fa3858471e40b84eace09713",
+  "environment": {
+    "python": "3.14.3",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "psutil": "7.2.2",
+      "lightgbm": "4.7.0",
+      "torch": "2.14.1+cu130",
+      "xgboost": "not installed",
+      "nbformat": "5.11.1",
+      "ipython": "9.17.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "scope": "Published weighting mechanisms transferred to BAF; not original image-dataset experiments",
+  "evaluation": "Validation only during training; test opened by notebook16 after all suites freeze"
+}

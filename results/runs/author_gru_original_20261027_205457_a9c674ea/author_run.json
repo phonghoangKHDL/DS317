@@ -1,0 +1,48 @@
+{
+  "state": "completed",
+  "repo": "https://github.com/wn-nwN/fraud-detection-project-Nov2025.git",
+  "commit": "6e8252cb9080378905b2aae30033c5946b72335b",
+  "source_notebook_sha256": "5391e269bb5388ac5c0dde44662a950de1285e0f5f81c6b02315d466e3422e41",
+  "data_sha256": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809",
+  "data_rows": 1000000,
+  "author_cells": [
+    0,
+    2,
+    3,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33
+  ],
+  "modified_author_cells": [
+    0,
+    29
+  ],
+  "scope": "GRU original HPO10 plus original fixed recipe and test; no classical/importance/CI replay",
+  "rng": "Original seed1234 in cell29; no reset after HPO; original DataLoader order",
+  "python": "3.14.3",
+  "python_executable": "d:\\UIT\\.venvs\\ml-gpu\\Scripts\\python.exe",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1+cu130",
+    "joblib": "1.6.0",
+    "nbformat": "5.11.1",
+    "ipython": "9.17.1",
+    "ipykernel": "7.4.0",
+    "tqdm": "4.70.1"
+  },
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cuda_build": "13.0",
+  "progress_change": "TQDM_DISABLE=1 only; original epoch print retained",
+  "preprocessing_note": "Original fit on outer80%, includes inner validation features; random split includes month7",
+  "test_model": "Fixed model from author cell30, as author cell33; not automatic HPO winner",
+  "execution_engine": "Fresh Python process with IPython InteractiveShell; no native Jupyter kernel",
+  "started": "2026-10-27T20:54:58.904679+07:00",
+  "elapsed_seconds": 5104.929080600001,
+  "finished": "2026-10-27T22:20:03.836134+07:00"
+}

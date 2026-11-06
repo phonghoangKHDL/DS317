@@ -1,0 +1,11 @@
+{
+  "version": "advisor-20261030-v1",
+  "source": "D:\\UIT\\DS317\\BAF_project\\results\\research_campaigns\\weighting_research_20261028_214637_b9a2294e\\evaluation",
+  "source_sha256": null,
+  "test_rows_sha256": "090e4952a67eae33951544b2bd308875cc0cf69f2003063b2787ee716bcef337",
+  "n_test": 96843,
+  "fraud": 1428,
+  "verified_scores": 60,
+  "metrics_sha256": "fe054fef06207aff49ac3a279a3dd2004699d8c4ea1ad452db23c0c401806519",
+  "scope": "Recomputed from saved predictions; no new model fits or new test data"
+}

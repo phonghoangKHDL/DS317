@@ -1,0 +1,12 @@
+{
+  "method": "balanced",
+  "ratio_requested": 0.1,
+  "counts": [
+    786710,
+    8023
+  ],
+  "rows": 794733,
+  "unique_rows": 794733,
+  "train_only": true,
+  "inverse_probability_correction": false
+}

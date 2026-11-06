@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "name": "two_reusable_formatted_modules",
+      "passed": true,
+      "detail": "only baf.py/gru.py; all source compiles and has no semicolon-packed statements"
+    },
+    {
+      "name": "legacy_17_real_predictions",
+      "passed": true,
+      "detail": "old result ZIP reads correctly; all metric checks pass and summaries match to 1e-12"
+    },
+    {
+      "name": "author_gru_numerical_equivalence",
+      "passed": true,
+      "detail": "default embedding186/hidden733 gives identical logits and gradients after copying author state"
+    },
+    {
+      "name": "classical_refactor_prediction_parity",
+      "passed": true,
+      "detail": "balanced LR and LightGBM predictions are identical to the original implementation under the same environment"
+    },
+    {
+      "name": "run_all_once_01_BAF_class_weighting",
+      "passed": true,
+      "detail": "fresh Python/IPython process executed every cell exactly once, including proof export; synthetic data with small training settings, not BAF scores"
+    },
+    {
+      "name": "run_all_once_02_BAF_cost_weighting",
+      "passed": true,
+      "detail": "fresh Python/IPython process executed every cell exactly once, including proof export; synthetic data with small training settings, not BAF scores"
+    },
+    {
+      "name": "run_all_once_03_BAF_comparison",
+      "passed": true,
+      "detail": "fresh Python/IPython process executed every cell exactly once, including proof export; synthetic data with small training settings, not BAF scores"
+    },
+    {
+      "name": "run_all_once_04_BAF_GRU_reproduction",
+      "passed": true,
+      "detail": "fresh Python/IPython process executed every cell exactly once, including proof export; synthetic data with small training settings, not BAF scores"
+    },
+    {
+      "name": "portable_proof_fresh_process",
+      "passed": true,
+      "detail": "proof notebook re-executes after extraction from another directory, without training or autosave"
+    },
+    {
+      "name": "temporal_gru_same_core_and_proof",
+      "passed": true,
+      "detail": "synthetic temporal pilot trains both losses; no month7 predictions; generic audit/export verifies float32 thresholds"
+    },
+    {
+      "name": "tampering_rejected",
+      "passed": true,
+      "detail": "changed labels in a prediction file fail the audit"
+    },
+    {
+      "name": "reusable_export_no_overwrite",
+      "passed": true,
+      "detail": "same function works for baseline, cost, comparison, both GRU protocols, and repeated exports"
+    }
+  ],
+  "real_BAF_models_trained": false,
+  "real_BAF_prediction_files_verified": 17,
+  "CUDA_tested": false,
+  "notebooks_run_all_from_fresh_process": 4,
+  "test_environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.8.0",
+    "psutil": "7.2.2",
+    "lightgbm": "4.7.0",
+    "torch": "2.14.1+cpu"
+  },
+  "execution_backend": "fresh Python/IPython process per notebook; code cells executed once, captured actual outputs; no Jupyter transport sockets required"
+}

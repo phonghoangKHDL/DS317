@@ -1,0 +1,416 @@
+BEGIN_STAGE 1
+CONFIG {'datasets': ['mnist', 'cifar10'], 'majority': 1000, 'imbalance': 100, 'epochs': 10, 'seeds': [42, 317, 2026], 'threads': 4, 'device': 'auto'}
+END_STAGE 1
+BEGIN_STAGE 2
+                             check  max_abs_error  pass
+                 CB_weights_beta_0   0.000000e+00  True
+               CB_weights_beta_0.9   0.000000e+00  True
+            CB_weights_beta_0.9999   1.332268e-15  True
+          CB_weights_beta_0.999999   1.201261e-13  True
+           CB_CE_loss_and_gradient   0.000000e+00  True
+          CB_focal_sigmoid_formula   0.000000e+00  True
+LRE_independent_gradient_alignment   2.775558e-17  True
+    MWN_author_MetaModule_one_step   0.000000e+00  True
+NUMERICAL_CHECKS_PASS; this does not reproduce full-paper accuracy
+ORIGINAL_FIT_BEGIN mnist ce 42
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 1 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 2 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 3 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 4 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 5 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 6 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 7 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 8 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 9 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 42 10 0.5
+ORIGINAL_FIT_BEGIN mnist lre 42
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 1 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 2 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 3 0.645
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 4 0.57
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 5 0.64
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 6 0.76
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 7 0.925
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 8 0.945
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 9 0.955
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 42 10 0.61
+ORIGINAL_FIT_BEGIN mnist ce 317
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 1 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 2 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 3 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 4 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 5 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 6 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 7 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 8 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 9 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 317 10 0.5
+ORIGINAL_FIT_BEGIN mnist lre 317
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 1 0.575
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 2 0.61
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 3 0.63
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 4 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 5 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 6 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 7 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 8 0.66
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 9 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 317 10 0.5
+ORIGINAL_FIT_BEGIN mnist ce 2026
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 1 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 2 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 3 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 4 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 5 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 6 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 7 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 8 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 9 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist ce 2026 10 0.5
+ORIGINAL_FIT_BEGIN mnist lre 2026
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 1 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 2 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 3 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 4 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 5 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 6 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 7 0.515
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 8 0.5
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 9 0.535
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH mnist lre 2026 10 0.72
+ORIGINAL_DATASET_COMPLETE mnist
+DOWNLOAD cifar-10-python.tar.gz 20 MiB
+DOWNLOAD cifar-10-python.tar.gz 40 MiB
+DOWNLOAD cifar-10-python.tar.gz 60 MiB
+DOWNLOAD cifar-10-python.tar.gz 80 MiB
+DOWNLOAD cifar-10-python.tar.gz 100 MiB
+DOWNLOAD cifar-10-python.tar.gz 120 MiB
+DOWNLOAD cifar-10-python.tar.gz 140 MiB
+DOWNLOAD cifar-10-python.tar.gz 160 MiB
+ORIGINAL_FIT_BEGIN cifar10 ce 42
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 1 0.153
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 2 0.223
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 3 0.256
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 4 0.257
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 5 0.252
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 6 0.306
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 7 0.294
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 8 0.296
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 9 0.305
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 42 10 0.323
+ORIGINAL_FIT_BEGIN cifar10 cb_ce 42
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 1 0.111
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 2 0.2
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 3 0.204
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 4 0.229
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 5 0.282
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 6 0.274
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 7 0.285
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 8 0.303
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 9 0.285
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 42 10 0.354
+ORIGINAL_FIT_BEGIN cifar10 mwn 42
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 1 0.151
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 2 0.213
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 3 0.264
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 4 0.264
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 5 0.251
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 6 0.313
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 7 0.28
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 8 0.306
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 9 0.329
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 mwn 42 10 0.329
+ORIGINAL_FIT_BEGIN cifar10 ce 317
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 1 0.173
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 2 0.214
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 3 0.249
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 4 0.259
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 5 0.258
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 6 0.277
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 7 0.292
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 8 0.3
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 9 0.319
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 ce 317 10 0.308
+ORIGINAL_FIT_BEGIN cifar10 cb_ce 317
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 1 0.18
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 2 0.24
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 3 0.23
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 4 0.278
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 5 0.318
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 6 0.321
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ORIGINAL_EPOCH cifar10 cb_ce 317 7 0.313
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[31m---------------------------------------------------------------------------[39m
+[31mPermissionError[39m                           Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m table = [30;43mtraining[39;49m[30;43m.[39;49m[30;43mrun_original[39;49m[30;43m([39;49m[30;43mROOT[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mRUN_DIR[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mCONFIG[39;49m[30;43m)[39;49m
+[32m      2[39m [38;5;28mprint[39m(table.to_string(index=[38;5;28;01mFalse[39;00m))
+[32m      3[39m [38;5;28mprint[39m([33m"[39m[33mORIGINAL_DATASET_CHECK_READY[39m[33m"[39m, RUN_DIR)
+
+[36mFile [39m[32mD:\UIT\DS317\BAF_project\supplement\training.py:514[39m, in [36mrun_original[39m[34m(root, output, config)[39m
+[32m    512[39m         best = accuracy
+[32m    513[39m         torch.save(model.state_dict(), folder / [33m"[39m[33mmodel.pt[39m[33m"[39m)
+[32m--> [39m[32m514[39m     [30;43mreport[39;49m[30;43m.[39;49m[30;43mwrite_csv[39;49m[30;43m([39;49m[30;43mpd[39;49m[30;43m.[39;49m[30;43mDataFrame[39;49m[30;43m([39;49m[30;43mhistory[39;49m[30;43m)[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mfolder[39;49m[30;43m [39;49m[30;43m/[39;49m[30;43m [39;49m[30;43m"[39;49m[30;43mepochs.csv[39;49m[30;43m"[39;49m[30;43m)[39;49m
+[32m    515[39m     [38;5;28mprint[39m([33m"[39m[33mORIGINAL_EPOCH[39m[33m"[39m, dataset, method, seed, epoch + [32m1[39m, accuracy, flush=[38;5;28;01mTrue[39;00m)
+[32m    516[39m [38;5;66;03m# Fixed method/recipe; test never selects hyperparameters or checkpoint.[39;00m
+
+[36mFile [39m[32mD:\UIT\DS317\BAF_project\supplement\reporting.py:59[39m, in [36mwrite_csv[39m[34m(frame, path)[39m
+[32m     57[39m     stream.flush()
+[32m     58[39m     os.fsync(stream.fileno())
+[32m---> [39m[32m59[39m [30;43mtemporary[39;49m[30;43m.[39;49m[30;43mreplace[39;49m[30;43m([39;49m[30;43mpath[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32m~\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py:1091[39m, in [36mPath.replace[39m[34m(self, target)[39m
+[32m   1081[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mreplace[39m([38;5;28mself[39m, target):
+[32m   1082[39m [38;5;250m    [39m[33;03m"""[39;00m
+[32m   1083[39m [33;03m    Rename this path to the target path, overwriting if that path exists.[39;00m
+[32m   1084[39m 
+[32m   (...)[39m[32m   1089[39m [33;03m    Returns the new Path instance pointing to the target path.[39;00m
+[32m   1090[39m [33;03m    """[39;00m
+[32m-> [39m[32m1091[39m     [30;43mos[39;49m[30;43m.[39;49m[30;43mreplace[39;49m[30;43m([39;49m[30;43mself[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mtarget[39;49m[30;43m)[39;49m
+[32m   1092[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28mhasattr[39m(target, [33m'[39m[33mwith_segments[39m[33m'[39m):
+[32m   1093[39m         target = [38;5;28mself[39m.with_segments(target)
+
+[31mPermissionError[39m: [WinError 5] Access is denied: 'D:\\UIT\\DS317\\BAF_project\\results\\advisor_runs\\original_checks_582e4a8ada1a\\cifar10\\cb_ce_s317\\epochs.csv.tmp' -> 'D:\\UIT\\DS317\\BAF_project\\results\\advisor_runs\\original_checks_582e4a8ada1a\\cifar10\\cb_ce_s317\\epochs.csv'
+Traceback (most recent call last):
+  File [35m"d:\UIT\.venvs\ml-gpu\Lib\site-packages\IPython\core\interactiveshell.py"[0m, line [35m3823[0m, in [35mrun_code[0m
+    [31mexec[0m[1;31m(code_obj, self.user_global_ns, self.user_ns)[0m
+    [31m~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"<ipython-input-2-ccc1e5992e70>"[0m, line [35m1[0m, in [35m<module>[0m
+    table = training.run_original(ROOT, RUN_DIR, CONFIG)
+  File [35m"D:\UIT\DS317\BAF_project\supplement\training.py"[0m, line [35m514[0m, in [35mrun_original[0m
+    [31mreport.write_csv[0m[1;31m(pd.DataFrame(history), folder / "epochs.csv")[0m
+    [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"D:\UIT\DS317\BAF_project\supplement\reporting.py"[0m, line [35m59[0m, in [35mwrite_csv[0m
+    [31mtemporary.replace[0m[1;31m(path)[0m
+    [31m~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+  File [35m"C:\Users\ADMIN\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py"[0m, line [35m1091[0m, in [35mreplace[0m
+    [31mos.replace[0m[1;31m(self, target)[0m
+    [31m~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^[0m
+[1;35mPermissionError[0m: [35m[WinError 5] Access is denied: 'D:\\UIT\\DS317\\BAF_project\\results\\advisor_runs\\original_checks_582e4a8ada1a\\cifar10\\cb_ce_s317\\epochs.csv.tmp' -> 'D:\\UIT\\DS317\\BAF_project\\results\\advisor_runs\\original_checks_582e4a8ada1a\\cifar10\\cb_ce_s317\\epochs.csv'[0m
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File [35m"<string>"[0m, line [35m1[0m, in [35m<module>[0m
+    import sys; sys.path.insert(0, sys.argv[1]); import baf; [31mbaf.execute_weighting_recipe[0m[1;31m(sys.argv[2])[0m
+                                                             [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^[0m
+  File [35m"D:\UIT\DS317\BAF_project\src\baf.py"[0m, line [35m1998[0m, in [35mexecute_weighting_recipe[0m
+    raise RuntimeError(
+        "Weighting stage failed; keep completed fits for resume"
+    ) from error
+[1;35mRuntimeError[0m: [35mWeighting stage failed; keep completed fits for resume[0m

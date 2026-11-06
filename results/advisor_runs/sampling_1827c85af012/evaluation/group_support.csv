@@ -1,0 +1,13 @@
+suite,comparison_group,method,seed,older_n,older_negative_n,older_positive_n,younger_n,younger_negative_n,younger_positive_n
+advisor_sampling,sampling_matched_lightgbm,lgbm_balanced,42,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_balanced,317,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_balanced,2026,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_none,42,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_none,317,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_none,2026,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_ros,42,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_ros,317,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_ros,2026,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_rus,42,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_rus,317,12667,12249,418,84176,83166,1010
+advisor_sampling,sampling_matched_lightgbm,lgbm_rus,2026,12667,12249,418,84176,83166,1010

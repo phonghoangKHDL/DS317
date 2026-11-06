@@ -1,0 +1,2 @@
+﻿suite,comparison_group,method,n_seeds,ap,roc_auc,recall_at_fpr5_curve,recall_frozen_threshold,fpr_frozen_threshold,precision_frozen_threshold,alert_rate_frozen_threshold,older_fpr,younger_fpr,older_tpr,younger_tpr,fpr_gap_older_minus_younger,fpr_ratio_min_max,fit_seconds
+advisor_ce,meta_matched_batch256,ce_batch256,3,0.19681 ± 0.00643,0.88737 ± 0.00250,54.01494 ± 0.87558,53.29132 ± 1.03158,4.83886 ± 0.41005,14.18903 ± 0.77303,5.55332 ± 0.41907,11.23085 ± 0.60986,3.89743 ± 0.41078,68.50080 ± 1.68033,46.99670 ± 0.99175,7.33342 ± 0.48834,0.34694 ± 0.02900,159.03879 ± 27.57783

@@ -1,0 +1,151 @@
+{
+  "campaign": "D:\\UIT\\DS317\\BAF_project\\results\\research_campaigns\\weighting_research_20261028_214637_b9a2294e",
+  "cache": "D:\\UIT\\DS317\\BAF_project\\results\\research_data\\80bcacc462d4de92",
+  "metadata": {
+    "version": "baf-research-20261028-v1",
+    "data_sha256": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809",
+    "mode": "full",
+    "meta_per_class": 128,
+    "pilot_train": 20000,
+    "pilot_eval": 10000,
+    "feature_rule": "drop fraud_bool/month; sentinel cleaning; fit core train only",
+    "dataset_label": "BAF_Base",
+    "data_path": "D:\\UIT\\DS317\\BAF_project\\data\\raw\\Base.csv",
+    "counts": {
+      "train": {
+        "n": 794733,
+        "fraud": 8023,
+        "months": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "validation": {
+        "n": 108168,
+        "fraud": 1450,
+        "months": [
+          6
+        ]
+      },
+      "test": {
+        "n": 96843,
+        "fraud": 1428,
+        "months": [
+          7
+        ]
+      },
+      "meta": {
+        "n": 256,
+        "fraud": 128,
+        "months": [
+          5
+        ]
+      }
+    },
+    "categories": {
+      "payment_type": [
+        "AA",
+        "AB",
+        "AC",
+        "AD",
+        "AE"
+      ],
+      "employment_status": [
+        "CA",
+        "CB",
+        "CC",
+        "CD",
+        "CE",
+        "CF",
+        "CG"
+      ],
+      "housing_status": [
+        "BA",
+        "BB",
+        "BC",
+        "BD",
+        "BE",
+        "BF",
+        "BG"
+      ],
+      "source": [
+        "INTERNET",
+        "TELEAPP"
+      ],
+      "device_os": [
+        "linux",
+        "macintosh",
+        "other",
+        "windows",
+        "x11"
+      ]
+    },
+    "cardinalities": [
+      6,
+      8,
+      8,
+      3,
+      6
+    ],
+    "numeric": [
+      "income",
+      "name_email_similarity",
+      "prev_address_months_count",
+      "current_address_months_count",
+      "customer_age",
+      "days_since_request",
+      "intended_balcon_amount",
+      "zip_count_4w",
+      "velocity_6h",
+      "velocity_24h",
+      "velocity_4w",
+      "bank_branch_count_8w",
+      "date_of_birth_distinct_emails_4w",
+      "credit_risk_score",
+      "email_is_free",
+      "phone_home_valid",
+      "phone_mobile_valid",
+      "bank_months_count",
+      "has_other_cards",
+      "proposed_credit_limit",
+      "foreign_request",
+      "session_length_in_minutes",
+      "keep_alive_session",
+      "device_distinct_emails_8w",
+      "device_fraud_count"
+    ],
+    "categorical": [
+      "payment_type",
+      "employment_status",
+      "housing_status",
+      "source",
+      "device_os"
+    ],
+    "meta_rule": "seed317; balanced labels; held out from last train month; removed from all learners",
+    "feature_count": 56,
+    "versions": {
+      "python": "3.14.3",
+      "packages": {
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1",
+        "psutil": "7.2.2",
+        "lightgbm": "4.7.0",
+        "torch": "2.14.1+cu130",
+        "xgboost": "not installed",
+        "nbformat": "5.11.1",
+        "ipython": "9.17.1",
+        "joblib": "1.6.0"
+      }
+    }
+  },
+  "cache_complete_sha256": "cba015a011db216de41004ad201e7c472143331eabb985d178ef6bd9bae56752",
+  "rule": "Same core train/meta/validation/test cache as notebooks 11–16; no new preprocessing",
+  "training_batch_size": 256,
+  "device": "cuda"
+}

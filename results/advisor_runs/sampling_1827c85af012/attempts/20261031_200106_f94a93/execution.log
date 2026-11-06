@@ -1,0 +1,96 @@
+BEGIN_STAGE 1
+CONFIG {'campaign': None, 'ratio': 0.1}
+END_STAGE 1
+BEGIN_STAGE 2
+FIT_BEGIN lgbm_none_c00_s42 {'method': 'lgbm_none', 'sampling': 'none', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_none_c00_s42 validation_AP 0.17717053663012244
+FIT_BEGIN lgbm_none_c01_s42 {'method': 'lgbm_none', 'sampling': 'none', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_none_c01_s42 validation_AP 0.178486746150037
+FIT_BEGIN lgbm_none_c02_s42 {'method': 'lgbm_none', 'sampling': 'none', 'ratio': 0.1, 'candidate': 2, 'leaves': 63, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_none_c02_s42 validation_AP 0.1772380476729728
+FIT_BEGIN lgbm_balanced_c00_s42 {'method': 'lgbm_balanced', 'sampling': 'balanced', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_balanced_c00_s42 validation_AP 0.17931663944208187
+FIT_BEGIN lgbm_balanced_c01_s42 {'method': 'lgbm_balanced', 'sampling': 'balanced', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_balanced_c01_s42 validation_AP 0.17991518558432143
+FIT_BEGIN lgbm_balanced_c02_s42 {'method': 'lgbm_balanced', 'sampling': 'balanced', 'ratio': 0.1, 'candidate': 2, 'leaves': 63, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_balanced_c02_s42 validation_AP 0.1784768841648966
+FIT_BEGIN lgbm_rus_c00_s42 {'method': 'lgbm_rus', 'sampling': 'rus', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_rus_c00_s42 validation_AP 0.18077792913510757
+FIT_BEGIN lgbm_rus_c01_s42 {'method': 'lgbm_rus', 'sampling': 'rus', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_rus_c01_s42 validation_AP 0.17799105372084145
+FIT_BEGIN lgbm_rus_c02_s42 {'method': 'lgbm_rus', 'sampling': 'rus', 'ratio': 0.1, 'candidate': 2, 'leaves': 63, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_rus_c02_s42 validation_AP 0.17966894635749364
+FIT_BEGIN lgbm_ros_c00_s42 {'method': 'lgbm_ros', 'sampling': 'ros', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_ros_c00_s42 validation_AP 0.17908829452517222
+FIT_BEGIN lgbm_ros_c01_s42 {'method': 'lgbm_ros', 'sampling': 'ros', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_ros_c01_s42 validation_AP 0.18010639757164623
+FIT_BEGIN lgbm_ros_c02_s42 {'method': 'lgbm_ros', 'sampling': 'ros', 'ratio': 0.1, 'candidate': 2, 'leaves': 63, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_ros_c02_s42 validation_AP 0.1780655821043496
+FIT_REUSED lgbm_balanced_c01_s42
+FIT_BEGIN lgbm_balanced_c01_s317 {'method': 'lgbm_balanced', 'sampling': 'balanced', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_balanced_c01_s317 validation_AP 0.1786250906598309
+FIT_BEGIN lgbm_balanced_c01_s2026 {'method': 'lgbm_balanced', 'sampling': 'balanced', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_balanced_c01_s2026 validation_AP 0.17877228564473902
+FIT_REUSED lgbm_none_c01_s42
+FIT_BEGIN lgbm_none_c01_s317 {'method': 'lgbm_none', 'sampling': 'none', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_none_c01_s317 validation_AP 0.17406892495857998
+FIT_BEGIN lgbm_none_c01_s2026 {'method': 'lgbm_none', 'sampling': 'none', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_none_c01_s2026 validation_AP 0.17694200383406833
+FIT_REUSED lgbm_ros_c01_s42
+FIT_BEGIN lgbm_ros_c01_s317 {'method': 'lgbm_ros', 'sampling': 'ros', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_ros_c01_s317 validation_AP 0.1813187672898972
+FIT_BEGIN lgbm_ros_c01_s2026 {'method': 'lgbm_ros', 'sampling': 'ros', 'ratio': 0.1, 'candidate': 1, 'leaves': 31, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_ros_c01_s2026 validation_AP 0.1788024671480465
+FIT_REUSED lgbm_rus_c00_s42
+FIT_BEGIN lgbm_rus_c00_s317 {'method': 'lgbm_rus', 'sampling': 'rus', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_rus_c00_s317 validation_AP 0.175876441545017
+FIT_BEGIN lgbm_rus_c00_s2026 {'method': 'lgbm_rus', 'sampling': 'rus', 'ratio': 0.1, 'candidate': 0, 'leaves': 15, 'family': 'lsr_lgbm', 'feature': 'dense'}
+d:\UIT\.venvs\ml-gpu\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+FIT_COMPLETE lgbm_rus_c00_s2026 validation_AP 0.17990014953897998
+TABLE_READY 4 methods 12 seed records
+           suite          comparison_group        method  ap_mean   ap_std  roc_auc_mean  roc_auc_std  recall_at_fpr5_curve_mean  recall_at_fpr5_curve_std  recall_frozen_threshold_mean  recall_frozen_threshold_std  fpr_frozen_threshold_mean  fpr_frozen_threshold_std  precision_frozen_threshold_mean  precision_frozen_threshold_std  alert_rate_frozen_threshold_mean  alert_rate_frozen_threshold_std  older_fpr_mean  older_fpr_std  younger_fpr_mean  younger_fpr_std  older_tpr_mean  older_tpr_std  younger_tpr_mean  younger_tpr_std  fpr_gap_older_minus_younger_mean  fpr_gap_older_minus_younger_std  fpr_ratio_min_max_mean  fpr_ratio_min_max_std  fit_seconds_mean  fit_seconds_std  n_seeds
+advisor_sampling sampling_matched_lightgbm lgbm_balanced 0.216222 0.002505      0.895073     0.000703                   0.573996                  0.002251                      0.536648                     0.011932                   0.041300                  0.003017                         0.163120                        0.007533                          0.048604                         0.003128        0.100144       0.007553          0.032634         0.002354        0.682616       0.009960          0.476238         0.012947                          0.067511                         0.005220                0.325933               0.002962         15.824185         1.120795        3
+advisor_sampling sampling_matched_lightgbm     lgbm_none 0.213266 0.001758      0.894745     0.000778                   0.573296                  0.004556                      0.548553                     0.007049                   0.043414                  0.000730                         0.159038                        0.000890                          0.050862                         0.000817        0.107546       0.000492          0.033968         0.000866        0.708931       0.007690          0.482178         0.006931                          0.073578                         0.001168                0.315863               0.008798         11.689549         0.578289        3
+advisor_sampling sampling_matched_lightgbm      lgbm_ros 0.214700 0.001023      0.894304     0.000206                   0.573996                  0.003525                      0.537115                     0.007107                   0.040968                  0.000364                         0.164027                        0.001273                          0.048284                         0.000440        0.100825       0.002255          0.032153         0.000334        0.698565       0.009569          0.470297         0.006183                          0.068672                         0.002349                0.319011               0.008373         15.779971         2.079893        3
+advisor_sampling sampling_matched_lightgbm      lgbm_rus 0.214595 0.001114      0.896496     0.000302                   0.569328                  0.002801                      0.554155                     0.003454                   0.045618                  0.001195                         0.153878                        0.002792                          0.053117                         0.001220        0.107601       0.003069          0.036489         0.001250        0.704147       0.004980          0.492079         0.003960                          0.071111                         0.003196                0.339276               0.014156          6.386568         0.276540        3
+ADVISOR_SAMPLING_READY D:\UIT\DS317\BAF_project\results\advisor_runs\sampling_1827c85af012
+END_STAGE 2

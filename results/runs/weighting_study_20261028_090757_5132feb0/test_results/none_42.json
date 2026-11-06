@@ -1,0 +1,21 @@
+{
+  "method": "none",
+  "seed": 42,
+  "freeze_sha256": "fc143005c2d390e60bfc8ff9388ca5ac771bd15fe70b70d40cd3772814519102",
+  "prediction_file": "test_scores/none_42.npz",
+  "artifacts": {
+    "test_scores/none_42.npz": "e7042fe4d5a610d39b6c9d5e1635c30f5c29e73231e2e81f380b521db2e6210c"
+  },
+  "metrics": {
+    "ap": 0.2183824322650152,
+    "roc_auc": 0.8982415677584769,
+    "recall": 0.5371148459383753,
+    "precision": 0.16991581745680107,
+    "fpr": 0.03927055494419116,
+    "alert_rate": 0.046611525871771836,
+    "tn": 91668,
+    "fp": 3747,
+    "fn": 661,
+    "tp": 767
+  }
+}

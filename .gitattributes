@@ -1,0 +1,6 @@
+# Source/evidence hashes include exact bytes and line endings.
+# Preserve bytes across Windows/Linux clones; diff uses Git's detection.
+* -text whitespace=cr-at-eol
+# Immutable evidence and upstream licenses retain their original whitespace.
+results/** -whitespace
+docs/third_party/** -whitespace

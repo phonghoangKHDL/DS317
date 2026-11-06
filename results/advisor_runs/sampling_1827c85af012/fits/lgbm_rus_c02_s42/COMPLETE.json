@@ -1,0 +1,28 @@
+{
+  "name": "lgbm_rus_c02_s42",
+  "recipe": {
+    "method": "lgbm_rus",
+    "sampling": "rus",
+    "ratio": 0.1,
+    "candidate": 2,
+    "leaves": 63,
+    "family": "lsr_lgbm",
+    "feature": "dense"
+  },
+  "seed": 42,
+  "model_file": "model.txt",
+  "best_rounds": 142,
+  "score_link": "probability",
+  "comparison_group": "sampling_matched_lightgbm",
+  "threshold": 0.31714901328086853,
+  "threshold_is_posinf": false,
+  "validation_ap": 0.17966894635749364,
+  "fit_seconds": 4.8030747999991945,
+  "hashes": {
+    "model.txt": "4425b1113a85387cdab0fb97a3efccf22e643eb55e449e983730475152c156b5",
+    "sampled_indices.npy": "b58975e80dd91c462a17051117f714df7bce275cece4b4f9a465b4fec72f4fa6",
+    "sampling.json": "7d7f1fc9824ace5148cac60099eb709f170cfec7f8023bcd7b0df699d4741af4",
+    "validation_score.npy": "0d769de94f52c8d335c46aa533efc3b4d07d22fa563b61ad3a188420401d2ae3",
+    "weight_summary.json": "31c06966bd30279b8e36a2eb7e049ec0adca1644385698fd2ff5fd3d254c2a35"
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "review_date": "2026-11-06",
   "step1": {
     "status": "executed",
     "methods": 20,
@@ -6,16 +7,20 @@
     "test_rows": 96843
   },
   "step2": {
-    "status": "ready_for_local_BAF_run",
-    "new_fits": 5
+    "status": "completed_local_BAF",
+    "fits": 5,
+    "selected_test_scores": 3,
+    "run": "results/advisor_runs/ce_0c139aa5b451"
   },
   "step3": {
-    "status": "ready_for_local_BAF_run",
-    "new_fits": 20
+    "status": "completed_local_BAF",
+    "fits": 20,
+    "selected_test_scores": 12,
+    "run": "results/advisor_runs/sampling_1827c85af012"
   },
   "step4": {
-    "status": "small_original_dataset_checks_executed",
-    "new_fits": 15,
+    "status": "small_original_dataset_checks_completed_separately_CPU_and_CUDA",
+    "fits_per_run": 15,
     "seeds": [
       42,
       317,
@@ -25,8 +30,17 @@
       "MNIST 4/9",
       "CIFAR-10"
     ],
-    "numerical_checks_passed": 8,
-    "run": "results/advisor_runs/original_checks_3848ef4489af"
+    "numerical_checks_per_run": 8,
+    "cpu_run": "results/advisor_runs/original_checks_3848ef4489af",
+    "cuda_run": "results/advisor_runs/original_checks_582e4a8ada1a",
+    "cuda_attempt_history": "CSV publication PermissionError followed by successful retry-patched attempt"
   },
-  "scope": "Source-dataset scaled checks, not full-paper score reproduction; BAF additions pending local cache"
+  "step5": {
+    "status": "combined_table_exists",
+    "rows": 81,
+    "unique_BAF_scores": 75,
+    "comparison_groups": 27,
+    "reused_meta_rows": 6
+  },
+  "scope": "BAF transfers and small original-dataset checks, not full-paper score reproduction; proposed CCRW-E/P not executed"
 }

@@ -1,0 +1,177 @@
+BEGIN_CELL evidence
+END_CELL evidence
+BEGIN_CELL 0
+
+Label distribution:
+fraud_bool
+0    988971
+1     11029
+Name: count, dtype: int64
+Positive rate = 0.011029
+
+First 5 rows:
+
+Note: We will use variables X, y, df as the main data objects in the following steps.
+END_CELL 0
+BEGIN_CELL evidence
+END_CELL evidence
+BEGIN_CELL 2
+Final num_cols count: 16
+Final cat_cols count: 13
+END_CELL 2
+BEGIN_CELL 3
+Dataset split completed. Train shape: (800000, 31) Test shape: (200000, 31)
+Train positives: 8823  Test positives: 2206
+Transformed types: <class 'numpy.ndarray'> <class 'numpy.ndarray'>
+Transformed shapes (train/test): (800000, 59) (200000, 59)
+Number of post-transform features (approx): 59
+First 30 feature names: ['income', 'name_email_similarity', 'current_address_months_count', 'customer_age', 'days_since_request', 'intended_balcon_amount', 'zip_count_4w', 'velocity_6h', 'velocity_24h', 'velocity_4w', 'bank_branch_count_8w', 'date_of_birth_distinct_emails_4w', 'credit_risk_score', 'bank_months_count', 'proposed_credit_limit', 'session_length_in_minutes', 'payment_type_AA', 'payment_type_AB', 'payment_type_AC', 'payment_type_AD', 'payment_type_AE', 'employment_status_CA', 'employment_status_CB', 'employment_status_CC', 'employment_status_CD', 'employment_status_CE', 'employment_status_CF', 'employment_status_CG', 'email_is_free_0', 'email_is_free_1']
+END_CELL 3
+BEGIN_CELL 27
+Built GRU loaders. Sizes: 640000 160000 200000
+Categorical embedding sizes (per column):
+{'payment_type': 6, 'employment_status': 8, 'email_is_free': 3, 'housing_status': 8, 'phone_home_valid': 3, 'phone_mobile_valid': 3, 'has_other_cards': 3, 'foreign_request': 3, 'source': 3, 'device_os': 6}
+END_CELL 27
+BEGIN_CELL 28
+END_CELL 28
+BEGIN_CELL 29
+Using device: cuda
+GPU name: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+Epoch 1/5, Loss: 0.4925
+Epoch 2/5, Loss: 0.4706
+Epoch 3/5, Loss: 0.4606
+Epoch 4/5, Loss: 0.4460
+Epoch 5/5, Loss: 0.4318
+Validation F-1 Score: 0.8772, Accuracy: 0.7973
+HPO_TRIAL {"trial": 1, "hyperparams": {"embedding_dim": 169.15194503788922, "hidden_dim": 574.5196907723939, "lr": 0.0002739856006447883, "epochs": 5}, "validation_f1_weighted": 0.8771894401582767, "validation_accuracy": 0.797275, "seconds": 334.4066132000007}
+Epoch 1/8, Loss: 0.4924
+Epoch 2/8, Loss: 0.4702
+Epoch 3/8, Loss: 0.4607
+Epoch 4/8, Loss: 0.4513
+Epoch 5/8, Loss: 0.4394
+Epoch 6/8, Loss: 0.4254
+Epoch 7/8, Loss: 0.4200
+Epoch 8/8, Loss: 0.4131
+Validation F-1 Score: 0.9012, Accuracy: 0.8367
+HPO_TRIAL {"trial": 2, "hyperparams": {"embedding_dim": 227.1359918862401, "hidden_dim": 696.6629229453758, "lr": 0.00014146107875525552, "epochs": 8}, "validation_f1_weighted": 0.9012319895732324, "validation_accuracy": 0.83665625, "seconds": 602.4424449999988}
+Epoch 1/5, Loss: 0.4980
+Epoch 2/5, Loss: 0.4754
+Epoch 3/5, Loss: 0.4654
+Epoch 4/5, Loss: 0.4590
+Epoch 5/5, Loss: 0.4516
+Validation F-1 Score: 0.9063, Accuracy: 0.8452
+HPO_TRIAL {"trial": 3, "hyperparams": {"embedding_dim": 231.5162934051002, "hidden_dim": 337.3134608304315, "lr": 0.00013065854800735555, "epochs": 5}, "validation_f1_weighted": 0.9062827449485928, "validation_accuracy": 0.84515625, "seconds": 219.6231330999999}
+Epoch 1/7, Loss: 0.4986
+Epoch 2/7, Loss: 0.4697
+Epoch 3/7, Loss: 0.4418
+Epoch 4/7, Loss: 0.4354
+Epoch 5/7, Loss: 0.4298
+Epoch 6/7, Loss: 0.4281
+Epoch 7/7, Loss: 0.4250
+Validation F-1 Score: 0.8974, Accuracy: 0.8302
+HPO_TRIAL {"trial": 4, "hyperparams": {"embedding_dim": 200.09951255234586, "hidden_dim": 605.9330228081337, "lr": 0.0005160621732746954, "epochs": 7}, "validation_f1_weighted": 0.8973737928252391, "validation_accuracy": 0.830225, "seconds": 476.6875204000007}
+Epoch 1/7, Loss: 0.4978
+Epoch 2/7, Loss: 0.4734
+Epoch 3/7, Loss: 0.4607
+Epoch 4/7, Loss: 0.4489
+Epoch 5/7, Loss: 0.4372
+Epoch 6/7, Loss: 0.4275
+Epoch 7/7, Loss: 0.4255
+Validation F-1 Score: 0.8381, Accuracy: 0.7367
+HPO_TRIAL {"trial": 5, "hyperparams": {"embedding_dim": 200.30831653078098, "hidden_dim": 263.0494461904293, "lr": 0.0005926886650693367, "epochs": 7}, "validation_f1_weighted": 0.8381273391735659, "validation_accuracy": 0.7367125, "seconds": 260.8542882999991}
+Epoch 1/5, Loss: 0.4967
+Epoch 2/5, Loss: 0.4658
+Epoch 3/5, Loss: 0.4448
+Epoch 4/5, Loss: 0.4424
+Epoch 5/5, Loss: 0.4405
+Validation F-1 Score: 0.9142, Accuracy: 0.8586
+HPO_TRIAL {"trial": 6, "hyperparams": {"embedding_dim": 174.6394443250343, "hidden_dim": 634.0028252235267, "lr": 0.0007748651553730491, "epochs": 5}, "validation_f1_weighted": 0.9141961486303708, "validation_accuracy": 0.8586, "seconds": 359.0780492999984}
+Epoch 1/8, Loss: 0.4962
+Epoch 2/8, Loss: 0.4646
+Epoch 3/8, Loss: 0.4417
+Epoch 4/8, Loss: 0.4349
+Epoch 5/8, Loss: 0.4264
+Epoch 6/8, Loss: 0.4210
+Epoch 7/8, Loss: 0.4178
+Epoch 8/8, Loss: 0.4092
+Validation F-1 Score: 0.9163, Accuracy: 0.8622
+HPO_TRIAL {"trial": 7, "hyperparams": {"embedding_dim": 186.88240060019746, "hidden_dim": 733.7677322150511, "lr": 0.000448103301026688, "epochs": 8}, "validation_f1_weighted": 0.9162968720178316, "validation_accuracy": 0.8622, "seconds": 643.0599450000009}
+Epoch 1/9, Loss: 0.4925
+Epoch 2/9, Loss: 0.4709
+Epoch 3/9, Loss: 0.4454
+Epoch 4/9, Loss: 0.4311
+Epoch 5/9, Loss: 0.4266
+Epoch 6/9, Loss: 0.4205
+Epoch 7/9, Loss: 0.4152
+Epoch 8/9, Loss: 0.4073
+Epoch 9/9, Loss: 0.3965
+Validation F-1 Score: 0.9075, Accuracy: 0.8473
+HPO_TRIAL {"trial": 8, "hyperparams": {"embedding_dim": 203.8147835349516, "hidden_dim": 660.7985165284581, "lr": 0.00029230506644470025, "epochs": 9}, "validation_f1_weighted": 0.9075394011183525, "validation_accuracy": 0.84726875, "seconds": 634.4811142999988}
+Epoch 1/9, Loss: 0.5000
+Epoch 2/9, Loss: 0.4630
+Epoch 3/9, Loss: 0.4450
+Epoch 4/9, Loss: 0.4382
+Epoch 5/9, Loss: 0.4344
+Epoch 6/9, Loss: 0.4317
+Epoch 7/9, Loss: 0.4305
+Epoch 8/9, Loss: 0.4288
+Epoch 9/9, Loss: 0.4263
+Validation F-1 Score: 0.8984, Accuracy: 0.8319
+HPO_TRIAL {"trial": 9, "hyperparams": {"embedding_dim": 236.91273895612258, "hidden_dim": 479.32079303458784, "lr": 0.0006340852372561556, "epochs": 9}, "validation_f1_weighted": 0.8983627987563979, "validation_accuracy": 0.83186875, "seconds": 489.7039029000007}
+Epoch 1/6, Loss: 0.4935
+Epoch 2/6, Loss: 0.4739
+Epoch 3/6, Loss: 0.4639
+Epoch 4/6, Loss: 0.4508
+Epoch 5/6, Loss: 0.4356
+Epoch 6/6, Loss: 0.4245
+Validation F-1 Score: 0.8750, Accuracy: 0.7938
+HPO_TRIAL {"trial": 10, "hyperparams": {"embedding_dim": 220.42609711183354, "hidden_dim": 616.7456297930612, "lr": 0.0001654977545378634, "epochs": 6}, "validation_f1_weighted": 0.8750205703688929, "validation_accuracy": 0.7938, "seconds": 412.2479218999997}
+Best Validation F1 Score: 0.9163
+Best Hyperparameters: {'embedding_dim': 186.88240060019746, 'hidden_dim': 733.7677322150511, 'lr': 0.000448103301026688, 'epochs': 8}
+Total Parameter Tuning Time: 4432.70 seconds
+END_CELL 29
+BEGIN_CELL 30
+Epoch 1/8, Loss: 0.4925
+Epoch 2/8, Loss: 0.4681
+Epoch 3/8, Loss: 0.4408
+Epoch 4/8, Loss: 0.4328
+Epoch 5/8, Loss: 0.4289
+Epoch 6/8, Loss: 0.4231
+Epoch 7/8, Loss: 0.4183
+Epoch 8/8, Loss: 0.4096
+END_CELL 30
+BEGIN_CELL 31
+END_CELL 31
+BEGIN_CELL 33
+Test F-1 Score: 0.8503, Test Accuracy: 0.7551
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.9977    0.7541    0.8590    197794
+           1     0.0369    0.8454    0.0708      2206
+
+    accuracy                         0.7551    200000
+   macro avg     0.5173    0.7998    0.4649    200000
+weighted avg     0.9871    0.7551    0.8503    200000
+
+END_CELL 33
+BEGIN_CELL evidence
+ORIGINAL_GRU_ARTIFACTS_READY
+{
+  "fraud_precision": 0.0369350813958094,
+  "fraud_recall": 0.8454215775158658,
+  "fraud_f1": 0.07077798861480077,
+  "weighted_f1": 0.8503039178974042,
+  "weighted_recall": 0.75515,
+  "accuracy": 0.75515,
+  "roc_auc": 0.8822224491994386,
+  "ap": 0.1573626938623287,
+  "fpr": 0.2458568005096211,
+  "tn": 149165,
+  "fp": 48629,
+  "fn": 341,
+  "tp": 1865
+}
+END_CELL evidence
+EXECUTED_NOTEBOOK_SAVED D:\UIT\DS317\BAF_project\results\runs\author_gru_original_20261027_205457_a9c674ea\author_gru_executed.ipynb

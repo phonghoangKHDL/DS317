@@ -1,0 +1,20 @@
+{
+  "kind": "compact review; model checkpoints and sampled indices stay in the local run",
+  "omitted": {
+    "mnist/ce_s42/model.pt": "8bf3ae6963dc017cd1822329f03a58454b483b18e02f87fbab5ad9648bbf9904",
+    "mnist/lre_s317/model.pt": "f58b109b260dd50661e7ed323dfc66a16b89b3b7f46b978b6dcbd910955195ae",
+    "mnist/ce_s317/model.pt": "0d3978891545be8d0d4e8bf482e5bd464b38995e28416ed61d8cad4b878ba786",
+    "mnist/ce_s2026/model.pt": "b94f5a4ab5466fca073d6acc5df0e4f8963a40ebc05a5e5c788601f3357ab524",
+    "mnist/lre_s2026/model.pt": "b8a014a908d92ad0f3b7ecfe554b5769282eb9c4424653e19e8ce770575075fc",
+    "mnist/lre_s42/model.pt": "0c16d4b34b709fd14adf57c743812c682102acc45e14c0d53a53be351a044c48",
+    "cifar10/mwn_s2026/model.pt": "0a1f3c7bd6a1c8bcc1168d6620c07442ef68afb9e752144b2c706e10339e0c4a",
+    "cifar10/ce_s42/model.pt": "03a837863156c359567819291b1ccfe5c5c774217db36c853e955acc6f635e6d",
+    "cifar10/ce_s317/model.pt": "196a364e52ef4e6092b54bebfaece8146e43e29cb2d2564463decd2d49b4e176",
+    "cifar10/ce_s2026/model.pt": "91b23f4648c8112488c6995369b6f19c72fdbd6cf10d0ef77ac0374285357ea5",
+    "cifar10/mwn_s42/model.pt": "9365b6ee73e8a16a003d68972471a0aa323db9777eafd0d6d7c474c117de794f",
+    "cifar10/mwn_s317/model.pt": "4893d7302e11c2a344d95eebd1c4b219a1464fce4f816ecf025e23ab9bc03b71",
+    "cifar10/cb_ce_s317/model.pt": "5702b1cf26dd2be96c6d827db1e029c434324d5705e341e1c01b737b1ae12ffd",
+    "cifar10/cb_ce_s42/model.pt": "c9582cfebcd60f6cf5f282d1808c329f0b97ebe2e5ca4fb2205b1f66efdd008d",
+    "cifar10/cb_ce_s2026/model.pt": "4aa6e37c3f36ed24db19b2d3000cdfd473f08f3c4799c05fa1c1f2523438f79e"
+  }
+}

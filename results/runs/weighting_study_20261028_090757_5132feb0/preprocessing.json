@@ -1,0 +1,112 @@
+{
+  "partitions": {
+    "train": {
+      "n": 794989,
+      "positive": 8151,
+      "months": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "validation": {
+      "n": 108168,
+      "positive": 1450,
+      "months": [
+        6
+      ]
+    },
+    "test": {
+      "n": 96843,
+      "positive": 1428,
+      "months": [
+        7
+      ]
+    }
+  },
+  "feature_order": [
+    "income",
+    "name_email_similarity",
+    "prev_address_months_count",
+    "current_address_months_count",
+    "customer_age",
+    "days_since_request",
+    "intended_balcon_amount",
+    "payment_type",
+    "zip_count_4w",
+    "velocity_6h",
+    "velocity_24h",
+    "velocity_4w",
+    "bank_branch_count_8w",
+    "date_of_birth_distinct_emails_4w",
+    "employment_status",
+    "credit_risk_score",
+    "email_is_free",
+    "housing_status",
+    "phone_home_valid",
+    "phone_mobile_valid",
+    "bank_months_count",
+    "has_other_cards",
+    "proposed_credit_limit",
+    "foreign_request",
+    "source",
+    "session_length_in_minutes",
+    "device_os",
+    "keep_alive_session",
+    "device_distinct_emails_8w",
+    "device_fraud_count"
+  ],
+  "categorical_vocabularies": {
+    "payment_type": [
+      "AA",
+      "AD",
+      "AB",
+      "AC",
+      "AE"
+    ],
+    "employment_status": [
+      "CB",
+      "CA",
+      "CC",
+      "CF",
+      "CD",
+      "CE",
+      "CG"
+    ],
+    "housing_status": [
+      "BC",
+      "BE",
+      "BD",
+      "BA",
+      "BB",
+      "BF",
+      "BG"
+    ],
+    "source": [
+      "INTERNET",
+      "TELEAPP"
+    ],
+    "device_os": [
+      "linux",
+      "other",
+      "windows",
+      "x11",
+      "macintosh"
+    ]
+  },
+  "missing_minus_one": [
+    "prev_address_months_count",
+    "current_address_months_count",
+    "bank_months_count",
+    "session_length_in_minutes",
+    "device_distinct_emails_8w"
+  ],
+  "drop_features": [
+    "fraud_bool",
+    "month"
+  ],
+  "negative_intended_balance": "missing"
+}

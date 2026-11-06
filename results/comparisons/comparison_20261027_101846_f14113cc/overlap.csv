@@ -1,0 +1,15 @@
+reference,method,seed,partition,fraud_gained,fraud_lost,net_fraud,baseline_fp,candidate_fp
+lgbm_balanced,lr_none,42,validation,74,89,-15,5313,5318
+lgbm_balanced,lr_balanced,42,validation,76,101,-25,5313,5329
+lgbm_balanced,lgbm_none,42,validation,41,48,-7,5313,5308
+lgbm_balanced,lgbm_none,317,validation,43,45,-2,5330,5333
+lgbm_balanced,lgbm_none,2026,validation,35,44,-9,5284,5335
+lgbm_balanced,lgbm_cost_0.0114,42,validation,23,21,2,5313,5274
+lgbm_balanced,lgbm_cost_0.0114,317,validation,27,22,5,5330,5287
+lgbm_balanced,lgbm_cost_0.0114,2026,validation,22,27,-5,5284,5295
+lgbm_balanced,lgbm_cost_0.057,42,validation,30,30,0,5313,5332
+lgbm_balanced,lgbm_cost_0.057,317,validation,22,27,-5,5330,5318
+lgbm_balanced,lgbm_cost_0.057,2026,validation,30,28,2,5284,5335
+lgbm_balanced,lgbm_cost_0.285,42,validation,27,37,-10,5313,5329
+lgbm_balanced,lgbm_cost_0.285,317,validation,30,46,-16,5330,5307
+lgbm_balanced,lgbm_cost_0.285,2026,validation,36,49,-13,5284,5307

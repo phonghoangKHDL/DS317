@@ -1,0 +1,42 @@
+{
+  "key": "hpo_none_022_42",
+  "signature": {
+    "phase": "hpo",
+    "method": "none",
+    "candidate": 22,
+    "seed": 42,
+    "power": 0.0,
+    "parameters": {
+      "objective": "binary",
+      "class_weight": null,
+      "n_estimators": 150,
+      "learning_rate": 0.021836931661190346,
+      "num_leaves": 31,
+      "min_child_samples": 92,
+      "subsample": 0.9984714427604049,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.9979500921850386,
+      "reg_lambda": 0.2743903526007264,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "max_depth": -1
+    }
+  },
+  "fit_seconds": 9.312331600000107,
+  "peak_rss_mib": 692.49609375,
+  "validation_ap": 0.17520054570692684,
+  "validation_auc": 0.8861169592306117,
+  "class_weights": [
+    1.0,
+    1.0
+  ],
+  "mean_sample_weight": 1.0,
+  "model_file": "models/hpo_none_022_42.txt.gz",
+  "validation_file": "validation_scores/hpo_none_022_42.npz",
+  "fitted_trees": 150,
+  "artifacts": {
+    "models/hpo_none_022_42.txt.gz": "904e57a373c98b30fa1e5402c012a021bffbda6a17e61fd492c5428752b12bc5",
+    "validation_scores/hpo_none_022_42.npz": "cc1196439e6a8f42c102ba704b2c9f5bfbf9b19126335579d82f379c6ccd826f"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "method": "ros",
+  "ratio_requested": 0.1,
+  "counts": [
+    786710,
+    78671
+  ],
+  "rows": 865381,
+  "unique_rows": 794733,
+  "train_only": true,
+  "inverse_probability_correction": false
+}

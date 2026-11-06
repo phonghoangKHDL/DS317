@@ -1,0 +1,10 @@
+{
+  "primary_metric": "validation_ap",
+  "tie_break": "lowest_candidate_index",
+  "candidate_plan_sha256": "577f7625ff3b53a71a967dec5aaf3a44c0750abd3fcf6ee42638e5164ce5ba8c",
+  "selected": {
+    "none": "hpo_none_001_42",
+    "balanced": "hpo_balanced_001_42",
+    "tuned": "hpo_tuned_000_42"
+  }
+}
