@@ -1,5 +1,0 @@
-{
-  "kind": "Observed minibatch weights; temporal observations are not global static ESS",
-  "epochs": [],
-  "zero_weight_batches": 0
-}

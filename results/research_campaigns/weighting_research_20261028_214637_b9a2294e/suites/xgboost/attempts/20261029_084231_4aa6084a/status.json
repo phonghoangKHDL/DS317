@@ -1,6 +1,0 @@
-{
-  "state": "failed_or_interrupted",
-  "suite": "xgboost",
-  "attempt": "D:\\UIT\\DS317\\BAF_project\\results\\research_campaigns\\weighting_research_20261028_214637_b9a2294e\\suites\\xgboost\\attempts\\20261029_084231_4aa6084a",
-  "error": "RuntimeError('Research suite failed; keep this attempt and resume completed fits')"
-}

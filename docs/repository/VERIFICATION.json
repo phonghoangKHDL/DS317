@@ -1,11 +1,11 @@
 {
-  "official_files_present": 1107,
-  "inventory_file_sizes_checked": 1107,
-  "inventory_file_sha256_checked": 1106,
+  "official_files_present": 426,
+  "inventory_file_sizes_checked": 426,
+  "inventory_file_sha256_checked": 425,
   "inventory_self_reference": "Own byte size checked; own SHA-256 intentionally empty; all other official SHA-256 values required",
-  "python_files_parsed": 16,
-  "notebooks_validated": 47,
-  "evidence_hashes_checked": 1011,
+  "python_files_parsed": 14,
+  "notebooks_validated": 21,
+  "evidence_hashes_checked": 353,
   "historical_survey_bytes": 6673,
   "historical_survey_sha256": "aa0e443c862f6761c784a92c517fe848ea2afe4206d0f6670e11a94d2ce9aa79",
   "notebook20_run_selection": {

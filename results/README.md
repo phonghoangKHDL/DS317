@@ -1,7 +1,7 @@
-# Kết quả đã chạy và minh chứng GitHub
+# Kết quả được chọn
 
-Bảng cuối: [advisor_combined/RESEARCH_TABLE.md](advisor_combined/RESEARCH_TABLE.md). `advisor_step1/` giữ60 score nghiên cứu; `advisor_runs/` giữ CE/sampling và kiểm chứng nhỏ CPU/CUDA; `research_campaigns/.../evaluation/` giữ60 score/nhãn để tính metric. `runs/`/`comparisons/` giữ bảng và provenance lịch sử. `checks/` là kiểm tra kỹ thuật, không phải benchmark BAF mới.
+Bảng cuối ở [advisor_combined/RESEARCH_TABLE.md](advisor_combined/RESEARCH_TABLE.md). `advisor_step1/` giữ bảng/audit60 score ban đầu; `research_campaigns/.../evaluation/` giữ score/nhãn, bảng paper và bootstrap; `advisor_runs/` giữ đối chứng bổ sung và hai run kiểm chứng nhỏ CPU/CUDA riêng biệt. `runs/`/`comparisons/` giữ bảng benchmark lịch sử.
 
-Chạy `python -B scripts/verify_repository.py` từ root, không train. Phạm vi/hash ở `docs/repository/EVIDENCE_SCOPE.json`. Các index `sha256.json`, `COMPLETE.json`, `FROZEN.json` lịch sử giữ nguyên; chúng có thể nhắc tới model/validation scores/split chỉ còn ở máy. Bản GitHub không phải full proof có thể resume.
+Chạy `python -B scripts/verify_repository.py` từ root để kiểm chứng không train. Phạm vi và hash ở `docs/repository/EVIDENCE_SCOPE.json`. Worker notebook, verbose log, trial không chọn và full-proof index được giữ local; main giữ canonical notebook output, manifests, FROZEN, selected COMPLETE records, bảng và score.
 
-Dữ liệu/cache/checkpoint/latent/raw predictions một số run cũ và toàn bộ `proofs/` giữ tại vị trí cũ trên máy, không stage. Attempt lỗi giữ làm lịch sử trước attempt thành công, không cộng thành kết quả mới. `original_checks_3848ef4489af` là CPU; `original_checks_582e4a8ada1a` là CUDA; không trộn kết quả.
+Manifest/record lịch sử có thể nhắc tới model/validation scores/split chỉ giữ trên máy. Clone mới không đủ payload để resume; không sửa manifest để giả lập. Xem README gốc để tạo campaign mới.

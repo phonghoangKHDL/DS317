@@ -1,38 +1,27 @@
-# DS317 — Xử lý mất cân bằng dữ liệu BAF bằng đánh trọng số mẫu
+# DS317 — Đánh trọng số mẫu trên BAF
 
-Đồ án khảo sát class/cost weighting, chọn trọng số trên validation và chuyển giao các cơ chế weighting từ paper sang Bank Account Fraud (BAF). Repo giữ mã nguồn, notebook có output, bảng khảo sát, kết quả và phần minh chứng có thể tính lại. CCRW-E/P là hướng dự kiến, **chưa có thực nghiệm** trong bản này.
+Đồ án xử lý mất cân bằng dữ liệu Bank Account Fraud (BAF): khảo sát class/cost weighting, chọn trọng số bằng validation và chuyển giao các cơ chế từ paper sang dữ liệu bảng.
 
-Đọc [bảng kết quả cuối](results/advisor_combined/RESEARCH_TABLE.md), [phạm vi phương pháp](docs/RESEARCH_METHODS.md) và [báo cáo rà soát](REPOSITORY_REVIEW.md). [GITHUB_FILES.txt](docs/repository/GITHUB_FILES.txt) là danh sách file chính thức; [FILE_INVENTORY.csv](FILE_INVENTORY.csv) ghi từng quyết định giữ/lưu máy/lưu trữ.
+**Xem kết quả:** [bảng tổng hợp](results/advisor_combined/RESEARCH_TABLE.md), [protocol/phương pháp](docs/RESEARCH_METHODS.md), [phạm vi kiểm chứng](docs/advisor/IMPLEMENTATION_SCOPE.md).
 
 ## Cấu trúc
 
-```text
-src/                 baf.py: dữ liệu, metric, LR/LightGBM, chọn class weight
-                     gru.py: GRU, loss/meta weighting, LSR, XGBoost, campaign
-supplement/          reporting.py và training.py cho notebook 17–21
-notebooks/           20 notebook chính: 01–09 và 11–21; không có bước 10
-docs/                protocol, nguồn khóa commit/hash, synthetic checks, giấy phép
-references/          khảo sát ban đầu (.md/.xlsx/.csv), notebook GRU nguồn
-scripts/             helper cài đặt và verify_repository.py chỉ kiểm chứng
-results/             kết quả được chọn, giữ nguyên đường dẫn và byte
-data/raw/README.md   hướng dẫn lấy Base.csv; dữ liệu thật giữ tại máy
-```
+| Thư mục | Nội dung |
+|---|---|
+| `src/` | Dữ liệu, metric, LR/LightGBM, GRU và các adapter nghiên cứu |
+| `supplement/` | Tổng hợp metric và đối chứng bổ sung |
+| `notebooks/` | 20  notebook chính có output; không có bước10 |
+| `results/` | Bảng, score/nhãn, cấu hình và lựa chọn đã khóa để kiểm chứng |
+| `references/`, `docs/` | Khảo sát, protocol, source lock, giấy phép và hướng dẫn từng bước |
+| `scripts/` | Kiểm chứng không train, kiểm tra nhẹ và helper cài đặt |
 
-`external/`, cache/latent, model, dữ liệu và ZIP proof không đưa vào Git. Chúng vẫn ở vị trí cũ trên máy để tránh phá resume. Manifest lịch sử có thể chứa đường dẫn tuyệt đối của máy đã chạy: đó là provenance, không phải cấu hình portable để resume trên máy khác. Phần minh chứng công khai được liệt kê trong [EVIDENCE_SCOPE.json](docs/repository/EVIDENCE_SCOPE.json).
+Các notebook con, log chi tiết, trial không được chọn, model, cache và ZIP proof đầy đủ giữ local. Repo chỉ giữ phần minh chứng cần để đọc báo cáo và tính lại kết quả. Xem [REPOSITORY_REVIEW.md](REPOSITORY_REVIEW.md), [inventory](FILE_INVENTORY.csv) và [danh sách file](docs/repository/GITHUB_FILES.txt).
 
-## Môi trường và cài đặt
+## Môi trường
 
-Đã kiểm tra ngày 06/11/2026: Windows, Python 3.14.3, PyTorch **2.14.1+cu130**, CUDA build 13.0, RTX 3050 6GB; `pip check` đạt. Phiên bản đầy đủ và kiểm tra từng profile nằm ở [ENVIRONMENT.json](docs/repository/ENVIRONMENT.json). Môi trường CPU/phiên bản cũ được giữ riêng trong manifest từng run.
+Máy đã chạy: Windows, Python 3 .14 .3 , PyTorch 2 .14 .1 +cu130/CUDA13.0 , RTX 3050  6GB. Snapshot môi trường ở [ENVIRONMENT.json](docs/repository/ENVIRONMENT.json); manifest từng run mô tả môi trường của chính run đó. Không gộp các profile dependencies hoặc tự thay bản Torch/CUDA.
 
-Trên máy hiện tại, dùng đúng interpreter/kernel:
-
-```powershell
-$Python = 'D:\UIT\.venvs\ml-gpu\Scripts\python.exe'
-& $Python -m pip check
-& $Python -B scripts/verify_repository.py --imports
-```
-
-Trên máy mới, tạo môi trường riêng để đọc/kiểm chứng, không cần GPU:
+Đọc và kiểm chứng trên môi trường mới không cần GPU:
 
 ```powershell
 py -m venv .venv
@@ -42,66 +31,59 @@ $Python = '.\.venv\Scripts\python.exe'
 & $Python -B scripts/verify_repository.py
 ```
 
-Script verify đối chiếu byte size và SHA-256 của **mọi file chính thức** với FILE_INVENTORY.csv, kiểm notebook/đường dẫn và tính lại 75 bộ score BAF, 30 fit dữ liệu gốc (15 CPU + 15 CUDA). Inventory tự kiểm dung lượng nhưng để trống SHA-256 của chính nó để tránh tự tham chiếu; mọi file khác bắt buộc có hash. Script cũng kiểm byte/hash lịch sử của paper_survey.csv và chạy các fixture nhẹ cho chọn run notebook20/inventory. Không train, tải dữ liệu hay chạy lại bootstrap.
+Trên máy hiện tại dùng `$Python = 'D:\UIT\.venvs\ml-gpu\Scripts\python.exe'` và thêm `--imports` để kiểm tra import huấn luyện. Verifier đối chiếu dung lượng/SHA-256  mọi file chính thức, kiểm notebook 20 , tính lại **75  score BAF** và **30  bộ dự đoán kiểm chứng nhỏ**, kiểm bảng tổng hợp; không train, chạy HPO hay bootstrap. Inventory tự kiểm dung lượng và để trống hash của chính nó; mọi file khác bắt buộc có hash. Nếu dùng `--output`, ghi ngoài working copy để không làm thay đổi file đã kiểm.
 
-Nếu dùng `--output`, ghi báo cáo **bên ngoài working copy đang kiểm tra** để không thay đổi một file đã được inventory bảo vệ. `docs/repository/VERIFICATION.json` là báo cáo đã đóng gói và có hash trong inventory.
-
-Để train trên máy mới, cài PyTorch/CUDA phù hợp trước rồi chọn profile bên dưới. Để tái lập môi trường đã báo cáo, đối chiếu phiên bản trong manifest/ENVIRONMENT.json; cài theo khoảng phiên bản **không bảo đảm** tái lập bitwise. Repo không tự cài hoặc thay Torch hiện có.
-
-| Profile giữ nguyên | Vai trò |
+| Profile | Dùng cho |
 |---|---|
-| `requirements.txt` | LR/LightGBM, tiền xử lý và kernel cho 01–03; không cài Torch |
-| `requirements-author07.txt` | nbformat/IPython/tqdm cho replay GRU; cần thêm môi trường ML/Torch |
-| `requirements-feedzai08.txt` | Profile riêng cho 08; notebook cài Optuna/Aequitas vào `external/feedzai08_runtime/packages` |
-| `requirements-step09.txt` | Profile riêng cho 09, dùng môi trường CUDA hiện có |
-| `requirements-research.txt` | 11–21; có XGBoost, không yêu cầu Torch |
+| `requirements.txt` | Baseline, tiền xử lý và kernel |
+| `requirements-author07.txt` | Bổ sung cho replay GRU07 |
+| `requirements-feedzai08.txt` | Feedzai08; legacy packages tải riêng vào `external/` |
+| `requirements-step09.txt` | Chọn class weight09 |
+| `requirements-research.txt` | Nghiên cứu11–21 ; không cài Torch |
 
-Không cài chồng tất cả profile. Nếu môi trường khớp manifest và import được thì không cần cài lại. Hai helper `install_research.ps1 -PythonExe <python>` và `scripts/Install-BAFAdvisorDeps.ps1 -Python <python>` dành cho cài bổ sung có chủ đích; chúng có mặc định đường dẫn ổ D và pip có thể đổi phiên bản gói nhẹ. Đọc script trước khi dùng trên máy khác. Không cần chạy helper khi chỉ xem kết quả.
+Để train trên máy khác, cài Torch/CUDA phù hợp trước rồi chọn đúng profile, không cài chồng cả năm. Các khoảng phiên bản không bảo đảm tái lập bitwise; đối chiếu manifest nếu cần đúng môi trường cũ. Helper `install_research.ps1 -PythonExe <python>` và `scripts/Install-BAFAdvisorDeps.ps1 -Python <python>` có mặc định ổ D; không cần chạy chúng chỉ để xem kết quả.
 
-## Lấy dữ liệu
+## Dữ liệu
 
-Theo [nguồn Feedzai](https://github.com/feedzai/bank-account-fraud), tải BAF từ [Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022), lấy **Base.csv** đầy đủ và đặt ở `data/raw/Base.csv`. Không commit tài khoản/token Kaggle hay dữ liệu. Đã dùng 1.000.000 dòng, 11.029 fraud, tháng0–7, SHA-256:
+Tải **Base.csv** từ [BAF trên Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022 ) theo [nguồn Feedzai](https://github.com/feedzai/bank-account-fraud), đặt vào `data/raw/Base.csv`. Không commit dữ liệu hoặc token Kaggle.
+
+Đã dùng1.000 .000  dòng,11 .029  fraud; SHA-256 :
 
 ```text
 7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809
 ```
 
-PowerShell: `Get-FileHash data/raw/Base.csv -Algorithm SHA256`. Không ghi lại CSV rồi bỏ qua hash. Notebook20 tải MNIST/CIFAR-10 và kiểm MD5 vào `data/external/advisor`; có thể chọn từng dataset trong cấu hình. Không cần các dataset để verify score đã lưu.
-
-Git cần có trong PATH để 07/08/11 lấy source đúng commit. Không cần `git submodule update`: nguồn tải về là thư mục local được ignore.
+Kiểm bằng `Get-FileHash data/raw/Base.csv -Algorithm SHA256`. Notebook20 tải MNIST/CIFAR-10  có kiểm MD5 vào `data/external/advisor`. Không cần tải dữ liệu để verify score đã lưu. Git cần có trong PATH để07/08/11 tải source đúng commit; không có submodule.
 
 ## Notebook và thứ tự chạy
 
-Mở từ project root hoặc `notebooks/`, chọn đúng kernel, đọc cell cấu hình trước Run All. **Notebook huấn luyện có thể chạy nhiều giờ**; để xem báo cáo, đọc output sẵn có hoặc chạy script verify.
+Mở từ project root hoặc `notebooks/`, chọn đúng kernel và đọc cấu hình trước Run All. Notebook huấn luyện có thể chạy nhiều giờ; khi chỉ xem báo cáo hãy dùng output sẵn có hoặc verifier.
 
 | Notebook | Vai trò |
 |---|---|
-| 01 → 02 → 03 | Baseline LR/LightGBM, cost weighting, rồi so sánh; 03 không fit |
-| 04 | Pilot GRU một epoch trên mẫu nhỏ; không đưa vào benchmark full |
-| 05 → 06 | GRU full seed 1234 rồi thêm 317/2026; thực nghiệm lịch sử có source lock, xem lưu ý bên dưới |
-| 07 | Replay GRU nguồn: HPO10 + fixed recipe; khác 05/06 không chạy HPO |
-| 08 | Feedzai Base 100 trial; train0–5/test6–7; chọn top-five trên test chỉ để mô tả |
-| 09 | Chọn none/balanced/tuned trên validation6, khóa ngưỡng rồi đánh giá tháng7 |
-| 11 → 12/13/14/15 → 16 | Tạo campaign/cache/source lock → losses/meta/LSR/XGBoost → bảng paper/bootstrap |
-| 17 | Audit 60 score và tổng hợp độ đo đầy đủ; không fit |
-| 18, 19 → 21 | CE batch256 và sampling baselines trên cùng campaign → ghép bảng; đều đã chạy xong |
-| 20 | Kiểm chứng công thức và chạy nhỏ CB/LRE/MWN trên MNIST/CIFAR-10; bản hiện tại có retry ghi CSV |
+|01  →02  →03  | Baseline LR/LightGBM → cost weighting → so sánh validation |
+|04  | GRU pilot; không tính vào benchmark full |
+|05  →06  | GRU full seed 1234  → thêm317/2026; source lịch sử, xem lưu ý bên dưới |
+|07  | Replay GRU nguồn: HPO10 và fixed recipe |
+|08  | Feedzai Base 100  trial; top-five test chỉ để mô tả |
+|09  | Chọn none/balanced/tuned trên validation6 rồi đánh giá tháng7 |
+|11  →12 /13/14/15 →16  | Tạo campaign → losses/meta/LSR/XGBoost → bảng paper/bootstrap |
+|17  | Audit60 score và tổng hợp độ đo đầy đủ |
+|18 ,19  →21  | CE batch256 và sampling baselines → bảng cuối; đã chạy xong |
+|20  | Kiểm tra công thức và chạy nhỏ CB/LRE/MWN trên MNIST/CIFAR-10  |
 
-Không có notebook chính nào trùng hoàn toàn source. 17 bổ sung metric cho 16; 21 mở rộng bảng 17, tái dùng LRE/MWN chứ không fit mới hai phương pháp đó. Notebook `docs/validation/SYNTHETIC_*` chỉ là kiểm tra kỹ thuật.
+**05 /06:** guard source sẽ từ chối bản mở rộng hiện tại. Snapshot đúng ở `results/runs/gru_author_fixed_full_20261027_123100_deeb80e4/evidence/src/` và `results/runs/gru_author_fixed_full_extra_seeds_20261027_182144_4cb8cfb7/evidence/src/`. Để train lại lịch sử dùng working copy riêng, source/môi trường đúng phiên bản;06  cần full base run local và BASE_RUN_DIR đúng. Không bỏ guard hoặc ghi đè source hiện tại.
 
-**GRU lịch sử 05/06:** 05 dừng với source hiện tại vì SHA cũ; 06 dừng ở training signature so với base run. Không bỏ các kiểm tra đó. Snapshot đúng ở `results/runs/gru_author_fixed_full_20261027_123100_deeb80e4/evidence/src/` (05) và `results/runs/gru_author_fixed_full_extra_seeds_20261027_182144_4cb8cfb7/evidence/src/` (06). Để chạy lại lịch sử, dùng bản sao dự án riêng với source tương ứng và môi trường cũ. 06 cần đầy đủ base run local, gồm predictions/split/model; khi tạo run mới phải cập nhật `BASE_RUN_DIR`. Các payload này không nằm trong bản GitHub gọn. Không chép đè `src/` của campaign hiện tại.
+**20 :** `RESUME_RUN = None` chọn theo config/source/environment hiện tại. Explicit resume phải khớp toàn bộ identity và vị trí canonical của `reporting.launch`; run đã di chuyển bị từ chối trước launch. Output được giữ từ lần chạy cũ, sửa selector chỉ được kiểm tra nhẹ.
 
-**Notebook20:** `RESUME_RUN = None` suy ra run từ cấu hình, hash source và môi trường hiện tại; không tự ưu tiên run cũ trong log. Muốn resume một run cũ, điền đường dẫn rõ ràng; toàn bộ manifest identity phải khớp. Đường dẫn phải là vị trí canonical theo identity như `reporting.launch` đang dùng, nên run đã di chuyển bị từ chối trước khi launch. Output đang lưu là minh chứng lần chạy cũ; sửa chọn run chỉ được kiểm tra nhẹ, không chạy lại train.
+**Campaign mới:** GitHub không chứa cache/checkpoint để resume run cũ. Tạo working copy riêng, chạy11 với Base.csv để tạo cache/campaign mới, chọn CAMPAIGN_DIR cụ thể trong12–16 /18/19 nếu có nhiều campaign. Chạy các suite tuần tự;16  cần mọi suite đã chọn có FROZEN. Không sửa manifest lịch sử để giả lập resume.
 
-**Campaign mới:** GitHub giữ manifest/score nhưng không giữ cache/checkpoint để resume. Dùng working copy riêng để train, không lấy các run minh chứng làm cache. Chạy11 tạo campaign/cache mới từ Base.csv, điền `CAMPAIGN_DIR` mới trong 12–16/18/19 nếu có nhiều campaign. Chạy suite tuần tự; 16 cần mọi suite đã chọn có FROZEN. Không sửa manifest cũ để giả lập resume. Trên máy gốc vẫn dùng cache cũ được khi source/config/environment khớp.
+## Kết quả và giới hạn
 
-## Nơi xem kết quả và giới hạn
+- `results/advisor_combined/`: bảng cuối27 nhóm/81 dòng seed, gồm75 score duy nhất và6 dòng LRE/MWN tái dùng.
+- `results/advisor_step1/`: bảng/audit của60 score nghiên cứu gốc.
+- `results/research_campaigns/weighting_research_20261028_214637_b9a2294e/`: cấu hình, lựa chọn khóa, validation summary, selected records; `evaluation/` có60 score/nhãn, bảng paper và bootstrap đã chạy.
+- `results/advisor_runs/`: CE/sampling thêm15 score; hai run SmallCNN CPU/CUDA giữ riêng,15  bộ dự đoán mỗi run.
+- `results/runs/`, `results/comparisons/`: bảng benchmark lịch sử, cấu hình và source snapshot cần thiết.
 
-- `results/advisor_combined/RESEARCH_TABLE.md`: bảng cuối, 27 nhóm method/backbone, 81 dòng seed; **75 score BAF duy nhất** và 6 dòng LRE/MWN tái dùng cho đối chiếu CE batch256.
-- `results/advisor_step1/`: 60 score/20 phương pháp gốc, bảng metric và audit/provenance.
-- `results/research_campaigns/weighting_research_20261028_214637_b9a2294e/evaluation/`: score/nhãn, bảng từng seed, `research_table.csv`, `paper_research_table.csv`, `paired_bootstrap.csv`.
-- `results/advisor_runs/ce_0c139aa5b451/`, `sampling_1827c85af012/`: 5 + 20 predictor fit, 3 + 12 selected test scores.
-- `results/advisor_runs/original_checks_582e4a8ada1a/`: 15 fit SmallCNN CUDA; `original_checks_3848ef4489af` là 15 fit CPU bàn giao, giữ riêng.
-- `results/runs/`, `results/comparisons/`: kết quả lịch sử01–09. ZIP proof đầy đủ chỉ giữ local.
-
-Chỉ so weighting trong cùng backbone/feature/protocol. Image-paper chuyển sang BAF không phải tái lập toàn bộ paper. LSR giới hạn ngân sách, dùng chung auxiliary seed 42. Tháng7 đã xem khi phát triển: đây là development test. SD seed không thay CI lấy mẫu test. Bootstrap 1.000 lần có sẵn thuộc11–16, không tự áp dụng cho18/19. Đọc [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) trước khi dùng lại mã bên thứ ba.
+Chỉ so weighting trong cùng backbone/protocol. Tháng7 đã xem trong phát triển: đây là development test. SD seed không thay CI test; bootstrap gốc không tự áp dụng cho 18 /19. Các image-paper là BAF adaptation, LSR có ngân sách giới hạn/chung auxiliary seed 42 ; SmallCNN20 không tái lập đầy đủ paper. Chưa chạy CCRW-E/P hay cải tiến đề xuất. Xem [nguồn và giấy phép](THIRD_PARTY_NOTICES.md).
