@@ -574,3 +574,16 @@ client_secret*.json
 !/results/runs/weighting_study_20261028_090757_5132feb0/status.json
 !/results/runs/weighting_study_20261028_090757_5132feb0/summary.csv
 !/results/runs/weighting_study_20261028_090757_5132feb0/test_comparison.png
+
+# Local-only repository audits and superseded setup helpers/profiles.
+/FILE_INVENTORY.csv
+/REPOSITORY_REVIEW.md
+/install_research.ps1
+/requirements-author07.txt
+/requirements-feedzai08.txt
+/requirements-step09.txt
+/scripts/Install-BAFAdvisorDeps.ps1
+/scripts/check_inventory_integrity.py
+/docs/repository/GITHUB_FILES.txt
+/docs/repository/EVIDENCE_SCOPE.json
+/docs/repository/VERIFICATION.json

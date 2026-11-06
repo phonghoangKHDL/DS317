@@ -7,10 +7,10 @@ from __future__ import annotations
 
 import argparse
 import ast
-import csv
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,48 +33,67 @@ def require(condition, message):
         raise ValueError(message)
 
 
-def check_inventory(root, official):
-    """Check every published byte; only the inventory's own digest is omitted."""
+def git_file_manifest(root):
+    """Read exact tracked bytes from the Git index without network access."""
     root = Path(root).resolve()
-    inventory_name = "FILE_INVENTORY.csv"
-    with (root / inventory_name).open(encoding="utf-8-sig", newline="") as stream:
-        rows = list(csv.DictReader(stream))
-    by_path = {}
-    for row in rows:
-        relative = row["path"]
-        require(relative not in by_path, f"Duplicate inventory path: {relative}")
-        by_path[relative] = row
-    declared = {row["path"] for row in rows if row["include_in_github"] == "True"}
-    require(declared == set(official), "Inventory official paths differ from GITHUB_FILES.txt")
-    hashes_checked = 0
-    for relative in official:
-        require(relative in by_path, f"Missing inventory row: {relative}")
-        row = by_path[relative]
-        path = root / relative
-        require(path.resolve().is_relative_to(root), f"Official path outside repository: {relative}")
-        require(path.is_file(), f"Missing inventoried file: {relative}")
-        require(row["category"] == "official", f"Wrong inventory category: {relative}")
-        try:
-            expected_size = int(row["size_bytes"])
-        except (ValueError, TypeError):
-            raise ValueError(f"Missing/invalid inventory byte size: {relative}") from None
-        actual_size = path.stat().st_size
-        require(actual_size == expected_size,
-                f"Inventory size mismatch: {relative}: expected {expected_size}, got {actual_size}")
-        expected_hash = row["sha256"]
-        if relative == inventory_name:
-            require(expected_hash == "", "Inventory self SHA-256 must be empty to avoid self-reference")
+    top = subprocess.check_output(
+        ["git", "-C", str(root), "rev-parse", "--show-toplevel"]
+    ).decode("utf-8").strip()
+    require(Path(top).resolve() == root, "Run in this repository or pass an external --manifest for an index export")
+    entries = subprocess.check_output(
+        ["git", "-C", str(root), "ls-files", "--stage", "-z"]
+    )
+    paths = {}
+    for entry in entries.split(b"\0"):
+        if not entry:
             continue
-        require(len(expected_hash) == 64 and all(c in "0123456789abcdef" for c in expected_hash),
-                f"Missing/invalid inventory SHA-256: {relative}")
-        actual_hash = digest(path)
-        require(actual_hash == expected_hash,
-                f"Inventory SHA-256 mismatch: {relative}: expected {expected_hash}, got {actual_hash}")
-        hashes_checked += 1
-    require(inventory_name in official, "Inventory must itself be an official file")
-    return {"inventory_file_sizes_checked": len(official),
-            "inventory_file_sha256_checked": hashes_checked,
-            "inventory_self_reference": "Own byte size checked; own SHA-256 intentionally empty; all other official SHA-256 values required"}
+        header, name = entry.split(b"\t", 1)
+        mode, oid, stage = header.decode("ascii").split()
+        require(stage == "0" and mode in {"100644", "100755"},
+                "Unresolved conflict, submodule or unsupported file mode in index")
+        relative = name.decode("utf-8")
+        require(relative not in paths, f"Duplicate indexed path: {relative}")
+        paths[relative] = oid
+    require(bool(paths), "Empty Git index")
+    objects = sorted(set(paths.values()))
+    raw = subprocess.check_output(
+        ["git", "-C", str(root), "cat-file", "--batch"],
+        input=("\n".join(objects) + "\n").encode("ascii"),
+    )
+    position = 0
+    by_oid = {}
+    for expected_oid in objects:
+        end = raw.index(b"\n", position)
+        oid, kind, size = raw[position:end].decode("ascii").split()
+        require(oid == expected_oid and kind == "blob", "Unexpected Git batch object")
+        size = int(size)
+        data = raw[end + 1:end + 1 + size]
+        require(len(data) == size and raw[end + 1 + size:end + 2 + size] == b"\n", "Truncated Git blob")
+        by_oid[oid] = {"size_bytes": size, "sha256": hashlib.sha256(data).hexdigest()}
+        position = end + 2 + size
+    require(position == len(raw), "Unexpected Git batch trailer")
+    return {"kind": "GIT_INDEX_FILE_MANIFEST",
+            "files": {relative: by_oid[oid] for relative, oid in sorted(paths.items())}}
+
+
+def check_manifest(root, manifest):
+    """Every official byte is checked; no public inventory/self-hash exception."""
+    root = Path(root).resolve()
+    require(manifest.get("kind") == "GIT_INDEX_FILE_MANIFEST", "Unsupported manifest kind")
+    files = manifest.get("files")
+    require(isinstance(files, dict) and bool(files), "Empty/invalid file manifest")
+    for relative, record in files.items():
+        path = root / relative
+        require(path.resolve().is_relative_to(root), f"Path outside repository: {relative}")
+        require(path.is_file(), f"Missing tracked file: {relative}")
+        expected_size = record["size_bytes"]
+        require(type(expected_size) is int and expected_size >= 0, f"Invalid byte size: {relative}")
+        require(path.stat().st_size == expected_size, f"Git size mismatch: {relative}")
+        expected_hash = record["sha256"]
+        require(isinstance(expected_hash, str) and len(expected_hash) == 64
+                and all(c in "0123456789abcdef" for c in expected_hash), f"Invalid SHA-256: {relative}")
+        require(digest(path) == expected_hash, f"Git SHA-256 mismatch: {relative}")
+    return {"git_file_sizes_checked": len(files), "git_file_sha256_checked": len(files)}
 
 
 def check_historical_survey():
@@ -186,13 +205,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--imports", action="store_true")
     parser.add_argument("--output", type=Path, help="Optional JSON report outside the repository; default is read-only")
+    parser.add_argument("--manifest", type=Path, help="External Git-index manifest when verifying an export without .git")
+    parser.add_argument("--write-manifest", type=Path, help="Export Git-index hashes outside the repository, then exit")
     args = parser.parse_args()
-    official = (ROOT / "docs/repository/GITHUB_FILES.txt").read_text(encoding="utf-8").splitlines()
-    require(len(official) == len(set(official)), "Duplicate official paths")
     if args.output:
-        require(not args.output.resolve().is_relative_to(ROOT),
-                "Write the report outside this repository; rewriting an official file would invalidate its inventory hash")
-    inventory_result = check_inventory(ROOT, official)
+        require(not args.output.resolve().is_relative_to(ROOT), "Write the report outside this repository")
+    if args.write_manifest:
+        require(args.manifest is None, "Do not combine --manifest and --write-manifest")
+        require(not args.write_manifest.resolve().is_relative_to(ROOT), "Write the manifest outside this repository")
+        manifest = git_file_manifest(ROOT)
+        args.write_manifest.write_bytes((json.dumps(manifest, indent=2) + "\n").encode("utf-8"))
+        print(f"Exported Git-index manifest: {len(manifest['files'])} files")
+        return
+    manifest = read_json(args.manifest) if args.manifest else git_file_manifest(ROOT)
+    manifest_result = check_manifest(ROOT, manifest)
+    official = sorted(manifest["files"])
     code_count = notebook_count = 0
     import nbformat
     from IPython.core.inputtransformer2 import TransformerManager
@@ -213,16 +240,10 @@ def main():
                 if cell.cell_type == "code":
                     ast.parse(transformer.transform_cell(cell.source), filename=relative)
             notebook_count += 1
-    scope = read_json(ROOT / "docs/repository/EVIDENCE_SCOPE.json")
-    for relative, expected in scope["retained_sha256"].items():
-        require(digest(ROOT / relative) == expected, f"Retained evidence changed: {relative}")
     from check_notebook20_run_selection import check_run_selection
-    from check_inventory_integrity import run_checks
-    result = {"official_files_present": len(official), **inventory_result,
-              "python_files_parsed": code_count,
-              "notebooks_validated": notebook_count, "evidence_hashes_checked": len(scope["retained_sha256"]),
+    result = {"official_files_present": len(official), **manifest_result,
+              "python_files_parsed": code_count, "notebooks_validated": notebook_count,
               **check_historical_survey(), "notebook20_run_selection": check_run_selection(ROOT),
-              "inventory_validator_checks": run_checks(),
               **check_results()}
     if args.imports:
         sys.path[:0] = [str(ROOT / "src"), str(ROOT / "supplement")]
@@ -234,7 +255,7 @@ def main():
             require(Path(module.__file__).resolve().is_relative_to(ROOT), f"Foreign import: {module.__name__}")
         result["training_imports"] = "passed"
     result["status"] = "passed"
-    result["scope"] = "All official inventory sizes/SHA-256 (self-inventory digest excepted), historical CSV, notebook20 selector, saved scores/summaries/schemas/imports; no training, downloads, bootstrap rerun, or omitted checkpoints"
+    result["scope"] = "All indexed file sizes/SHA-256, historical CSV, notebook20 selector, saved scores/summaries/schemas/imports; no training, downloads, bootstrap rerun, or omitted checkpoints"
     output = json.dumps(result, ensure_ascii=False, indent=2)
     print(output)
     if args.output:

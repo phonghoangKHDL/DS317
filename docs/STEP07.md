@@ -1,7 +1,7 @@
 # Bước07: chạy trực tiếp GRU của tác giả
 
 Giải nén vào D:\UIT\DS317, gộp thư mục BAF_project. Gói chỉ thêm notebook07,
-requirements-author07.txt và tài liệu. Không thay src hoặc notebook đã chạy.
+các gói nbformat/IPython/tqdm và tài liệu. Không thay src hoặc notebook đã chạy.
 
 ## Cài thêm thư viện nhỏ trong venv chung ở D
 
@@ -13,7 +13,7 @@ New-Item -ItemType Directory -Force -Path "D:\pip-cache", "D:\pip-temp" | Out-Nu
 $env:PIP_CACHE_DIR = "D:\pip-cache"
 $env:TEMP = "D:\pip-temp"
 $env:TMP = "D:\pip-temp"
-& "D:\UIT\.venvs\ml-gpu\Scripts\python.exe" -m pip install -r requirements-author07.txt
+& "D:\UIT\.venvs\ml-gpu\Scripts\python.exe" -m pip install "nbformat>=5.10" "ipython>=8.20" "tqdm>=4.66"
 ```
 
 Cần Git trên PATH. Mở notebook07, chọn kernel D:\UIT\.venvs\ml-gpu\Scripts\python.exe,
