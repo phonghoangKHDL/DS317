@@ -75,7 +75,9 @@ def environment():
 
 def setup(root):
     root = Path(root).resolve()
-    cache = Path(r"D:\UIT\.cache\baf-research") if os.name == "nt" else root / ".cache"
+    cache = Path(
+        os.environ.get("BAF_CACHE_ROOT") or root / ".cache" / "baf-research"
+    ).expanduser().resolve()
     for key, folder in {"PIP_CACHE_DIR": "pip", "TORCH_HOME": "torch", "XDG_CACHE_HOME": "misc"}.items():
         target = cache / folder
         target.mkdir(parents=True, exist_ok=True)

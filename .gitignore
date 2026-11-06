@@ -587,3 +587,6 @@ client_secret*.json
 /docs/repository/GITHUB_FILES.txt
 /docs/repository/EVIDENCE_SCOPE.json
 /docs/repository/VERIFICATION.json
+
+# Superseded research profile; fresh clones use requirements.txt.
+/requirements-research.txt

@@ -14,38 +14,63 @@
 | `docs/`, `references/` | Protocol, khảo sát, source lock, giấy phép và hướng dẫn chi tiết |
 | `scripts/` | Verifier đọc lại kết quả và kiểm tra nhẹ notebook20 |
 
-Dataset, model, cache, full proof và log/worker notebook lặp giữ local. Các báo cáo dọn repository, inventory và profile cài phụ đã gỡ khỏi main; lệnh cài tương ứng được ghi bên dưới. Giữ lịch sử Git và bản đầy đủ tại máy.
+Dataset, model, cache, full proof và log/worker notebook lặp giữ local. Các báo cáo quản trị và profile cài trùng đã gỡ khỏi main; người clone dùng requirements.txt và README này. Giữ lịch sử Git và bản đầy đủ tại máy.
 
-## Cài đặt
+## Clone và cài đặt
 
-Môi trường đã chạy: Windows, Python **3.14.3**, PyTorch **2.14.1+cu130**, CUDA **13.0**, RTX3050 6GB. [Snapshot môi trường](docs/repository/ENVIRONMENT.json) và manifest từng run giữ phiên bản thực tế. Không tự cài lại Torch/CUDA hay cài chồng các thiết lập cũ.
+Người clone mới dùng **một file `requirements.txt`** cho luồng chính. File này chứa các gói dữ liệu, weighting, XGBoost, notebook/plot và PyTorch; không còn phải chọn giữa requirements thường và research.
 
-Chỉ đọc/kiểm chứng kết quả, không cần GPU:
+Cần Git và Python3.11 trở lên. Ví dụ dưới đây dùng Python3.11 trên Windows; Linux/macOS dùng `python3.11 -m venv .venv` và `.venv/bin/python` thay đường dẫn interpreter.
 
 ```powershell
-py -m venv .venv
+git clone https://github.com/phonghoangKHDL/DS317.git
+cd DS317
+py -3.11 -m venv .venv
 $Python = '.\.venv\Scripts\python.exe'
-& $Python -m pip install -r requirements.txt
-& $Python -m pip install nbformat ipython
-& $Python -B scripts/verify_repository.py
+& $Python -m pip install --upgrade pip
 ```
 
-Verifier cần Git và working copy có `.git`; nó đối chiếu dung lượng/SHA-256 toàn bộ file theo Git index, kiểm notebook, tính lại75 score BAF và30 bộ dự đoán nhỏ, đối chiếu bảng. Thêm `--imports` khi có môi trường huấn luyện. Script không train, tải dữ liệu, chạy HPO hay bootstrap; `--output` ghi ra ngoài project.
+Chọn **một** cách cài PyTorch trong chính môi trường mới:
 
-Để train11–21, chọn môi trường đã có Torch phù hợp rồi cài `requirements-research.txt`. Hai file requirements chính phục vụ baseline và nghiên cứu; không gộp chúng. Các gói phụ cho07/08/09 dưới đây giữ nguyên ràng buộc của profile cũ; chỉ cài nhóm thực sự cần, không chạy cả ba trên một môi trường đang khớp manifest:
+- **CPU:** dùng lệnh dưới. Đủ để kiểm chứng kết quả và import/chạy các phương pháp hỗ trợ CPU; training full có thể rất lâu. Notebook07 mặc định yêu cầu CUDA, notebook06 còn khóa môi trường cũ.
+- **NVIDIA GPU:** lấy lệnh Windows/Linux, Pip, Python, CUDA phù hợp máy từ [bộ chọn chính thức của PyTorch](https://pytorch.org/get-started/locally/). Dùng `$Python -m pip` thay `pip3` trong lệnh đó. Không chọn CUDA theo máy tác giả nếu driver/máy của bạn khác.
 
 ```powershell
-# Notebook07: bổ sung giao diện replay GRU; dùng môi trường ML/Torch sẵn có.
+# Chỉ chạy dòng này khi chọn CPU.
+& $Python -m pip install "torch>=2.6,<3" --index-url https://download.pytorch.org/whl/cpu
+
+# Sau khi đã chọn CPU hoặc CUDA, cài phần còn lại bằng cùng một file.
+& $Python -m pip install -r requirements.txt
+& $Python -m pip check
+& $Python -B scripts/verify_repository.py --imports
+```
+
+`requirements.txt` chấp nhận Torch2.x đã cài, gồm bản CPU/CUDA; không dùng `--upgrade` khi muốn giữ phiên bản đó. Các bước trên dành cho **venv mới**. Môi trường `ml-gpu` cũ có manifest/source lock riêng, không cần cài lại. Máy tác giả đã dùng Python3.14.3, Torch2.14.1+cu130/CUDA13.0; [snapshot môi trường lịch sử](docs/repository/ENVIRONMENT.json) dùng để truy nguồn, không phải file cài cho mọi máy.
+
+Verifier kiểm size/SHA-256 theo Git index, notebook,14 kiểm tra selector của20,75 score BAF,30 bộ dự đoán nhỏ và bảng tổng hợp. Nó không train, tải dữ liệu, chạy HPO hay bootstrap. `--output` phải nằm ngoài working copy. Chỉ xem báo cáo có thể mở CSV/notebook có output ngay; không cần train.
+
+Cache mặc định nằm trong `.cache/baf-research/` của repo, không yêu cầu ổ D. Có thể đặt `BAF_CACHE_ROOT` tới thư mục ghi được trước khi mở kernel nếu muốn lưu cache ở nơi khác. Source mới có thay đổi đường dẫn cache nên identity advisor khác run lịch sử; manifest/output cũ vẫn nguyên, không bỏ guard để resume bằng source khác.
+
+Mở thư mục `DS317` bằng VS Code, chọn kernel `.venv` vừa tạo. Nếu Jupyter không thấy kernel:
+
+```powershell
+& $Python -m ipykernel install --user --name ds317-baf --display-name "DS317 BAF"
+```
+
+### Tái lập các run cũ
+
+Cài thành công/import được không bảo đảm tái lập bitwise trên mọi phiên bản. Muốn khớp kết quả cũ phải đối chiếu source/config/data/environment trong manifest của run đó. Bản GitHub không kèm dataset, feature cache hay model để resume.
+
+Notebook05/06 cần snapshot/môi trường cũ như ghi dưới đây. Notebook08 là replay Feedzai riêng: nó tải legacy Optuna/Aequitas vào `external/feedzai08_runtime/packages`; không gộp các gói cũ này vào môi trường mặc định. Các lệnh sau chỉ phục vụ tái lập07/08/09 trong **môi trường riêng** cần đúng profile lịch sử, không phải bước cài bắt buộc cho người clone:
+
+```powershell
+# 07: giao diện replay GRU, sau khi đã có môi trường ML/Torch.
 & $Python -m pip install "nbformat>=5.10" "ipython>=8.20" "tqdm>=4.66"
-
-# Notebook08: tương thích Feedzai; legacy Optuna/Aequitas tải riêng bởi notebook.
+# 08: profile tương thích của lần chạy Feedzai đã báo cáo.
 & $Python -m pip install "lightgbm==4.7.0" "nbformat==5.11.1" "ipython==9.17.1" "PyYAML==6.0.3" "seaborn>=0.13.2"
-
-# Notebook09: thiết lập đã dùng cho chọn class weight.
+# 09: profile của lần chọn class weight đã báo cáo.
 & $Python -m pip install "lightgbm==4.7.0" "nbformat==5.11.1" "ipython==9.17.1" "psutil==7.2.2" "matplotlib>=3.8"
 ```
-
-Trên máy hiện tại dùng `$Python = 'D:\UIT\.venvs\ml-gpu\Scripts\python.exe'`. Nếu môi trường đã khớp manifest thì không cần cài lại. Cài theo khoảng phiên bản không bảo đảm tái lập bitwise trên máy khác.
 
 ## Dữ liệu
 
@@ -78,7 +103,7 @@ Mở từ project root hoặc `notebooks/`, chọn đúng kernel và đọc cấ
 
 **20:** `RESUME_RUN = None` chọn theo config/source/environment hiện tại. Explicit resume phải khớp toàn bộ identity và vị trí canonical của `reporting.launch`. Output cũ được giữ; thay đổi selector được kiểm tra nhẹ, không train lại.
 
-**Campaign mới:** GitHub không có cache/checkpoint để resume run cũ. Dùng working copy riêng, chạy11 tạo cache/campaign từ Base.csv, chọn CAMPAIGN_DIR cụ thể trong12–16/18/19 nếu có nhiều campaign. Chạy suite tuần tự;16 cần mọi suite đã chọn có FROZEN. Không sửa manifest lịch sử để giả lập resume.
+**Campaign mới:** GitHub không có cache/checkpoint để resume run cũ. Dùng working copy riêng, chạy11 tạo cache/campaign từ Base.csv, chép đường dẫn campaign mới in ở11 vào `CAMPAIGN_DIR` của12–16/18/19. Clone đã kèm một campaign kết quả cũ nên sau khi tạo mới sẽ có nhiều campaign; không để bộ chọn tự lấy run lịch sử. Chạy suite tuần tự;16 cần mọi suite đã chọn có FROZEN. Không sửa manifest lịch sử để giả lập resume.
 
 ## Nơi xem kết quả
 

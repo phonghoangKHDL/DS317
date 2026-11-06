@@ -1,7 +1,19 @@
-numpy>=1.26
-pandas>=2.1
-scipy>=1.11
-scikit-learn>=1.4
-lightgbm>=4.0
-psutil>=5.9
-ipykernel>=6.29
+# Default setup for a fresh clone (Python 3.11+).
+# Pick CPU/CUDA PyTorch first as described in README; an installed compatible
+# Torch >=2.6,<3 satisfies this file. Do not use --upgrade on a locked run environment.
+numpy>=2.0,<3
+pandas>=2.2,<4
+scipy>=1.14,<2
+scikit-learn>=1.6,<2
+lightgbm>=4.5,<5
+xgboost>=3.1,<4
+joblib>=1.4,<2
+psutil>=6,<8
+nbformat>=5.10,<6
+ipython>=8.20,<10
+ipykernel>=6.29,<8
+matplotlib>=3.8,<4
+tqdm>=4.66,<5
+PyYAML>=6.0,<7
+seaborn>=0.13.2,<0.14
+torch>=2.6,<3
